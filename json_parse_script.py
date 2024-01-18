@@ -21,6 +21,13 @@ def get_sql_query(query_file_name):
 def get_sql_query_w_explain_analyze(query_file_name):
     return EXPLAIN_ANALYZE_PREFIX + get_sql_query(query_file_name)
 
+def is_bushy(curr_plan_node):
+    children = curr_plan_node[CHILDREN]
+    return len(children) == 2 and \
+           "JOIN" in curr_plan_node[NAME] and \
+           "JOIN" in children[0][NAME] and \
+           "JOIN" in children[1][NAME]
+
 def get_children_leaf_size(curr_plan_node, depth=0):
     # BC: we hit a leaf node
     children = curr_plan_node[CHILDREN]
@@ -28,7 +35,7 @@ def get_children_leaf_size(curr_plan_node, depth=0):
         return curr_plan_node[CARDINALITY]
     
     # IS: get size of children
-    if len(children) == 2 and "JOIN" in curr_plan_node[NAME]:
+    if is_bushy(curr_plan_node):
         x = get_children_leaf_size(children[0], depth + 1)
         y = get_children_leaf_size(children[1], depth + 1)
         z = curr_plan_node[CARDINALITY]
