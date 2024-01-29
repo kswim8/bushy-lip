@@ -6,6 +6,9 @@ import sys
 PROFILING_AS_JSON_COMMAND = "PRAGMA enable_profiling = 'json'"
 EXPLAIN_ANALYZE_PREFIX = "EXPLAIN ANALYZE "
 DATABASE_NAME = "imdb.duckdb"
+OUT_FILE = "statistics.txt"
+OUT_FILE_ROW_FORMAT = "{:<30} {:<10} {:<8} {:<8} {:<12} {:<12}\n"
+FLOAT_FORMAT = ".2f"
 
 CARDINALITY = "cardinality"
 CHILDREN = "children"
@@ -28,28 +31,48 @@ def is_bushy(curr_plan_node):
            "JOIN" in children[0][NAME] and \
            "JOIN" in children[1][NAME]
 
-def get_children_leaf_size(curr_plan_node, depth=0):
+def is_join(curr_plan_node):
+    children = curr_plan_node[CHILDREN]
+    return len(children) == 2 and \
+           "JOIN" in curr_plan_node[NAME]
+
+def get_children_leaf_size(curr_plan_node, query_file, out_file, depth=0):
     # BC: we hit a leaf node
     children = curr_plan_node[CHILDREN]
     if not children:
         return curr_plan_node[CARDINALITY]
     
     # IS: get size of children
-    if is_bushy(curr_plan_node):
-        x = get_children_leaf_size(children[0], depth + 1)
-        y = get_children_leaf_size(children[1], depth + 1)
+    if is_join(curr_plan_node):
+        x = get_children_leaf_size(children[0], query_file, out_file, depth + 1)
+        y = get_children_leaf_size(children[1], query_file, out_file, depth + 1)
         z = curr_plan_node[CARDINALITY]
-        print("depth =", depth, " |", curr_plan_node[NAME], " | left:", x, " | right:", y)
-        if z:
-            print("depth =", depth, " | (x + y) / z =", (x + y) / z)
-        if min(x, y):
-            print("depth =", depth, " | x / y =", max(x, y) / min(x, y))
-        print()
+        
+        node_name = curr_plan_node[NAME]
+        bushy = "Y" if is_bushy(curr_plan_node) else ""
+        children_to_parent_ratio = "----" if not z else \
+                                          format((x + y) / z, FLOAT_FORMAT)
+        children_ratio = "----" if not min(x, y) else \
+                                format(max(x, y) / min(x, y), FLOAT_FORMAT)
+        row = OUT_FILE_ROW_FORMAT.format(
+            query_file, 
+            node_name,
+            depth,
+            bushy,
+            children_to_parent_ratio,
+            children_ratio,
+        )
+        out_file.write(row)
         return x + y
 
     total_children = 0
     for child in children:
-        total_children += get_children_leaf_size(child, depth + 1)
+        total_children += get_children_leaf_size(
+                child, 
+                query_file, 
+                out_file, 
+                depth + 1
+        )
     
     return total_children
 
@@ -63,8 +86,22 @@ def main():
     explain_analyze_query = get_sql_query_w_explain_analyze(query_file)
     query_plan_json_str = con.sql(explain_analyze_query).fetchall()[0][1]
     query_plan_json = json.loads(query_plan_json_str)
+    
+    with open(OUT_FILE, 'a+') as out_file:
+        if len(out_file.read()) == 0:
+            title_row = OUT_FILE_ROW_FORMAT.format(
+                "Query",
+                "Node Name",
+                "Depth",
+                "Bushy?",
+                "[(x+y)/z]",
+                "[x/y]",
+            )
+            out_file.write(title_row)
+        
+        get_children_leaf_size(query_plan_json, query_file, out_file)
 
-    get_children_leaf_size(query_plan_json)
+        out_file.write("\n")
 
 if __name__ == '__main__':
     main() 

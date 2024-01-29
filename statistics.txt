@@ -1,0 +1,1136 @@
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/10a.sql   HASH_JOIN  9                 296.98       1917.07     
+join-order-benchmark/10a.sql   HASH_JOIN  8                 798.28       2.58        
+join-order-benchmark/10a.sql   HASH_JOIN  7                 264013.33    10.00       
+join-order-benchmark/10a.sql   HASH_JOIN  6                 355946.55    39866013.00 
+join-order-benchmark/10a.sql   HASH_JOIN  5                 355946.57    19933007.00 
+join-order-benchmark/10a.sql   HASH_JOIN  4                 413522.64    12.69       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/10b.sql   HASH_JOIN  9                 296.98       1917.07     
+join-order-benchmark/10b.sql   HASH_JOIN  8                 2384.56      6.67        
+join-order-benchmark/10b.sql   HASH_JOIN  7                 15013.30     12.07       
+join-order-benchmark/10b.sql   HASH_JOIN  6                 ----         39244759.00 
+join-order-benchmark/10b.sql   HASH_JOIN  5                 ----         19622380.00 
+join-order-benchmark/10b.sql   HASH_JOIN  4                 ----         2395.31     
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/10c.sql   HASH_JOIN  9                 2.33         30.75       
+join-order-benchmark/10c.sql   HASH_JOIN  8                 7.45         1.54        
+join-order-benchmark/10c.sql   HASH_JOIN  7                 7.45         2221502.00  
+join-order-benchmark/10c.sql   HASH_JOIN  6                 52.02        8.16        
+join-order-benchmark/10c.sql   HASH_JOIN  5                 52.02        3698691.73  
+join-order-benchmark/10c.sql   HASH_JOIN  4                 4382595.90   12.96       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/11a.sql   HASH_JOIN  10                2127.28      97854.00    
+join-order-benchmark/11a.sql   HASH_JOIN  9                 509.37       3.26        
+join-order-benchmark/11a.sql   HASH_JOIN  8                 642.56       7520.71     
+join-order-benchmark/11a.sql   HASH_JOIN  7                 6831.91      7.12        
+join-order-benchmark/11a.sql   HASH_JOIN  6                 1614.65      10.40       
+join-order-benchmark/11a.sql   HASH_JOIN  5                 4161.58      4.84        
+join-order-benchmark/11a.sql   HASH_JOIN  4                 4430.08      1373323.00  
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/11b.sql   HASH_JOIN  10                4030.53      1.55        
+join-order-benchmark/11b.sql   HASH_JOIN  9                 10942.43     4504.71     
+join-order-benchmark/11b.sql   HASH_JOIN  8                 8403.48      1.30        
+join-order-benchmark/11b.sql   HASH_JOIN  7                 29390.71     1.33        
+join-order-benchmark/11b.sql   HASH_JOIN  6                 29390.79     411470.00   
+join-order-benchmark/11b.sql   HASH_JOIN  5                 9095.09      4.20        
+join-order-benchmark/11b.sql   HASH_JOIN  4                 36380.43     509325.00   
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/11c.sql   HASH_JOIN  10                77.95        76.25       
+join-order-benchmark/11c.sql   HASH_JOIN  9                 23.03        23.20       
+join-order-benchmark/11c.sql   HASH_JOIN  8                 315.66       10.29       
+join-order-benchmark/11c.sql   HASH_JOIN  7                 315.99       1326070.50  
+join-order-benchmark/11c.sql   HASH_JOIN  6                 3.52         27.10       
+join-order-benchmark/11c.sql   HASH_JOIN  5                 415.23       20.50       
+join-order-benchmark/11c.sql   HASH_JOIN  4                 415.23       169656.88   
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/11d.sql   HASH_JOIN  10                77.95        76.25       
+join-order-benchmark/11d.sql   HASH_JOIN  9                 23.03        23.20       
+join-order-benchmark/11d.sql   HASH_JOIN  8                 25.68        10.29       
+join-order-benchmark/11d.sql   HASH_JOIN  7                 27.66        1326070.50  
+join-order-benchmark/11d.sql   HASH_JOIN  6                 0.86         27.10       
+join-order-benchmark/11d.sql   HASH_JOIN  5                 193.58       20.50       
+join-order-benchmark/11d.sql   HASH_JOIN  4                 193.58       169656.88   
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/12a.sql   HASH_JOIN  12                3.32         52629.00    
+join-order-benchmark/12a.sql   HASH_JOIN  11                123.18       8.47        
+join-order-benchmark/12a.sql   HASH_JOIN  8                 179.62       5.23        
+join-order-benchmark/12a.sql   HASH_JOIN  7                 352.06       36.63       
+join-order-benchmark/12a.sql   HASH_JOIN  6                 562.65       3192462.00  
+join-order-benchmark/12a.sql   HASH_JOIN  5                 45407.86     4.65        
+join-order-benchmark/12a.sql   HASH_JOIN  4                 45407.86     18026920.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/12b.sql   HASH_JOIN  12                138003.60    1380035.00  
+join-order-benchmark/12b.sql   HASH_JOIN  11                1380744.50   1.00        
+join-order-benchmark/12b.sql   HASH_JOIN  8                 162746.00    1.06        
+join-order-benchmark/12b.sql   HASH_JOIN  7                 545546.10    63.30       
+join-order-benchmark/12b.sql   HASH_JOIN  6                 545546.30    2727730.50  
+join-order-benchmark/12b.sql   HASH_JOIN  5                 16768.53     2.72        
+join-order-benchmark/12b.sql   HASH_JOIN  4                 2028992.10   20289920.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/12c.sql   HASH_JOIN  12                1.59         192839.00   
+join-order-benchmark/12c.sql   HASH_JOIN  11                23.62        5.41        
+join-order-benchmark/12c.sql   HASH_JOIN  8                 22.73        2.11        
+join-order-benchmark/12c.sql   HASH_JOIN  7                 53.61        45.32       
+join-order-benchmark/12c.sql   HASH_JOIN  6                 92.83        3929612.00  
+join-order-benchmark/12c.sql   HASH_JOIN  5                 3983.03      3.78        
+join-order-benchmark/12c.sql   HASH_JOIN  4                 3983.03      18764070.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/13a.sql   HASH_JOIN  11                17.68        266.92      
+join-order-benchmark/13a.sql   HASH_JOIN  10                36.73        2618904.00  
+join-order-benchmark/13a.sql   HASH_JOIN  9                 42.29        1.90        
+join-order-benchmark/13a.sql   HASH_JOIN  8                 126.91       3998916.00  
+join-order-benchmark/13a.sql   HASH_JOIN  7                 207.07       1.58        
+join-order-benchmark/13a.sql   HASH_JOIN  6                 396.15       6524661.00  
+join-order-benchmark/13a.sql   HASH_JOIN  5                 41.37        2.27        
+join-order-benchmark/13a.sql   HASH_JOIN  4                 192.25       21359119.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/13b.sql   HASH_JOIN  13                3.00         1380035.00  
+join-order-benchmark/13b.sql   HASH_JOIN  12                11096.10     1.83        
+join-order-benchmark/13b.sql   HASH_JOIN  9                 43398.10     3905828.00  
+join-order-benchmark/13b.sql   HASH_JOIN  8                 20814.56     1.50        
+join-order-benchmark/13b.sql   HASH_JOIN  7                 40992.55     76.79       
+join-order-benchmark/13b.sql   HASH_JOIN  6                 108193.48    6599801.00  
+join-order-benchmark/13b.sql   HASH_JOIN  5                 10100.97     2.25        
+join-order-benchmark/13b.sql   HASH_JOIN  4                 57618.98     21434259.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/13c.sql   HASH_JOIN  13                3.00         1380035.00  
+join-order-benchmark/13c.sql   HASH_JOIN  12                59179.21     1.83        
+join-order-benchmark/13c.sql   HASH_JOIN  9                 134683.76    3905828.00  
+join-order-benchmark/13c.sql   HASH_JOIN  8                 68578.51     1.50        
+join-order-benchmark/13c.sql   HASH_JOIN  7                 140421.30    76.79       
+join-order-benchmark/13c.sql   HASH_JOIN  6                 471414.43    6599801.00  
+join-order-benchmark/13c.sql   HASH_JOIN  5                 98322.29     2.25        
+join-order-benchmark/13c.sql   HASH_JOIN  4                 404420.00    21434259.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/13d.sql   HASH_JOIN  11                2.33         30.75       
+join-order-benchmark/13d.sql   HASH_JOIN  10                4.88         2693972.00  
+join-order-benchmark/13d.sql   HASH_JOIN  9                 5.46         1.95        
+join-order-benchmark/13d.sql   HASH_JOIN  8                 16.39        4073984.00  
+join-order-benchmark/13d.sql   HASH_JOIN  7                 26.55        1.61        
+join-order-benchmark/13d.sql   HASH_JOIN  6                 75.60        6599729.00  
+join-order-benchmark/13d.sql   HASH_JOIN  5                 4.97         2.25        
+join-order-benchmark/13d.sql   HASH_JOIN  4                 31.97        21434187.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/14a.sql   HASH_JOIN  12                1.00         1483572.00  
+join-order-benchmark/14a.sql   HASH_JOIN  10                2.94         1337634.00  
+join-order-benchmark/14a.sql   HASH_JOIN  9                 40.49        3.42        
+join-order-benchmark/14a.sql   HASH_JOIN  8                 100.12       1729301.00  
+join-order-benchmark/14a.sql   HASH_JOIN  7                 1643.68      8.58        
+join-order-benchmark/14a.sql   HASH_JOIN  6                 1894.01      16565032.00 
+join-order-benchmark/14a.sql   HASH_JOIN  5                 278.70       3.66        
+join-order-benchmark/14a.sql   HASH_JOIN  4                 27888.47     157.18      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/14b.sql   HASH_JOIN  12                1.00         1483572.00  
+join-order-benchmark/14b.sql   HASH_JOIN  10                1.44         373409.00   
+join-order-benchmark/14b.sql   HASH_JOIN  9                 15613.80     1.05        
+join-order-benchmark/14b.sql   HASH_JOIN  8                 191269.25    765076.00   
+join-order-benchmark/14b.sql   HASH_JOIN  7                 7800403.50   19.39       
+join-order-benchmark/14b.sql   HASH_JOIN  6                 7800404.00   15600807.00 
+join-order-benchmark/14b.sql   HASH_JOIN  5                 5031183.00   3.45        
+join-order-benchmark/14b.sql   HASH_JOIN  4                 20258902.00  149.99      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/14c.sql   HASH_JOIN  12                1.00         1483572.00  
+join-order-benchmark/14c.sql   HASH_JOIN  10                2.94         1337634.00  
+join-order-benchmark/14c.sql   HASH_JOIN  9                 16.74        1.32        
+join-order-benchmark/14c.sql   HASH_JOIN  8                 21.97        335793.57   
+join-order-benchmark/14c.sql   HASH_JOIN  7                 337.75       6.31        
+join-order-benchmark/14c.sql   HASH_JOIN  6                 386.96       17186292.00 
+join-order-benchmark/14c.sql   HASH_JOIN  5                 47.18        3.80        
+join-order-benchmark/14c.sql   HASH_JOIN  4                 5308.48      161.81      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/15a.sql   HASH_JOIN  11                61.45        30.75       
+join-order-benchmark/15a.sql   HASH_JOIN  10                223.02       7.45        
+join-order-benchmark/15a.sql   HASH_JOIN  9                 61050.85     2.39        
+join-order-benchmark/15a.sql   HASH_JOIN  8                 61050.86     4334610.00  
+join-order-benchmark/15a.sql   HASH_JOIN  7                 100281.82    3.14        
+join-order-benchmark/15a.sql   HASH_JOIN  6                 100281.86    2858032.00  
+join-order-benchmark/15a.sql   HASH_JOIN  5                 31219.31     1.26        
+join-order-benchmark/15a.sql   HASH_JOIN  4                 31628.37     76.32       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/15b.sql   HASH_JOIN  11                9384.74      2608958.00  
+join-order-benchmark/15b.sql   HASH_JOIN  10                110012.52    7.22        
+join-order-benchmark/15b.sql   HASH_JOIN  9                 1416589.33   2.32        
+join-order-benchmark/15b.sql   HASH_JOIN  8                 1416589.67   4249768.00  
+join-order-benchmark/15b.sql   HASH_JOIN  7                 1655342.67   5.93        
+join-order-benchmark/15b.sql   HASH_JOIN  6                 1655343.33   2483014.00  
+join-order-benchmark/15b.sql   HASH_JOIN  5                 256483.76    1.10        
+join-order-benchmark/15b.sql   HASH_JOIN  4                 260109.97    70.73       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/15c.sql   HASH_JOIN  11                2.34         30.75       
+join-order-benchmark/15c.sql   HASH_JOIN  10                4.87         7.45        
+join-order-benchmark/15c.sql   HASH_JOIN  9                 21.99        1.75        
+join-order-benchmark/15c.sql   HASH_JOIN  8                 69148.97     3.09        
+join-order-benchmark/15c.sql   HASH_JOIN  7                 69148.97     19638307.00 
+join-order-benchmark/15c.sql   HASH_JOIN  6                 69148.98     9819154.00  
+join-order-benchmark/15c.sql   HASH_JOIN  5                 10639.44     4.34        
+join-order-benchmark/15c.sql   HASH_JOIN  4                 10698.52     180.09      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/15d.sql   HASH_JOIN  11                2.34         30.75       
+join-order-benchmark/15d.sql   HASH_JOIN  10                4.87         7.45        
+join-order-benchmark/15d.sql   HASH_JOIN  9                 21.99        1.75        
+join-order-benchmark/15d.sql   HASH_JOIN  8                 17518.56     3.09        
+join-order-benchmark/15d.sql   HASH_JOIN  7                 22443.78     19638307.00 
+join-order-benchmark/15d.sql   HASH_JOIN  6                 22443.78     9819154.00  
+join-order-benchmark/15d.sql   HASH_JOIN  5                 2129.39      4.34        
+join-order-benchmark/15d.sql   HASH_JOIN  4                 2141.21      180.09      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/16a.sql   HASH_JOIN  14                108.12       4523930.00  
+join-order-benchmark/16a.sql   HASH_JOIN  13                31453.26     66.29       
+join-order-benchmark/16a.sql   HASH_JOIN  10                133357.50    1.76        
+join-order-benchmark/16a.sql   HASH_JOIN  9                 291445.92    84.88       
+join-order-benchmark/16a.sql   HASH_JOIN  8                 134763.93    4.97        
+join-order-benchmark/16a.sql   HASH_JOIN  5                 115068.39    56.34       
+join-order-benchmark/16a.sql   HASH_JOIN  4                 125618.84    10.91       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/16b.sql   HASH_JOIN  12                108.13       4523913.00  
+join-order-benchmark/16b.sql   HASH_JOIN  11                48.02        1.73        
+join-order-benchmark/16b.sql   HASH_JOIN  10                105.65       84.07       
+join-order-benchmark/16b.sql   HASH_JOIN  9                 142.63       2.86        
+join-order-benchmark/16b.sql   HASH_JOIN  8                 16.23        3.72        
+join-order-benchmark/16b.sql   HASH_JOIN  5                 12.60        59.52       
+join-order-benchmark/16b.sql   HASH_JOIN  4                 13.70        11.51       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/16c.sql   HASH_JOIN  14                108.12       4523930.00  
+join-order-benchmark/16c.sql   HASH_JOIN  13                789.90       4.78        
+join-order-benchmark/16c.sql   HASH_JOIN  10                708.40       2.10        
+join-order-benchmark/16c.sql   HASH_JOIN  9                 956.29       95.23       
+join-order-benchmark/16c.sql   HASH_JOIN  8                 200.39       4.44        
+join-order-benchmark/16c.sql   HASH_JOIN  5                 141.22       57.48       
+join-order-benchmark/16c.sql   HASH_JOIN  4                 153.91       11.12       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/16d.sql   HASH_JOIN  14                108.12       4523930.00  
+join-order-benchmark/16d.sql   HASH_JOIN  13                968.71       6.53        
+join-order-benchmark/16d.sql   HASH_JOIN  10                903.55       2.00        
+join-order-benchmark/16d.sql   HASH_JOIN  9                 1169.15      92.24       
+join-order-benchmark/16d.sql   HASH_JOIN  8                 260.84       4.58        
+join-order-benchmark/16d.sql   HASH_JOIN  5                 180.10       57.15       
+join-order-benchmark/16d.sql   HASH_JOIN  4                 196.38       11.06       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/17a.sql   HASH_JOIN  10                108.13       4523913.00  
+join-order-benchmark/17a.sql   HASH_JOIN  9                 48.02        1.73        
+join-order-benchmark/17a.sql   HASH_JOIN  8                 105.65       84.07       
+join-order-benchmark/17a.sql   HASH_JOIN  7                 142.63       2.86        
+join-order-benchmark/17a.sql   HASH_JOIN  6                 16.23        3.72        
+join-order-benchmark/17a.sql   HASH_JOIN  5                 179.37       133.91      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/17b.sql   HASH_JOIN  12                108.12       4523930.00  
+join-order-benchmark/17b.sql   HASH_JOIN  11                168.50       1.79        
+join-order-benchmark/17b.sql   HASH_JOIN  8                 65.02        2.70        
+join-order-benchmark/17b.sql   HASH_JOIN  7                 5.89         3.75        
+join-order-benchmark/17b.sql   HASH_JOIN  6                 878.25       1268.91     
+join-order-benchmark/17b.sql   HASH_JOIN  5                 882.74       195.48      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/17c.sql   HASH_JOIN  12                108.12       4523930.00  
+join-order-benchmark/17c.sql   HASH_JOIN  11                168.50       1.79        
+join-order-benchmark/17c.sql   HASH_JOIN  8                 65.02        2.70        
+join-order-benchmark/17c.sql   HASH_JOIN  7                 5.89         3.75        
+join-order-benchmark/17c.sql   HASH_JOIN  6                 23933.42     17230.34    
+join-order-benchmark/17c.sql   HASH_JOIN  5                 24055.94     195.34      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/17d.sql   HASH_JOIN  11                108.12       4523930.00  
+join-order-benchmark/17d.sql   HASH_JOIN  10                168.50       1.79        
+join-order-benchmark/17d.sql   HASH_JOIN  7                 65.02        2.70        
+join-order-benchmark/17d.sql   HASH_JOIN  6                 66.60        41.10       
+join-order-benchmark/17d.sql   HASH_JOIN  5                 5.92         3.66        
+join-order-benchmark/17d.sql   HASH_JOIN  4                 4350.72      11.36       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/17e.sql   HASH_JOIN  9                 108.13       4523913.00  
+join-order-benchmark/17e.sql   HASH_JOIN  8                 48.02        1.73        
+join-order-benchmark/17e.sql   HASH_JOIN  7                 105.65       84.07       
+join-order-benchmark/17e.sql   HASH_JOIN  6                 142.63       2.86        
+join-order-benchmark/17e.sql   HASH_JOIN  5                 16.23        3.72        
+join-order-benchmark/17e.sql   HASH_JOIN  4                 17.67        11.32       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/17f.sql   HASH_JOIN  11                108.12       4523930.00  
+join-order-benchmark/17f.sql   HASH_JOIN  10                168.50       1.79        
+join-order-benchmark/17f.sql   HASH_JOIN  7                 65.02        2.70        
+join-order-benchmark/17f.sql   HASH_JOIN  6                 66.60        41.10       
+join-order-benchmark/17f.sql   HASH_JOIN  5                 5.92         3.66        
+join-order-benchmark/17f.sql   HASH_JOIN  4                 45.10        11.36       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/18a.sql   HASH_JOIN  9                 3.00         1380035.00  
+join-order-benchmark/18a.sql   HASH_JOIN  8                 43.81        26.26       
+join-order-benchmark/18a.sql   HASH_JOIN  7                 11459.36     21.63       
+join-order-benchmark/18a.sql   HASH_JOIN  6                 12194.67     15.58       
+join-order-benchmark/18a.sql   HASH_JOIN  5                 688.32       2.82        
+join-order-benchmark/18a.sql   HASH_JOIN  4                 138349.61    56723341.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/18b.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/18b.sql   HASH_JOIN  9                 3.32         52629.00    
+join-order-benchmark/18b.sql   HASH_JOIN  8                 136.07       14.91       
+join-order-benchmark/18b.sql   HASH_JOIN  7                 43775.90     17.72       
+join-order-benchmark/18b.sql   HASH_JOIN  6                 43775.90     15671771.00 
+join-order-benchmark/18b.sql   HASH_JOIN  5                 193716.87    2.31        
+join-order-benchmark/18b.sql   HASH_JOIN  4                 4807061.45   53.99       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/18c.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/18c.sql   HASH_JOIN  9                 78.50        2472442.17  
+join-order-benchmark/18c.sql   HASH_JOIN  9                 3.00         1380035.00  
+join-order-benchmark/18c.sql   HASH_JOIN  8        Y        154.58       10.75       
+join-order-benchmark/18c.sql   HASH_JOIN  7                 158.17       16214695.00 
+join-order-benchmark/18c.sql   HASH_JOIN  6                 182.81       6.42        
+join-order-benchmark/18c.sql   HASH_JOIN  5                 1015.32      1.93        
+join-order-benchmark/18c.sql   HASH_JOIN  4                 2020.60      31.61       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/19a.sql   HASH_JOIN  14                4.97         30.75       
+join-order-benchmark/19a.sql   HASH_JOIN  13                37.58        4.69        
+join-order-benchmark/19a.sql   HASH_JOIN  12                155.68       4.54        
+join-order-benchmark/19a.sql   HASH_JOIN  11                155.69       18102985.00 
+join-order-benchmark/19a.sql   HASH_JOIN  10                417.80       2.00        
+join-order-benchmark/19a.sql   HASH_JOIN  9                 1349.46      54345589.00 
+join-order-benchmark/19a.sql   HASH_JOIN  8                 325336.15    56.52       
+join-order-benchmark/19a.sql   HASH_JOIN  5                 296718.13    71.59       
+join-order-benchmark/19a.sql   HASH_JOIN  4                 321848.18    17.86       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/19b.sql   HASH_JOIN  16                13468.37     2.94        
+join-order-benchmark/19b.sql   HASH_JOIN  15                56250.29     956254.00   
+join-order-benchmark/19b.sql   HASH_JOIN  14                1917810.00   1.01        
+join-order-benchmark/19b.sql   HASH_JOIN  11                1508979.67   1.36        
+join-order-benchmark/19b.sql   HASH_JOIN  10                1537260.67   53.36       
+join-order-benchmark/19b.sql   HASH_JOIN  7                 358957.53    5.97        
+join-order-benchmark/19b.sql   HASH_JOIN  6                 1347921.33   2.76        
+join-order-benchmark/19b.sql   HASH_JOIN  5                 1347921.40   20218820.00 
+join-order-benchmark/19b.sql   HASH_JOIN  4                 1557277.33   6.44        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/19c.sql   HASH_JOIN  14                2.33         30.75       
+join-order-benchmark/19c.sql   HASH_JOIN  13                8.69         1.95        
+join-order-benchmark/19c.sql   HASH_JOIN  12                48.31        3.64        
+join-order-benchmark/19c.sql   HASH_JOIN  11                48.32        18909882.00 
+join-order-benchmark/19c.sql   HASH_JOIN  10                126.23       1.92        
+join-order-benchmark/19c.sql   HASH_JOIN  9                 417.14       55152486.00 
+join-order-benchmark/19c.sql   HASH_JOIN  8                 19828.28     57.36       
+join-order-benchmark/19c.sql   HASH_JOIN  5                 15194.08     72.63       
+join-order-benchmark/19c.sql   HASH_JOIN  4                 16790.76     18.11       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/19d.sql   HASH_JOIN  14                2.33         30.75       
+join-order-benchmark/19d.sql   HASH_JOIN  13                8.69         1.95        
+join-order-benchmark/19d.sql   HASH_JOIN  12                112.87       8.89        
+join-order-benchmark/19d.sql   HASH_JOIN  9                 386.22       40318028.00 
+join-order-benchmark/19d.sql   HASH_JOIN  8                 148.61       52.19       
+join-order-benchmark/19d.sql   HASH_JOIN  7                 152.14       42.73       
+join-order-benchmark/19d.sql   HASH_JOIN  6                 5.10         2.83        
+join-order-benchmark/19d.sql   HASH_JOIN  5                 29.79        56886622.00 
+join-order-benchmark/19d.sql   HASH_JOIN  4                 34.09        18.11       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/1a.sql    HASH_JOIN  7                 5520.05      1380011.00  
+join-order-benchmark/1a.sql    HASH_JOIN  6                 27137.01     1.89        
+join-order-benchmark/1a.sql    HASH_JOIN  5                 28092.55     3989141.00  
+join-order-benchmark/1a.sql    HASH_JOIN  4                 45879.48     1.58        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/1b.sql    HASH_JOIN  9                 138003.60    1380035.00  
+join-order-benchmark/1b.sql    HASH_JOIN  8                 524073.75    1.93        
+join-order-benchmark/1b.sql    HASH_JOIN  5                 71294.30     1.24        
+join-order-benchmark/1b.sql    HASH_JOIN  4                 1568475.00   4705424.00  
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/1c.sql    HASH_JOIN  9                 5520.14      1380035.00  
+join-order-benchmark/1c.sql    HASH_JOIN  8                 147641.83    3.52        
+join-order-benchmark/1c.sql    HASH_JOIN  5                 1460277.00   1.47        
+join-order-benchmark/1c.sql    HASH_JOIN  4                 1460277.33   4380831.00  
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/1d.sql    HASH_JOIN  9                 138003.60    1380035.00  
+join-order-benchmark/1d.sql    HASH_JOIN  8                 460248.17    1.00        
+join-order-benchmark/1d.sql    HASH_JOIN  5                 68854.08     1.06        
+join-order-benchmark/1d.sql    HASH_JOIN  4                 1342654.75   5370618.00  
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/20a.sql   HASH_JOIN  10                1.00         16771.25    
+join-order-benchmark/20a.sql   HASH_JOIN  14                21.13        16.93       
+join-order-benchmark/20a.sql   HASH_JOIN  13                58.84        2422357.00  
+join-order-benchmark/20a.sql   HASH_JOIN  12                84.75        2422358.00  
+join-order-benchmark/20a.sql   HASH_JOIN  11                84.75        1211179.50  
+join-order-benchmark/20a.sql   HASH_JOIN  8                 7.10         1.87        
+join-order-benchmark/20a.sql   HASH_JOIN  7                 1176.92      51.77       
+join-order-benchmark/20a.sql   HASH_JOIN  6                 81.31        5.12        
+join-order-benchmark/20a.sql   HASH_JOIN  5                 1407952.73   13.80       
+join-order-benchmark/20a.sql   HASH_JOIN  4                 1531041.39   11.44       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/20b.sql   HASH_JOIN  10                1.00         16771.25    
+join-order-benchmark/20b.sql   HASH_JOIN  14                39.16        10.23       
+join-order-benchmark/20b.sql   HASH_JOIN  13                243.27       1516539.00  
+join-order-benchmark/20b.sql   HASH_JOIN  12                322.94       1516540.00  
+join-order-benchmark/20b.sql   HASH_JOIN  11                322.94       758270.50   
+join-order-benchmark/20b.sql   HASH_JOIN  8                 20.50        2.98        
+join-order-benchmark/20b.sql   HASH_JOIN  7                 4194.64      45.02       
+join-order-benchmark/20b.sql   HASH_JOIN  6                 190.62       5.87        
+join-order-benchmark/20b.sql   HASH_JOIN  5                 1721415.15   10.44       
+join-order-benchmark/20b.sql   HASH_JOIN  4                 2918738.12   14.80       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/20c.sql   HASH_JOIN  10                1.00         13417.00    
+join-order-benchmark/20c.sql   HASH_JOIN  14                39.16        10.23       
+join-order-benchmark/20c.sql   HASH_JOIN  13                243.27       1516539.00  
+join-order-benchmark/20c.sql   HASH_JOIN  12                322.94       1516540.00  
+join-order-benchmark/20c.sql   HASH_JOIN  11                322.94       758270.50   
+join-order-benchmark/20c.sql   HASH_JOIN  8                 20.50        2.98        
+join-order-benchmark/20c.sql   HASH_JOIN  7                 4873.33      45.02       
+join-order-benchmark/20c.sql   HASH_JOIN  6                 223.43       5.87        
+join-order-benchmark/20c.sql   HASH_JOIN  5                 8427.05      13.51       
+join-order-benchmark/20c.sql   HASH_JOIN  4                 9178.42      11.22       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/21a.sql   HASH_JOIN  9                 1.00         1854465.00  
+join-order-benchmark/21a.sql   HASH_JOIN  11                2127.28      97854.00    
+join-order-benchmark/21a.sql   HASH_JOIN  10                509.37       3.26        
+join-order-benchmark/21a.sql   HASH_JOIN  9                 642.56       7520.71     
+join-order-benchmark/21a.sql   HASH_JOIN  8                 6831.91      7.12        
+join-order-benchmark/21a.sql   HASH_JOIN  7                 1614.65      10.40       
+join-order-benchmark/21a.sql   HASH_JOIN  6                 4161.58      4.84        
+join-order-benchmark/21a.sql   HASH_JOIN  5                 4430.08      1373323.00  
+join-order-benchmark/21a.sql   HASH_JOIN  4                 11495.78     10.80       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/21b.sql   HASH_JOIN  11                2127.28      97854.00    
+join-order-benchmark/21b.sql   HASH_JOIN  10                509.37       3.26        
+join-order-benchmark/21b.sql   HASH_JOIN  9                 642.56       7520.71     
+join-order-benchmark/21b.sql   HASH_JOIN  8                 24388.94     8.16        
+join-order-benchmark/21b.sql   HASH_JOIN  7                 4008.03      11.72       
+join-order-benchmark/21b.sql   HASH_JOIN  6                 16364.59     5.41        
+join-order-benchmark/21b.sql   HASH_JOIN  5                 16364.60     1505542.00  
+join-order-benchmark/21b.sql   HASH_JOIN  4                 53160.97     2.93        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/21c.sql   HASH_JOIN  9                 1.00         1648413.33  
+join-order-benchmark/21c.sql   HASH_JOIN  11                2127.28      97854.00    
+join-order-benchmark/21c.sql   HASH_JOIN  10                509.37       3.26        
+join-order-benchmark/21c.sql   HASH_JOIN  9                 642.56       7520.71     
+join-order-benchmark/21c.sql   HASH_JOIN  8                 10192.15     14.86       
+join-order-benchmark/21c.sql   HASH_JOIN  7                 2084.34      20.31       
+join-order-benchmark/21c.sql   HASH_JOIN  6                 5599.79      9.06        
+join-order-benchmark/21c.sql   HASH_JOIN  5                 5878.39      2363110.00  
+join-order-benchmark/21c.sql   HASH_JOIN  4                 9177.61      6.28        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/22a.sql   HASH_JOIN  15                3.62         1172960.00  
+join-order-benchmark/22a.sql   HASH_JOIN  14                33.30        1.77        
+join-order-benchmark/22a.sql   HASH_JOIN  13                44.92        262146.57   
+join-order-benchmark/22a.sql   HASH_JOIN  10                568.31       1.42        
+join-order-benchmark/22a.sql   HASH_JOIN  9                 686.50       18.91       
+join-order-benchmark/22a.sql   HASH_JOIN  8                 4557.13      3.17        
+join-order-benchmark/22a.sql   HASH_JOIN  7                 5314.17      19513616.00 
+join-order-benchmark/22a.sql   HASH_JOIN  6                 75.26        4.31        
+join-order-benchmark/22a.sql   HASH_JOIN  5                 8478.32      179.16      
+join-order-benchmark/22a.sql   HASH_JOIN  4                 8478.32      12085850.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/22b.sql   HASH_JOIN  15                3.62         1172960.00  
+join-order-benchmark/22b.sql   HASH_JOIN  14                41.16        2.20        
+join-order-benchmark/22b.sql   HASH_JOIN  13                54.84        243761.43   
+join-order-benchmark/22b.sql   HASH_JOIN  10                8843.17      1.53        
+join-order-benchmark/22b.sql   HASH_JOIN  9                 13113.73     18.36       
+join-order-benchmark/22b.sql   HASH_JOIN  8                 156330.00    3.26        
+join-order-benchmark/22b.sql   HASH_JOIN  7                 213021.11    19384920.00 
+join-order-benchmark/22b.sql   HASH_JOIN  6                 9174.53      4.28        
+join-order-benchmark/22b.sql   HASH_JOIN  5                 775580.77    178.20      
+join-order-benchmark/22b.sql   HASH_JOIN  4                 775580.84    12021502.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/22c.sql   HASH_JOIN  13                1.00         1483572.00  
+join-order-benchmark/22c.sql   HASH_JOIN  15                2.94         1337634.00  
+join-order-benchmark/22c.sql   HASH_JOIN  14                16.74        1.32        
+join-order-benchmark/22c.sql   HASH_JOIN  13                21.97        335793.57   
+join-order-benchmark/22c.sql   HASH_JOIN  10                80.25        1.11        
+join-order-benchmark/22c.sql   HASH_JOIN  9                 92.75        21.11       
+join-order-benchmark/22c.sql   HASH_JOIN  8                 478.02       2.86        
+join-order-benchmark/22c.sql   HASH_JOIN  7                 557.48       20030418.00 
+join-order-benchmark/22c.sql   HASH_JOIN  6                 9.40         4.43        
+join-order-benchmark/22c.sql   HASH_JOIN  5                 1148.89      183.01      
+join-order-benchmark/22c.sql   HASH_JOIN  4                 1148.89      12344251.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/22d.sql   HASH_JOIN  17                1.00         1483572.00  
+join-order-benchmark/22d.sql   HASH_JOIN  15                2.94         1337634.00  
+join-order-benchmark/22d.sql   HASH_JOIN  14                16.74        1.32        
+join-order-benchmark/22d.sql   HASH_JOIN  13                21.97        335793.57   
+join-order-benchmark/22d.sql   HASH_JOIN  12                337.75       6.31        
+join-order-benchmark/22d.sql   HASH_JOIN  9                 386.96       17186292.00 
+join-order-benchmark/22d.sql   HASH_JOIN  8                 104.65       6.59        
+join-order-benchmark/22d.sql   HASH_JOIN  7                 200.43       84.24       
+join-order-benchmark/22d.sql   HASH_JOIN  6                 4.44         4.43        
+join-order-benchmark/22d.sql   HASH_JOIN  5                 533.45       183.01      
+join-order-benchmark/22d.sql   HASH_JOIN  4                 533.45       12344251.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/23a.sql   HASH_JOIN  13                2.33         30.75       
+join-order-benchmark/23a.sql   HASH_JOIN  12                9.99         20.34       
+join-order-benchmark/23a.sql   HASH_JOIN  11                88.49        2.05        
+join-order-benchmark/23a.sql   HASH_JOIN  10                223.74       601094.00   
+join-order-benchmark/23a.sql   HASH_JOIN  9                 730.12       4207665.00  
+join-order-benchmark/23a.sql   HASH_JOIN  8                 3173532.50   3.53        
+join-order-benchmark/23a.sql   HASH_JOIN  7                 3173532.67   19041195.00 
+join-order-benchmark/23a.sql   HASH_JOIN  6                 3173533.00   9520598.00  
+join-order-benchmark/23a.sql   HASH_JOIN  5                 38131.02     4.21        
+join-order-benchmark/23a.sql   HASH_JOIN  4                 38348.13     175.64      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/23b.sql   HASH_JOIN  15                722.43       1279430.00  
+join-order-benchmark/23b.sql   HASH_JOIN  14                36203.36     9.66        
+join-order-benchmark/23b.sql   HASH_JOIN  13                75496.86     1.02        
+join-order-benchmark/23b.sql   HASH_JOIN  10                87293.28     2793384.00  
+join-order-benchmark/23b.sql   HASH_JOIN  9                 558677.20    2793385.00  
+join-order-benchmark/23b.sql   HASH_JOIN  8                 900384.83    1.07        
+join-order-benchmark/23b.sql   HASH_JOIN  7                 914525.33    63.67       
+join-order-benchmark/23b.sql   HASH_JOIN  6                 16198.91     1.21        
+join-order-benchmark/23b.sql   HASH_JOIN  5                 634068.56    74.61       
+join-order-benchmark/23b.sql   HASH_JOIN  4                 634068.69    5072548.50  
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/23c.sql   HASH_JOIN  13                2.33         30.75       
+join-order-benchmark/23c.sql   HASH_JOIN  12                9.99         20.34       
+join-order-benchmark/23c.sql   HASH_JOIN  11                50.88        1.62        
+join-order-benchmark/23c.sql   HASH_JOIN  10                85.07        653605.29   
+join-order-benchmark/23c.sql   HASH_JOIN  9                 209.38       4575244.00  
+join-order-benchmark/23c.sql   HASH_JOIN  8                 2772682.00   3.24        
+join-order-benchmark/23c.sql   HASH_JOIN  7                 2772682.14   19408774.00 
+join-order-benchmark/23c.sql   HASH_JOIN  6                 2772682.43   9704387.50  
+join-order-benchmark/23c.sql   HASH_JOIN  5                 38109.16     4.29        
+join-order-benchmark/23c.sql   HASH_JOIN  4                 38322.81     178.37      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/24a.sql   HASH_JOIN  16                2.33         30.75       
+join-order-benchmark/24a.sql   HASH_JOIN  15                24.08        6.88        
+join-order-benchmark/24a.sql   HASH_JOIN  14                125.97       4.81        
+join-order-benchmark/24a.sql   HASH_JOIN  13                125.97       17920095.00 
+join-order-benchmark/24a.sql   HASH_JOIN  12                17.80        3.96        
+join-order-benchmark/24a.sql   HASH_JOIN  11                6628.94      167.28      
+join-order-benchmark/24a.sql   HASH_JOIN  10                4275.39      1.61        
+join-order-benchmark/24a.sql   HASH_JOIN  9                 21173.79     58820782.00 
+join-order-benchmark/24a.sql   HASH_JOIN  8                 418058.31    61.17       
+join-order-benchmark/24a.sql   HASH_JOIN  5                 218609.82    77.38       
+join-order-benchmark/24a.sql   HASH_JOIN  4                 231619.12    19.28       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/24b.sql   HASH_JOIN  16                26354.85     2609129.00  
+join-order-benchmark/24b.sql   HASH_JOIN  15                652284.50    326141.25   
+join-order-benchmark/24b.sql   HASH_JOIN  14                3488719.00   5.69        
+join-order-benchmark/24b.sql   HASH_JOIN  13                3488719.20   17443595.00 
+join-order-benchmark/24b.sql   HASH_JOIN  12                135601.91    3.86        
+join-order-benchmark/24b.sql   HASH_JOIN  11                2455742.11   163.73      
+join-order-benchmark/24b.sql   HASH_JOIN  10                239115.91    1.64        
+join-order-benchmark/24b.sql   HASH_JOIN  9                 941036.82    58344282.00 
+join-order-benchmark/24b.sql   HASH_JOIN  8                 6589537.56   60.68       
+join-order-benchmark/24b.sql   HASH_JOIN  5                 1335075.98   76.76       
+join-order-benchmark/24b.sql   HASH_JOIN  4                 1404861.29   19.13       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/25a.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/25a.sql   HASH_JOIN  10                1.00         26834.00    
+join-order-benchmark/25a.sql   HASH_JOIN  11                1.01         30801.00    
+join-order-benchmark/25a.sql   HASH_JOIN  10                28.53        44.80       
+join-order-benchmark/25a.sql   HASH_JOIN  9                 85.61        1410837.00  
+join-order-benchmark/25a.sql   HASH_JOIN  8                 18.58        3.21        
+join-order-benchmark/25a.sql   HASH_JOIN  7                 532.88       44.23       
+join-order-benchmark/25a.sql   HASH_JOIN  6                 754.65       2.40        
+join-order-benchmark/25a.sql   HASH_JOIN  5                 6304.71      4.22        
+join-order-benchmark/25a.sql   HASH_JOIN  4                 10569.24     25.78       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/25b.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/25b.sql   HASH_JOIN  9                 1.00         26834.00    
+join-order-benchmark/25b.sql   HASH_JOIN  13                1.01         30801.00    
+join-order-benchmark/25b.sql   HASH_JOIN  12                1342.39      421.95      
+join-order-benchmark/25b.sql   HASH_JOIN  9                 47030.33     44.70       
+join-order-benchmark/25b.sql   HASH_JOIN  8                 141091.10    1410910.00  
+join-order-benchmark/25b.sql   HASH_JOIN  7                 80200.47     3.21        
+join-order-benchmark/25b.sql   HASH_JOIN  6                 674334.44    44.23       
+join-order-benchmark/25b.sql   HASH_JOIN  5                 7052226.50   5.97        
+join-order-benchmark/25b.sql   HASH_JOIN  4                 7342156.33   24.32       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/25c.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/25c.sql   HASH_JOIN  10                1.00         19167.14    
+join-order-benchmark/25c.sql   HASH_JOIN  11                78.50        2472442.17  
+join-order-benchmark/25c.sql   HASH_JOIN  11                3.00         1380035.00  
+join-order-benchmark/25c.sql   HASH_JOIN  10       Y        154.58       10.75       
+join-order-benchmark/25c.sql   HASH_JOIN  9                 158.17       16214695.00 
+join-order-benchmark/25c.sql   HASH_JOIN  8                 9.32         3.58        
+join-order-benchmark/25c.sql   HASH_JOIN  7                 329.30       154.56      
+join-order-benchmark/25c.sql   HASH_JOIN  6                 369.14       8.26        
+join-order-benchmark/25c.sql   HASH_JOIN  5                 1390.28      1.55        
+join-order-benchmark/25c.sql   HASH_JOIN  4                 2347.05      34.29       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/26a.sql   HASH_JOIN  10                1.00         13417.00    
+join-order-benchmark/26a.sql   HASH_JOIN  14                1.59         192839.00   
+join-order-benchmark/26a.sql   HASH_JOIN  13                10.87        1.46        
+join-order-benchmark/26a.sql   HASH_JOIN  12                172.89       4.25        
+join-order-benchmark/26a.sql   HASH_JOIN  11                1977.67      1706732.00  
+join-order-benchmark/26a.sql   HASH_JOIN  10                2637.92      1706733.00  
+join-order-benchmark/26a.sql   HASH_JOIN  9                 2637.92      853367.00   
+join-order-benchmark/26a.sql   HASH_JOIN  8                 78.83        2.65        
+join-order-benchmark/26a.sql   HASH_JOIN  7                 19523.63     46.43       
+join-order-benchmark/26a.sql   HASH_JOIN  6                 722.78       5.69        
+join-order-benchmark/26a.sql   HASH_JOIN  5                 26473.24     13.57       
+join-order-benchmark/26a.sql   HASH_JOIN  4                 28823.90     11.26       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/26b.sql   HASH_JOIN  14                3.32         52629.00    
+join-order-benchmark/26b.sql   HASH_JOIN  13                46.49        2.52        
+join-order-benchmark/26b.sql   HASH_JOIN  12                752.98       5.47        
+join-order-benchmark/26b.sql   HASH_JOIN  11                24958.12     1197989.00  
+join-order-benchmark/26b.sql   HASH_JOIN  10                37437.22     1197990.00  
+join-order-benchmark/26b.sql   HASH_JOIN  9                 37437.28     598995.50   
+join-order-benchmark/26b.sql   HASH_JOIN  8                 1470.52      3.78        
+join-order-benchmark/26b.sql   HASH_JOIN  7                 975991.50    42.65       
+join-order-benchmark/26b.sql   HASH_JOIN  6                 18302.90     6.19        
+join-order-benchmark/26b.sql   HASH_JOIN  5                 486419.48    13.41       
+join-order-benchmark/26b.sql   HASH_JOIN  4                 530096.11    11.14       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/26c.sql   HASH_JOIN  10                1.00         13417.00    
+join-order-benchmark/26c.sql   HASH_JOIN  14                3.00         1379933.00  
+join-order-benchmark/26c.sql   HASH_JOIN  13                15.85        10.42       
+join-order-benchmark/26c.sql   HASH_JOIN  12                145.98       1.09        
+join-order-benchmark/26c.sql   HASH_JOIN  11                572.81       2893826.00  
+join-order-benchmark/26c.sql   HASH_JOIN  10                718.43       2893827.00  
+join-order-benchmark/26c.sql   HASH_JOIN  9                 718.43       1446914.00  
+join-order-benchmark/26c.sql   HASH_JOIN  8                 25.30        1.56        
+join-order-benchmark/26c.sql   HASH_JOIN  7                 5988.74      55.28       
+join-order-benchmark/26c.sql   HASH_JOIN  6                 230.81       4.80        
+join-order-benchmark/26c.sql   HASH_JOIN  5                 8691.27      13.95       
+join-order-benchmark/26c.sql   HASH_JOIN  4                 9443.48      11.55       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/27a.sql   HASH_JOIN  16                2127.28      97854.00    
+join-order-benchmark/27a.sql   HASH_JOIN  15                509.37       3.26        
+join-order-benchmark/27a.sql   HASH_JOIN  12                1124.74      21.34       
+join-order-benchmark/27a.sql   HASH_JOIN  11                1365.93      7873.18     
+join-order-benchmark/27a.sql   HASH_JOIN  10                10657.57     6.80        
+join-order-benchmark/27a.sql   HASH_JOIN  9                 1969.21      10.48       
+join-order-benchmark/27a.sql   HASH_JOIN  8                 5560.92      4.87        
+join-order-benchmark/27a.sql   HASH_JOIN  7                 6022.31      1379109.00  
+join-order-benchmark/27a.sql   HASH_JOIN  6                 6022.32      689555.00   
+join-order-benchmark/27a.sql   HASH_JOIN  5                 8018.10      1379112.00  
+join-order-benchmark/27a.sql   HASH_JOIN  4                 3968.05      2.68        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/27b.sql   HASH_JOIN  18                429.05       4523930.00  
+join-order-benchmark/27b.sql   HASH_JOIN  17                16865.37     97.12       
+join-order-benchmark/27b.sql   HASH_JOIN  14                59746.90     152.37      
+join-order-benchmark/27b.sql   HASH_JOIN  11                80815.84     767.78      
+join-order-benchmark/27b.sql   HASH_JOIN  10                80816.14     270970.76   
+join-order-benchmark/27b.sql   HASH_JOIN  9                 13760.79     46.22       
+join-order-benchmark/27b.sql   HASH_JOIN  8                 32507.81     20.03       
+join-order-benchmark/27b.sql   HASH_JOIN  7                 32507.82     4941187.00  
+join-order-benchmark/27b.sql   HASH_JOIN  6                 32507.83     2470594.00  
+join-order-benchmark/27b.sql   HASH_JOIN  5                 52012.54     4941190.00  
+join-order-benchmark/27b.sql   HASH_JOIN  4                 22084.36     9.62        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/27c.sql   HASH_JOIN  9                 1.00         1648413.33  
+join-order-benchmark/27c.sql   HASH_JOIN  16                2127.28      97854.00    
+join-order-benchmark/27c.sql   HASH_JOIN  15                509.37       3.26        
+join-order-benchmark/27c.sql   HASH_JOIN  12                1124.74      21.34       
+join-order-benchmark/27c.sql   HASH_JOIN  11                1365.93      7873.18     
+join-order-benchmark/27c.sql   HASH_JOIN  10                20757.44     14.20       
+join-order-benchmark/27c.sql   HASH_JOIN  9                 3672.80      20.41       
+join-order-benchmark/27c.sql   HASH_JOIN  8                 9552.00      9.08        
+join-order-benchmark/27c.sql   HASH_JOIN  7                 10344.53     2368896.00  
+join-order-benchmark/27c.sql   HASH_JOIN  6                 13772.66     2368897.00  
+join-order-benchmark/27c.sql   HASH_JOIN  5                 13772.67     1184449.00  
+join-order-benchmark/27c.sql   HASH_JOIN  4                 23155.62     6.26        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/28a.sql   HASH_JOIN  12                1.00         1483572.00  
+join-order-benchmark/28a.sql   HASH_JOIN  18                2.95         1337634.00  
+join-order-benchmark/28a.sql   HASH_JOIN  17                15.62        10.10       
+join-order-benchmark/28a.sql   HASH_JOIN  16                149.13       1.06        
+join-order-benchmark/28a.sql   HASH_JOIN  15                169.60       407361.00   
+join-order-benchmark/28a.sql   HASH_JOIN  12                108.68       1.09        
+join-order-benchmark/28a.sql   HASH_JOIN  11                118.04       23.24       
+join-order-benchmark/28a.sql   HASH_JOIN  10                539.80       5695454.00  
+join-order-benchmark/28a.sql   HASH_JOIN  9                 600.09       2847727.50  
+join-order-benchmark/28a.sql   HASH_JOIN  8                 600.09       2847728.50  
+join-order-benchmark/28a.sql   HASH_JOIN  7                 2194.68      2.60        
+join-order-benchmark/28a.sql   HASH_JOIN  6                 2373.55      20531189.00 
+join-order-benchmark/28a.sql   HASH_JOIN  5                 33.93        4.54        
+join-order-benchmark/28a.sql   HASH_JOIN  4                 5244.46      186.74      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/28b.sql   HASH_JOIN  18                1.58         308267.00   
+join-order-benchmark/28b.sql   HASH_JOIN  17                9.37         2.33        
+join-order-benchmark/28b.sql   HASH_JOIN  16                166.72       2.30        
+join-order-benchmark/28b.sql   HASH_JOIN  15                173.67       207661.00   
+join-order-benchmark/28b.sql   HASH_JOIN  12                259.01       1.79        
+join-order-benchmark/28b.sql   HASH_JOIN  11                282.72       17.29       
+join-order-benchmark/28b.sql   HASH_JOIN  10                1021.52      4297554.00  
+join-order-benchmark/28b.sql   HASH_JOIN  9                 1059.82      2148777.50  
+join-order-benchmark/28b.sql   HASH_JOIN  8                 1059.82      2148778.50  
+join-order-benchmark/28b.sql   HASH_JOIN  7                 75616.95     3.45        
+join-order-benchmark/28b.sql   HASH_JOIN  6                 115945.99    19131088.00 
+join-order-benchmark/28b.sql   HASH_JOIN  5                 1479.45      4.23        
+join-order-benchmark/28b.sql   HASH_JOIN  4                 160736.72    176.31      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/28c.sql   HASH_JOIN  12                1.00         1483572.00  
+join-order-benchmark/28c.sql   HASH_JOIN  18                2.95         1337634.00  
+join-order-benchmark/28c.sql   HASH_JOIN  17                15.62        10.10       
+join-order-benchmark/28c.sql   HASH_JOIN  16                210.57       1.45        
+join-order-benchmark/28c.sql   HASH_JOIN  15                230.53       354713.43   
+join-order-benchmark/28c.sql   HASH_JOIN  12                214.76       1.05        
+join-order-benchmark/28c.sql   HASH_JOIN  11                234.56       21.67       
+join-order-benchmark/28c.sql   HASH_JOIN  10                293.96       5326921.00  
+join-order-benchmark/28c.sql   HASH_JOIN  9                 414.35       5326922.00  
+join-order-benchmark/28c.sql   HASH_JOIN  8                 414.35       2663461.50  
+join-order-benchmark/28c.sql   HASH_JOIN  7                 1589.99      2.79        
+join-order-benchmark/28c.sql   HASH_JOIN  6                 1760.16      20162655.00 
+join-order-benchmark/28c.sql   HASH_JOIN  5                 21.44        4.46        
+join-order-benchmark/28c.sql   HASH_JOIN  4                 2964.36      183.99      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/29a.sql   HASH_JOIN  23                135089.00    45028.67    
+join-order-benchmark/29a.sql   HASH_JOIN  22                135090.00    135089.00   
+join-order-benchmark/29a.sql   HASH_JOIN  21                135091.00    135090.00   
+join-order-benchmark/29a.sql   HASH_JOIN  18                124727.91    19.31       
+join-order-benchmark/29a.sql   HASH_JOIN  17                565771.40    32.34       
+join-order-benchmark/29a.sql   HASH_JOIN  16                1766238.60   5.24        
+join-order-benchmark/29a.sql   HASH_JOIN  15                1766238.70   17662386.00 
+join-order-benchmark/29a.sql   HASH_JOIN  14                20542.74     3.90        
+join-order-benchmark/29a.sql   HASH_JOIN  13                2218616.30   22186162.00 
+join-order-benchmark/29a.sql   HASH_JOIN  12                153753.18    1.63        
+join-order-benchmark/29a.sql   HASH_JOIN  11                5842621.00   58426209.00 
+join-order-benchmark/29a.sql   HASH_JOIN  8                 1973293.03   75.62       
+join-order-benchmark/29a.sql   HASH_JOIN  7                 2005344.87   61.57       
+join-order-benchmark/29a.sql   HASH_JOIN  6                 12892.29     20.87       
+join-order-benchmark/29a.sql   HASH_JOIN  5                 38915.63     63043312.00 
+join-order-benchmark/29a.sql   HASH_JOIN  4                 38915.63     63043313.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/29b.sql   HASH_JOIN  23                132502.00    66250.00    
+join-order-benchmark/29b.sql   HASH_JOIN  22                1411932.00   9.66        
+join-order-benchmark/29b.sql   HASH_JOIN  21                1411933.00   1411932.00  
+join-order-benchmark/29b.sql   HASH_JOIN  20                1411934.00   1411933.00  
+join-order-benchmark/29b.sql   HASH_JOIN  19                1411935.00   1411934.00  
+join-order-benchmark/29b.sql   HASH_JOIN  16                182766.27    1.85        
+join-order-benchmark/29b.sql   HASH_JOIN  15                821140.20    47.39       
+join-order-benchmark/29b.sql   HASH_JOIN  14                15980.51     1.10        
+join-order-benchmark/29b.sql   HASH_JOIN  13                1725895.40   8629476.00  
+join-order-benchmark/29b.sql   HASH_JOIN  12                236155.38    4.20        
+join-order-benchmark/29b.sql   HASH_JOIN  11                8973904.80   44869523.00 
+join-order-benchmark/29b.sql   HASH_JOIN  8                 3042807.00   58.08       
+join-order-benchmark/29b.sql   HASH_JOIN  7                 3106910.67   47.47       
+join-order-benchmark/29b.sql   HASH_JOIN  6                 20239.93     16.17       
+join-order-benchmark/29b.sql   HASH_JOIN  5                 3299108.47   49486626.00 
+join-order-benchmark/29b.sql   HASH_JOIN  4                 3299108.53   49486627.00 
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/29c.sql   HASH_JOIN  23                10927.04     4523792.00  
+join-order-benchmark/29c.sql   HASH_JOIN  22                51735.91     34.16       
+join-order-benchmark/29c.sql   HASH_JOIN  21                93426.75     4.47        
+join-order-benchmark/29c.sql   HASH_JOIN  20                103618.78    5699032.00  
+join-order-benchmark/29c.sql   HASH_JOIN  19                316613.00    5699033.00  
+join-order-benchmark/29c.sql   HASH_JOIN  16                20019.17     2.18        
+join-order-benchmark/29c.sql   HASH_JOIN  15                91226.09     97.92       
+join-order-benchmark/29c.sql   HASH_JOIN  14                68920.86     1.77        
+join-order-benchmark/29c.sql   HASH_JOIN  13                68920.86     23226329.00 
+join-order-benchmark/29c.sql   HASH_JOIN  12                6634.65      1.56        
+join-order-benchmark/29c.sql   HASH_JOIN  11                28480.07     59466376.00 
+join-order-benchmark/29c.sql   HASH_JOIN  10                1098689.67   61.84       
+join-order-benchmark/29c.sql   HASH_JOIN  7                 283335.71    78.22       
+join-order-benchmark/29c.sql   HASH_JOIN  6                 918.84       21.23       
+join-order-benchmark/29c.sql   HASH_JOIN  5                 3828.16      64083479.00 
+join-order-benchmark/29c.sql   HASH_JOIN  4                 4122.14      20.41       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/2a.sql    HASH_JOIN  7                 108.13       4523913.00  
+join-order-benchmark/2a.sql    HASH_JOIN  6                 48.02        1.73        
+join-order-benchmark/2a.sql    HASH_JOIN  5                 911.77       729.72      
+join-order-benchmark/2a.sql    HASH_JOIN  4                 1234.18      2.83        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/2b.sql    HASH_JOIN  7                 108.13       4523913.00  
+join-order-benchmark/2b.sql    HASH_JOIN  6                 48.02        1.73        
+join-order-benchmark/2b.sql    HASH_JOIN  5                 1364.84      3048.31     
+join-order-benchmark/2b.sql    HASH_JOIN  4                 1847.96      2.83        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/2c.sql    HASH_JOIN  7                 108.13       4523913.00  
+join-order-benchmark/2c.sql    HASH_JOIN  6                 48.02        1.73        
+join-order-benchmark/2c.sql    HASH_JOIN  5                 ----         7133043.00  
+join-order-benchmark/2c.sql    HASH_JOIN  4                 ----         435.37      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/2d.sql    HASH_JOIN  7                 108.13       4523913.00  
+join-order-benchmark/2d.sql    HASH_JOIN  6                 48.02        1.73        
+join-order-benchmark/2d.sql    HASH_JOIN  5                 105.65       84.07       
+join-order-benchmark/2d.sql    HASH_JOIN  4                 142.63       2.86        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/30a.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/30a.sql   HASH_JOIN  9                 1.00         19167.14    
+join-order-benchmark/30a.sql   HASH_JOIN  14                3.00         1379933.00  
+join-order-benchmark/30a.sql   HASH_JOIN  13                15.85        10.42       
+join-order-benchmark/30a.sql   HASH_JOIN  12                145.98       1.09        
+join-order-benchmark/30a.sql   HASH_JOIN  11                145.98       1446913.00  
+join-order-benchmark/30a.sql   HASH_JOIN  10                1543.38      2893828.00  
+join-order-benchmark/30a.sql   HASH_JOIN  9                 41036.00     5.13        
+join-order-benchmark/30a.sql   HASH_JOIN  8                 41036.01     17727554.00 
+join-order-benchmark/30a.sql   HASH_JOIN  7                 431.55       3.92        
+join-order-benchmark/30a.sql   HASH_JOIN  6                 19281.24     165.84      
+join-order-benchmark/30a.sql   HASH_JOIN  5                 57423.96     1.62        
+join-order-benchmark/30a.sql   HASH_JOIN  4                 79748.28     33.70       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/30b.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/30b.sql   HASH_JOIN  9                 1.00         19167.14    
+join-order-benchmark/30b.sql   HASH_JOIN  16                54162.11     10.23       
+join-order-benchmark/30b.sql   HASH_JOIN  15                54162.18     758269.50   
+join-order-benchmark/30b.sql   HASH_JOIN  12                758271.00    1516541.00  
+join-order-benchmark/30b.sql   HASH_JOIN  11                482745.83    1.10        
+join-order-benchmark/30b.sql   HASH_JOIN  10                1448238.00   2896475.00  
+join-order-benchmark/30b.sql   HASH_JOIN  9                 5910067.00   5.12        
+join-order-benchmark/30b.sql   HASH_JOIN  8                 5910067.33   17730201.00 
+join-order-benchmark/30b.sql   HASH_JOIN  7                 46556.46     3.92        
+join-order-benchmark/30b.sql   HASH_JOIN  6                 1865680.42   165.86      
+join-order-benchmark/30b.sql   HASH_JOIN  5                 2094018.36   1.62        
+join-order-benchmark/30b.sql   HASH_JOIN  4                 2156146.18   33.71       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/30c.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/30c.sql   HASH_JOIN  10                1.00         19167.14    
+join-order-benchmark/30c.sql   HASH_JOIN  11                78.50        2472287.50  
+join-order-benchmark/30c.sql   HASH_JOIN  14                3.00         1379933.00  
+join-order-benchmark/30c.sql   HASH_JOIN  13                15.85        10.42       
+join-order-benchmark/30c.sql   HASH_JOIN  12                24.57        1512373.00  
+join-order-benchmark/30c.sql   HASH_JOIN  11                88.87        1512374.00  
+join-order-benchmark/30c.sql   HASH_JOIN  10       Y        1340.50      9.81        
+join-order-benchmark/30c.sql   HASH_JOIN  9                 1588.39      16346106.00 
+join-order-benchmark/30c.sql   HASH_JOIN  8                 32.44        3.61        
+join-order-benchmark/30c.sql   HASH_JOIN  7                 1433.24      155.54      
+join-order-benchmark/30c.sql   HASH_JOIN  6                 1605.57      8.32        
+join-order-benchmark/30c.sql   HASH_JOIN  5                 5038.69      1.54        
+join-order-benchmark/30c.sql   HASH_JOIN  4                 7666.19      34.36       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/31a.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/31a.sql   HASH_JOIN  10                1.00         19167.14    
+join-order-benchmark/31a.sql   HASH_JOIN  13                3.00         1380011.00  
+join-order-benchmark/31a.sql   HASH_JOIN  12                2.94         1.89        
+join-order-benchmark/31a.sql   HASH_JOIN  11                2753.04      398914.10   
+join-order-benchmark/31a.sql   HASH_JOIN  10                27560.19     3.72        
+join-order-benchmark/31a.sql   HASH_JOIN  9                 28477.47     18823608.00 
+join-order-benchmark/31a.sql   HASH_JOIN  8                 428.70       4.16        
+join-order-benchmark/31a.sql   HASH_JOIN  7                 15407.94     174.01      
+join-order-benchmark/31a.sql   HASH_JOIN  6                 17065.25     9.30        
+join-order-benchmark/31a.sql   HASH_JOIN  5                 40007.58     1.39        
+join-order-benchmark/31a.sql   HASH_JOIN  4                 50268.16     35.79       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/31b.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/31b.sql   HASH_JOIN  9                 1.00         19167.14    
+join-order-benchmark/31b.sql   HASH_JOIN  15                3.00         1380035.00  
+join-order-benchmark/31b.sql   HASH_JOIN  14                27341.48     1.00        
+join-order-benchmark/31b.sql   HASH_JOIN  11                282664.11    1.06        
+join-order-benchmark/31b.sql   HASH_JOIN  10                767232.57    537061.80   
+join-order-benchmark/31b.sql   HASH_JOIN  9                 1836825.91   2.76        
+join-order-benchmark/31b.sql   HASH_JOIN  8                 1836826.00   20205085.00 
+join-order-benchmark/31b.sql   HASH_JOIN  7                 16442.15     4.47        
+join-order-benchmark/31b.sql   HASH_JOIN  6                 540503.83    184.30      
+join-order-benchmark/31b.sql   HASH_JOIN  5                 727470.54    1.46        
+join-order-benchmark/31b.sql   HASH_JOIN  4                 748179.81    35.13       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/31c.sql   HASH_JOIN  10                1.00         7248868.80  
+join-order-benchmark/31c.sql   HASH_JOIN  10                1.00         19167.14    
+join-order-benchmark/31c.sql   HASH_JOIN  11                78.51        2472409.50  
+join-order-benchmark/31c.sql   HASH_JOIN  13                3.00         1380011.00  
+join-order-benchmark/31c.sql   HASH_JOIN  12                2.94         1.89        
+join-order-benchmark/31c.sql   HASH_JOIN  11                2753.04      398914.10   
+join-order-benchmark/31c.sql   HASH_JOIN  10       Y        14535.61     3.72        
+join-order-benchmark/31c.sql   HASH_JOIN  9                 15241.79     18823614.00 
+join-order-benchmark/31c.sql   HASH_JOIN  8                 211.41       4.16        
+join-order-benchmark/31c.sql   HASH_JOIN  7                 8268.21      174.01      
+join-order-benchmark/31c.sql   HASH_JOIN  6                 9157.55      9.30        
+join-order-benchmark/31c.sql   HASH_JOIN  5                 22036.03     1.39        
+join-order-benchmark/31c.sql   HASH_JOIN  4                 23473.88     15.33       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/32a.sql   HASH_JOIN  8                 ----         97854.00    
+join-order-benchmark/32a.sql   HASH_JOIN  7                 ----         47.78       
+join-order-benchmark/32a.sql   HASH_JOIN  6                 ----         5876.65     
+join-order-benchmark/32a.sql   HASH_JOIN  5                 ----         6.10        
+join-order-benchmark/32a.sql   HASH_JOIN  4                 ----         30.48       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/32b.sql   HASH_JOIN  8                 43.82        97854.00    
+join-order-benchmark/32b.sql   HASH_JOIN  7                 29.14        3.26        
+join-order-benchmark/32b.sql   HASH_JOIN  6                 29.14        7520.71     
+join-order-benchmark/32b.sql   HASH_JOIN  5                 604.51       19.74       
+join-order-benchmark/32b.sql   HASH_JOIN  4                 646.94       14.25       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/33a.sql   HASH_JOIN  16                26.39        674828.00   
+join-order-benchmark/33a.sql   HASH_JOIN  15                649.61       22.50       
+join-order-benchmark/33a.sql   HASH_JOIN  14                20730.68     41460.35    
+join-order-benchmark/33a.sql   HASH_JOIN  13                191783.83    1.58        
+join-order-benchmark/33a.sql   HASH_JOIN  12                191785.00    164386.14   
+join-order-benchmark/33a.sql   HASH_JOIN  11                80974.00     18.01       
+join-order-benchmark/33a.sql   HASH_JOIN  10                242922.20    1214610.00  
+join-order-benchmark/33a.sql   HASH_JOIN  9                 280157.00    6.52        
+join-order-benchmark/33a.sql   HASH_JOIN  8                 280158.40    200112.14   
+join-order-benchmark/33a.sql   HASH_JOIN  7                 107190.57    14.03       
+join-order-benchmark/33a.sql   HASH_JOIN  6                 792755.50    17.69       
+join-order-benchmark/33a.sql   HASH_JOIN  5                 524151.25    1.64        
+join-order-benchmark/33a.sql   HASH_JOIN  4                 553525.88    17.84       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/33b.sql   HASH_JOIN  16                142.03       3.99        
+join-order-benchmark/33b.sql   HASH_JOIN  15                623.59       4.51        
+join-order-benchmark/33b.sql   HASH_JOIN  14                7851.34      824390.00   
+join-order-benchmark/33b.sql   HASH_JOIN  13                10053.63     117770.14   
+join-order-benchmark/33b.sql   HASH_JOIN  12                412207.50    48494.00    
+join-order-benchmark/33b.sql   HASH_JOIN  11                148052.50    12.90       
+join-order-benchmark/33b.sql   HASH_JOIN  10                444158.00    888315.00   
+join-order-benchmark/33b.sql   HASH_JOIN  9                 537245.00    4.77        
+join-order-benchmark/33b.sql   HASH_JOIN  8                 537248.50    153498.57   
+join-order-benchmark/33b.sql   HASH_JOIN  7                 293593.25    10.76       
+join-order-benchmark/33b.sql   HASH_JOIN  6                 1176713.00   501.87      
+join-order-benchmark/33b.sql   HASH_JOIN  5                 946103.00    2.22        
+join-order-benchmark/33b.sql   HASH_JOIN  4                 1004852.25   16.10       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/33c.sql   HASH_JOIN  16                18.71        687267.00   
+join-order-benchmark/33c.sql   HASH_JOIN  15                476.59       22.91       
+join-order-benchmark/33c.sql   HASH_JOIN  14                15261.32     42192.06    
+join-order-benchmark/33c.sql   HASH_JOIN  13                60692.48     1.45        
+join-order-benchmark/33c.sql   HASH_JOIN  12                83813.76     251440.29   
+join-order-benchmark/33c.sql   HASH_JOIN  11                31999.81     27.54       
+join-order-benchmark/33c.sql   HASH_JOIN  10                95999.47     1823989.00  
+join-order-benchmark/33c.sql   HASH_JOIN  9                 105798.11    9.80        
+join-order-benchmark/33c.sql   HASH_JOIN  8                 105798.47    287166.29   
+join-order-benchmark/33c.sql   HASH_JOIN  7                 41373.47     20.13       
+join-order-benchmark/33c.sql   HASH_JOIN  6                 50979.22     8.98        
+join-order-benchmark/33c.sql   HASH_JOIN  5                 43445.11     1.11        
+join-order-benchmark/33c.sql   HASH_JOIN  4                 45506.49     21.08       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/3a.sql    HASH_JOIN  9                 1.00         1854465.00  
+join-order-benchmark/3a.sql    HASH_JOIN  6                 4.42         4.47        
+join-order-benchmark/3a.sql    HASH_JOIN  5                 2537.37      41.27       
+join-order-benchmark/3a.sql    HASH_JOIN  4                 99547.32     2.62        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/3b.sql    HASH_JOIN  6                 16.41        11.55       
+join-order-benchmark/3b.sql    HASH_JOIN  5                 12468.56     36.64       
+join-order-benchmark/3b.sql    HASH_JOIN  4                 1010410.60   2208.03     
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/3c.sql    HASH_JOIN  9                 1.00         1483572.00  
+join-order-benchmark/3c.sql    HASH_JOIN  6                 2.29         2.59        
+join-order-benchmark/3c.sql    HASH_JOIN  5                 813.71       46.75       
+join-order-benchmark/3c.sql    HASH_JOIN  4                 2930.05      2.32        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/4a.sql    HASH_JOIN  7                 1.47         517682.00   
+join-order-benchmark/4a.sql    HASH_JOIN  6                 14.44        1.96        
+join-order-benchmark/4a.sql    HASH_JOIN  5                 8.68         2.96        
+join-order-benchmark/4a.sql    HASH_JOIN  4                 8363.10      45.13       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/4b.sql    HASH_JOIN  7                 27.29        8322.00     
+join-order-benchmark/4b.sql    HASH_JOIN  6                 5555.40      47.06       
+join-order-benchmark/4b.sql    HASH_JOIN  5                 4601.79      11.31       
+join-order-benchmark/4b.sql    HASH_JOIN  4                 843013.83    36.70       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/4c.sql    HASH_JOIN  7                 1.80         806365.00   
+join-order-benchmark/4c.sql    HASH_JOIN  6                 8.69         2.17        
+join-order-benchmark/4c.sql    HASH_JOIN  5                 3.52         1.77        
+join-order-benchmark/4c.sql    HASH_JOIN  4                 1534.79      52.76       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/5a.sql    HASH_JOIN  10                1.00         9031.62     
+join-order-benchmark/5a.sql    HASH_JOIN  7                 921.88       2.58        
+join-order-benchmark/5a.sql    HASH_JOIN  6                 ----         3622049.00  
+join-order-benchmark/5a.sql    HASH_JOIN  5                 ----         50.12       
+join-order-benchmark/5a.sql    HASH_JOIN  4                 ----         33584.65    
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/5b.sql    HASH_JOIN  7                 ----         6.66        
+join-order-benchmark/5b.sql    HASH_JOIN  6                 ----         3000795.00  
+join-order-benchmark/5b.sql    HASH_JOIN  5                 ----         3.83        
+join-order-benchmark/5b.sql    HASH_JOIN  4                 ----         131759.79   
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/5c.sql    HASH_JOIN  10                1.00         1483572.00  
+join-order-benchmark/5c.sql    HASH_JOIN  7                 41.31        1.49        
+join-order-benchmark/5c.sql    HASH_JOIN  6                 5682.09      4358161.00  
+join-order-benchmark/5c.sql    HASH_JOIN  5                 28690.42     3.40        
+join-order-benchmark/5c.sql    HASH_JOIN  4                 28690.59     174489.93   
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/6a.sql    HASH_JOIN  7                 323137.93    4523930.00  
+join-order-benchmark/6a.sql    HASH_JOIN  6                 446872.45    11.55       
+join-order-benchmark/6a.sql    HASH_JOIN  5                 33627.39     7.37        
+join-order-benchmark/6a.sql    HASH_JOIN  4                 7536975.00   10.13       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/6b.sql    HASH_JOIN  7                 4292.57      10328.61    
+join-order-benchmark/6b.sql    HASH_JOIN  8                 1.00         16771.25    
+join-order-benchmark/6b.sql    HASH_JOIN  6                 129404.06    33.72       
+join-order-benchmark/6b.sql    HASH_JOIN  5                 106796.01    7.78        
+join-order-benchmark/6b.sql    HASH_JOIN  4                 3747066.58   10.07       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/6c.sql    HASH_JOIN  7                 323137.93    4523930.00  
+join-order-benchmark/6c.sql    HASH_JOIN  6                 2262184.50   10328.61    
+join-order-benchmark/6c.sql    HASH_JOIN  5                 1235415.03   8.01        
+join-order-benchmark/6c.sql    HASH_JOIN  4                 22415311.00  10.04       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/6d.sql    HASH_JOIN  7                 3.00         3.27        
+join-order-benchmark/6d.sql    HASH_JOIN  8                 1.00         16771.25    
+join-order-benchmark/6d.sql    HASH_JOIN  6                 426.37       44.01       
+join-order-benchmark/6d.sql    HASH_JOIN  5                 53.83        6.00        
+join-order-benchmark/6d.sql    HASH_JOIN  4                 526656.98    10.41       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/6e.sql    HASH_JOIN  7                 323137.93    4523930.00  
+join-order-benchmark/6e.sql    HASH_JOIN  6                 536853.09    3.27        
+join-order-benchmark/6e.sql    HASH_JOIN  5                 34436.04     6.14        
+join-order-benchmark/6e.sql    HASH_JOIN  4                 7701939.50   10.38       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/6f.sql    HASH_JOIN  7                 3.00         3.27        
+join-order-benchmark/6f.sql    HASH_JOIN  8                 1.00         16771.25    
+join-order-benchmark/6f.sql    HASH_JOIN  6                 426.37       44.01       
+join-order-benchmark/6f.sql    HASH_JOIN  5                 53.83        6.00        
+join-order-benchmark/6f.sql    HASH_JOIN  4                 59.00        10.41       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/7a.sql    HASH_JOIN  16                1.02         64.00       
+join-order-benchmark/7a.sql    HASH_JOIN  15                64902.53     16973.51    
+join-order-benchmark/7a.sql    HASH_JOIN  12                100234.30    1.22        
+join-order-benchmark/7a.sql    HASH_JOIN  9                 11404.00     18.08       
+join-order-benchmark/7a.sql    HASH_JOIN  6                 75056.91     1275.10     
+join-order-benchmark/7a.sql    HASH_JOIN  5                 253503.47    38279023.00 
+join-order-benchmark/7a.sql    HASH_JOIN  4                 1206850.31   112.52      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/7b.sql    HASH_JOIN  14                1.02         64.00       
+join-order-benchmark/7b.sql    HASH_JOIN  13                9198.04      13866.82    
+join-order-benchmark/7b.sql    HASH_JOIN  12                331128.00    9.80        
+join-order-benchmark/7b.sql    HASH_JOIN  9                 105489.30    36.49       
+join-order-benchmark/7b.sql    HASH_JOIN  6                 211748.41    1241.38     
+join-order-benchmark/7b.sql    HASH_JOIN  5                 810167.87    37267721.00 
+join-order-benchmark/7b.sql    HASH_JOIN  4                 2333986.69   489.95      
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/7c.sql    HASH_JOIN  16                35.21        2963664.00  
+join-order-benchmark/7c.sql    HASH_JOIN  15                311.33       2.69        
+join-order-benchmark/7c.sql    HASH_JOIN  12                394.46       4.51        
+join-order-benchmark/7c.sql    HASH_JOIN  9                 25.47        7.30        
+join-order-benchmark/7c.sql    HASH_JOIN  6                 324.68       1373.89     
+join-order-benchmark/7c.sql    HASH_JOIN  5                 551.16       26.51       
+join-order-benchmark/7c.sql    HASH_JOIN  4                 627.68       2517542.35  
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/8a.sql    HASH_JOIN  11                2.67         93095.00    
+join-order-benchmark/8a.sql    HASH_JOIN  10                358.77       28.03       
+join-order-benchmark/8a.sql    HASH_JOIN  9                 364.21       400.21      
+join-order-benchmark/8a.sql    HASH_JOIN  8                 178181.66    1.50        
+join-order-benchmark/8a.sql    HASH_JOIN  5                 121669.10    8.76        
+join-order-benchmark/8a.sql    HASH_JOIN  4                 162406.90    2.99        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/8b.sql    HASH_JOIN  11                1420.75      2.45        
+join-order-benchmark/8b.sql    HASH_JOIN  10                5733.75      321089.00   
+join-order-benchmark/8b.sql    HASH_JOIN  9                 117208.76    8.13        
+join-order-benchmark/8b.sql    HASH_JOIN  8                 117478.84    433.98      
+join-order-benchmark/8b.sql    HASH_JOIN  7                 1749724.25   1.38        
+join-order-benchmark/8b.sql    HASH_JOIN  4                 1295246.33   9.06        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/8c.sql    HASH_JOIN  11                2.33         30.75       
+join-order-benchmark/8c.sql    HASH_JOIN  10                4.52         1.07        
+join-order-benchmark/8c.sql    HASH_JOIN  9                 1.28         6.94        
+join-order-benchmark/8c.sql    HASH_JOIN  6                 21.04        41462319.00 
+join-order-benchmark/8c.sql    HASH_JOIN  5                 16.98        53.67       
+join-order-benchmark/8c.sql    HASH_JOIN  4                 18.61        10.40       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/8d.sql    HASH_JOIN  11                2.33         30.75       
+join-order-benchmark/8d.sql    HASH_JOIN  10                4.52         1.07        
+join-order-benchmark/8d.sql    HASH_JOIN  9                 1.28         6.94        
+join-order-benchmark/8d.sql    HASH_JOIN  6                 145.21       41462319.00 
+join-order-benchmark/8d.sql    HASH_JOIN  5                 130.76       53.67       
+join-order-benchmark/8d.sql    HASH_JOIN  4                 143.33       10.40       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/9a.sql    HASH_JOIN  12                4.97         30.75       
+join-order-benchmark/9a.sql    HASH_JOIN  11                26.38        2.43        
+join-order-benchmark/9a.sql    HASH_JOIN  10                382.48       9.53        
+join-order-benchmark/9a.sql    HASH_JOIN  9                 1307.83      40044463.00 
+join-order-benchmark/9a.sql    HASH_JOIN  8                 328048.15    41.65       
+join-order-benchmark/9a.sql    HASH_JOIN  5                 328965.35    53.08       
+join-order-benchmark/9a.sql    HASH_JOIN  4                 371230.90    13.30       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/9b.sql    HASH_JOIN  14                3.21         713828.00   
+join-order-benchmark/9b.sql    HASH_JOIN  13                3698.42      1.35        
+join-order-benchmark/9b.sql    HASH_JOIN  10                49247.28     1.56        
+join-order-benchmark/9b.sql    HASH_JOIN  9                 53284.83     50.50       
+join-order-benchmark/9b.sql    HASH_JOIN  8                 162739.37    8.52        
+join-order-benchmark/9b.sql    HASH_JOIN  5                 141369.05    6.32        
+join-order-benchmark/9b.sql    HASH_JOIN  4                 219877.52    1.80        
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/9c.sql    HASH_JOIN  12                2.33         30.75       
+join-order-benchmark/9c.sql    HASH_JOIN  11                57.97        13.45       
+join-order-benchmark/9c.sql    HASH_JOIN  10                205.41       38936575.00 
+join-order-benchmark/9c.sql    HASH_JOIN  9                 8079.82      40.49       
+join-order-benchmark/9c.sql    HASH_JOIN  6                 4776.92      51.64       
+join-order-benchmark/9c.sql    HASH_JOIN  5                 5073.58      16.10       
+join-order-benchmark/9c.sql    HASH_JOIN  4                 5689.69      13.76       
+
+Query                          Node Name  Depth    Bushy?   [(x+y)/z]    [x/y]       
+join-order-benchmark/9d.sql    HASH_JOIN  12                2.33         30.75       
+join-order-benchmark/9d.sql    HASH_JOIN  11                57.97        13.45       
+join-order-benchmark/9d.sql    HASH_JOIN  8                 205.41       38936575.00 
+join-order-benchmark/9d.sql    HASH_JOIN  7                 78.59        50.40       
+join-order-benchmark/9d.sql    HASH_JOIN  6                 80.51        41.30       
+join-order-benchmark/9d.sql    HASH_JOIN  5                 85.51        16.10       
+join-order-benchmark/9d.sql    HASH_JOIN  4                 95.92        13.76       
+
