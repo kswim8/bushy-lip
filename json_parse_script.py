@@ -36,6 +36,9 @@ def is_join(curr_plan_node):
     return len(children) == 2 and \
            "JOIN" in curr_plan_node[NAME]
 
+def get_local_children_size(curr_plan_node, query_file, out_file):
+    pass
+
 def get_children_leaf_size(curr_plan_node, query_file, out_file, depth=0):
     # BC: we hit a leaf node
     children = curr_plan_node[CHILDREN]
@@ -75,6 +78,19 @@ def get_children_leaf_size(curr_plan_node, query_file, out_file, depth=0):
         )
     
     return total_children
+
+# ONE-TIME-USE: Checking if any query plans contain any nodes such that
+#               they have 2 children but aren't a join node... answer is NO
+def get_2_children_non_join_nodes(curr_plan_node):
+    children = curr_plan_node[CHILDREN]
+    if not children:
+        return
+
+    if len(children) == 2 and "JOIN" not in curr_plan_node[NAME]:
+        print(curr_plan_node[NAME])
+
+    for child in children:
+        get_2_children_non_join_nodes(child)
 
 def main():
     con = duckdb.connect(database=DATABASE_NAME, read_only=True)
