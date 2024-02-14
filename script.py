@@ -13,6 +13,7 @@ PROFILING_AS_JSON_COMMAND = "PRAGMA enable_profiling = 'json'"
 CARDINALITY = "cardinality"
 CHILDREN = "children"
 NAME = "name"
+EXTRA_INFO = "extra_info"
 
 QUERY_NAME = "query_name"
 NODE_INFO = "node_info"
@@ -33,7 +34,9 @@ Checks if a plan node is JOIN type.
 Explicitly ignores SEMI JOIN.
 '''
 def is_join_node(curr_node):
-    return len(curr_node[CHILDREN]) == 2 and "JOIN" in curr_node[NAME]
+    return len(curr_node[CHILDREN]) == 2 and \
+           "JOIN" in curr_node[NAME] and \
+           "SEMI" not in curr_node[EXTRA_INFO]
 
 
 '''
@@ -64,10 +67,8 @@ Finds the highest join node in this subtree.
 Returns a node, the depth of the node, and whether it is a JOIN node.
 '''
 def get_first_join_node(curr_plan_node):
-    # Iterate until we hit a node that is JOIN
     while "JOIN" not in curr_plan_node[NAME]:
         children = curr_plan_node[CHILDREN]
-        # If at a leaf node, return it anyways
         if not children:
             return curr_plan_node, False
         curr_plan_node = children[0]
@@ -90,7 +91,7 @@ def get_local_children_size(curr_plan_node, data, file_name):
     L_size = L_child[CARDINALITY]
     R_size = R_child[CARDINALITY]
     curr_size = curr_plan_node[CARDINALITY]
-
+    
     data[QUERY_NAME].append(file_name)
     data[NODE_INFO].append(curr_plan_node[NAME])
     data[DEPTH].append(curr_plan_node[DEPTH])
@@ -100,6 +101,7 @@ def get_local_children_size(curr_plan_node, data, file_name):
     data[LEFT_LOCAL_SIZE].append(L_size)
     data[RIGHT_LOCAL_SIZE].append(R_size)
     data[CURR_SIZE].append(curr_size)
+    data[EXTRA_INFO].append(curr_plan_node[EXTRA_INFO])
 
     if L_is_join:
         get_local_children_size(L_child, data, file_name)
@@ -123,7 +125,8 @@ def set_join_node_depths(curr_plan_node):
 
     if is_join_node(curr_plan_node):
         biggest_depth += 1
-        curr_plan_node[DEPTH] = biggest_depth
+    
+    curr_plan_node[DEPTH] = biggest_depth
 
     return biggest_depth
 
@@ -178,6 +181,7 @@ def main():
         LEFT_LOCAL_SIZE: [],
         RIGHT_LOCAL_SIZE: [],
         CURR_SIZE: [],
+        EXTRA_INFO: [],
     }
 
     # Iterate over all files in DIRECTORY
@@ -189,7 +193,7 @@ def main():
            file_name.endswith(".sql") and \
            file_name[0].isdigit():
             with open(file_path, 'r') as file:
-                print("Processing file...", file_name)
+                print("Processing file...", file_name, end=" ")
                 get_data(file, data, con)
             print("Done!")
     
