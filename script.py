@@ -63,30 +63,29 @@ Takes in a curr_plan_node as root.
 Finds the highest join node in this subtree.
 Returns a node, the depth of the node, and whether it is a JOIN node.
 '''
-def get_first_join_node(curr_plan_node, depth):
+def get_first_join_node(curr_plan_node):
     # Iterate until we hit a node that is JOIN
     while "JOIN" not in curr_plan_node[NAME]:
         children = curr_plan_node[CHILDREN]
         # If at a leaf node, return it anyways
         if not children:
-            return curr_plan_node, depth, False
+            return curr_plan_node, False
         curr_plan_node = children[0]
-        depth += 1
-    return curr_plan_node, depth, True
+    return curr_plan_node, True
 
 
 '''
 Assume curr_plan_node is a JOIN node.
 Chases left and right branches to get immediate/local children sizes.
 '''
-def get_local_children_size(curr_plan_node, depth, data, file_name):
+def get_local_children_size(curr_plan_node, data, file_name):
     assert("JOIN" in curr_plan_node[NAME])
     children = curr_plan_node[CHILDREN]
     if len(children) != 2:
         return
 
-    L_child, L_depth, L_is_join = get_first_join_node(children[0], depth + 1)
-    R_child, R_depth, R_is_join = get_first_join_node(children[1], depth + 1)
+    L_child, L_is_join = get_first_join_node(children[0])
+    R_child, R_is_join = get_first_join_node(children[1])
     
     L_size = L_child[CARDINALITY]
     R_size = R_child[CARDINALITY]
@@ -94,7 +93,7 @@ def get_local_children_size(curr_plan_node, depth, data, file_name):
 
     data[QUERY_NAME].append(file_name)
     data[NODE_INFO].append(curr_plan_node[NAME])
-    data[DEPTH].append(depth)
+    data[DEPTH].append(curr_plan_node[DEPTH])
     data[IS_BUSHY].append(is_bushy_join_node(curr_plan_node))
     data[LEFT_LEAF_SIZE].append(children[0][LEAF_SIZE])
     data[RIGHT_LEAF_SIZE].append(children[1][LEAF_SIZE])
@@ -103,9 +102,9 @@ def get_local_children_size(curr_plan_node, depth, data, file_name):
     data[CURR_SIZE].append(curr_size)
 
     if L_is_join:
-        get_local_children_size(L_child, L_depth, data, file_name)
+        get_local_children_size(L_child, data, file_name)
     if R_is_join:
-        get_local_children_size(R_child, R_depth, data, file_name)
+        get_local_children_size(R_child, data, file_name)
 
 
 '''
@@ -158,9 +157,9 @@ def get_data(file, data, con):
     query_plan = get_json_from_file(file, con)
     set_join_node_depths(query_plan)
     set_leaf_children_size(query_plan)
-    top_join_node, top_join_depth, is_join = get_first_join_node(query_plan, 0)
+    top_join_node, is_join = get_first_join_node(query_plan)
     if is_join:
-        get_local_children_size(top_join_node, top_join_depth, data, file_name)
+        get_local_children_size(top_join_node, data, file_name)
 
 
 def main():
