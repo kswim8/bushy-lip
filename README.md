@@ -16,4 +16,4 @@ this has been (mostly) tested on Intel MacOS and Ubuntu
 5. verify by running `select count(*) from aka_name;` to make sure there is a nonzero number of rows
 6. now that we have the database used for the join-order-benchmark, we can examine query plans for these queries
 7. clone the join-order-benchmark repo here: https://github.com/gregrahn/join-order-benchmark
-8. you can either run for all 99 join-order-benchmark queries by running `sh job_script.sh` or only an individual query by running `python json_parse_script.py join-order-benchmark/1a.sql`, for example
+8. you can run the script for all 99 join-order-benchmark queries by running `python script.py`
