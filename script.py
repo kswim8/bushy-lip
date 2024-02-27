@@ -194,13 +194,13 @@ def main():
     }
 
     # Iterate over all files in DIRECTORY
+    directory = os.path.expanduser(directory)
     for file_name in sorted(os.listdir(directory)):
         file_path = os.path.join(directory, file_name)
             
         # Only open and operate on .sql files
         if os.path.isfile(file_path) and \
-           file_name.endswith(".sql") and \
-           file_name[0].isdigit():
+           file_name.endswith(".sql"):
             with open(file_path, 'r') as file:
                 print("Processing file...", file_name, end=" ")
                 get_data(file, data, con)
