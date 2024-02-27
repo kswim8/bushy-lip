@@ -119,9 +119,9 @@ def set_join_node_depths(curr_plan_node):
         curr_plan_node[DEPTH] = 0
         return 0
     
-    biggest_depth = set_join_node_depths(children[0])
-    if len(children) == 2:
-        biggest_depth = max(biggest_depth, set_join_node_depths(children[1]))
+    biggest_depth = 0
+    for child in children:
+        biggest_depth = max(biggest_depth, set_join_node_depths(child))
 
     if is_join_node(curr_plan_node):
         biggest_depth += 1
@@ -147,6 +147,7 @@ def set_leaf_children_size(curr_plan_node):
         leaf_children_size += set_leaf_children_size(child)
 
     curr_plan_node[LEAF_SIZE] = leaf_children_size
+    
     return leaf_children_size
 
 
