@@ -63,6 +63,8 @@ def get_json_from_file(file, con):
 Takes in a curr_plan_node as root.
 Finds the highest join node in this subtree.
 Returns a node, the depth of the node, and whether it is a JOIN node.
+
+TODO: Does not work if curr_plan_node has 2 children and is NOT JOIN.
 '''
 def get_first_join_node(curr_plan_node):
     while "JOIN" not in curr_plan_node[NAME]:
