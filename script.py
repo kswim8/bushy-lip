@@ -1,13 +1,11 @@
+import argparse
 import duckdb
 import json
 import os
 import pandas as pd
 import sys
 
-DATABASE_NAME = "imdb.duckdb"
-DIRECTORY = "join-order-benchmark/"
 EXPLAIN_ANALYZE_PREFIX = "EXPLAIN ANALYZE "
-OUT_FILE = "statistics.csv"
 PROFILING_AS_JSON_COMMAND = "PRAGMA enable_profiling = 'json'"
 
 CARDINALITY = "cardinality"
@@ -166,8 +164,19 @@ def get_data(file, data, con):
 
 
 def main():
+    parser = argparse.ArgumentParser(description='Analyzes DuckDB query plans')
+
+    parser.add_argument('--db', type=str, help='Name of database file')
+    parser.add_argument('--dir', type=str, help='Directory with sql queries')
+    parser.add_argument('--out', type=str, help='Name of data output file')
+    
+    args = parser.parse_args()
+    database_name = args.db
+    directory = args.dir
+    out_file = args.out
+
     # Connect to our database
-    con = duckdb.connect(database=DATABASE_NAME, read_only=True)
+    con = duckdb.connect(database=database_name, read_only=True)
     con.execute(PROFILING_AS_JSON_COMMAND)
     
     # This dictionary will be used to create a pandas DataFrame later
@@ -185,8 +194,8 @@ def main():
     }
 
     # Iterate over all files in DIRECTORY
-    for file_name in sorted(os.listdir(DIRECTORY)):
-        file_path = os.path.join(DIRECTORY, file_name)
+    for file_name in sorted(os.listdir(directory)):
+        file_path = os.path.join(directory, file_name)
             
         # Only open and operate on .sql files
         if os.path.isfile(file_path) and \
@@ -199,7 +208,7 @@ def main():
     
     # Write out our data to file on disk
     df = pd.DataFrame(data)
-    df.to_csv(OUT_FILE)
+    df.to_csv(out_file)
 
 if __name__ == '__main__':
     main()
