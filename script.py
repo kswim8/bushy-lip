@@ -1,10 +1,8 @@
 import argparse
-from pty import CHILD
 import duckdb
 import json
 import os
 import pandas as pd
-import sys
 
 EXPLAIN_ANALYZE_PREFIX = "EXPLAIN ANALYZE "
 PROFILING_AS_JSON_COMMAND = "PRAGMA enable_profiling = 'json'"
