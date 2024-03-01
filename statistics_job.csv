@@ -4805,13 +4805,13 @@ movie_id = id
 [INFOSEPARATOR]
 EC: 101010
 "
-801,/Users/kerenhuang/join-order-benchmark/5b.sql,HASH_JOIN,4,False,14460672,110,0,110,0,"INNER
+801,/Users/kerenhuang/join-order-benchmark/5b.sql,HASH_JOIN,4,False,14358415,110,0,110,0,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 28939
 "
-802,/Users/kerenhuang/join-order-benchmark/5b.sql,HASH_JOIN,3,False,11459876,3000796,11459876,0,0,"INNER
+802,/Users/kerenhuang/join-order-benchmark/5b.sql,HASH_JOIN,3,False,11357619,3000796,11357619,0,0,"INNER
 movie_id = id
 
 [INFOSEPARATOR]

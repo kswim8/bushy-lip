@@ -30,7 +30,7 @@ LEAF_SIZE = "leaf_size"
 Checks if a plan node is UNION type.
 '''
 def is_union_node(curr_node):
-    return len(curr_node[CHILDREN]) == 2 and "UNION" in curr_node[NAME]
+    return len(curr_node[CHILDREN]) == 2 and "UNION" == curr_node[NAME]
 
 
 '''
@@ -204,9 +204,9 @@ Based on the query plan, we gather desired data to be placed in data.
 def get_data(file, data, con):
     file_name = file.name
     query_plan = get_json_from_file(file, con)
+    set_union_cardinality(query_plan)
     set_join_node_depths(query_plan)
     set_leaf_children_size(query_plan)
-    set_union_cardinality(query_plan)
     top_join_node, is_join = get_first_join_node(query_plan)
     if is_join:
         get_local_children_size(top_join_node, data, file_name)
