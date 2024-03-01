@@ -257,7 +257,7 @@ def main():
     
     # Write out our data to file on disk
     df = pd.DataFrame(data)
-    df.to_csv(out_file)
+    df.to_csv(out_file, index=False)
 
 if __name__ == '__main__':
     main()

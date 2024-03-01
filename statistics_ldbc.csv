@@ -1,65 +1,65 @@
-,query_name,node_info,depth,is_bushy,x,y,x',y',z,extra_info
-0,/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,9,False,2048,14859,2048,0,0,"INNER
+query_name,node_info,depth,is_bushy,x,y,x',y',z,extra_info
+/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,9,False,2048,14859,2048,0,0,"INNER
 t_tagid = mt_tagid
 
 [INFOSEPARATOR]
 EC: 47
 "
-1,/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,8,False,2048,12811,2048,0,0,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,8,False,2048,12811,2048,0,0,"INNER
 mt_messageid = messageid
 
 [INFOSEPARATOR]
 EC: 45
 "
-2,/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,7,False,12810,1,0,1,0,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,7,False,12810,1,0,1,0,"INNER
 t_tagclassid = tc_tagclassid
 
 [INFOSEPARATOR]
 EC: 2
 "
-3,/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,6,False,2048,10762,2048,0,0,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,6,False,2048,10762,2048,0,0,"INNER
 t_tagid = mt_tagid
 
 [INFOSEPARATOR]
 EC: 161
 "
-4,/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,5,False,2048,8714,2048,0,0,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,5,False,2048,8714,2048,0,0,"INNER
 mt_messageid = m_messageid
 
 [INFOSEPARATOR]
 EC: 156
 "
-5,/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,4,False,4096,4618,4096,0,0,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,4,False,4096,4618,4096,0,0,"INNER
 m_creatorid = friendid
 
 [INFOSEPARATOR]
 EC: 165868
 "
-6,/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,3,False,2048,2570,0,38,0,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,3,False,2048,2570,0,38,0,"INNER
 friend = p_personid
 
 [INFOSEPARATOR]
 EC: 0
 "
-7,/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,1,False,2048,0,2048,0,0,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,1,False,2048,0,2048,0,0,"INNER
 k_person1id = friend
 
 [INFOSEPARATOR]
 EC: 11496
 "
-8,/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,2,False,1227,1343,1227,40,38,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,2,False,1227,1343,1227,40,38,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-9,/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-10-shortestpath.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-10,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,5,False,14066,28132,198,169,0,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,5,False,14066,28132,198,169,0,"INNER
 friendid = personid
 personid = friendid
 personid < personid
@@ -67,653 +67,653 @@ personid < personid
 [INFOSEPARATOR]
 EC: 0
 "
-11,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,3,False,11496,2570,11496,7,198,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,3,False,11496,2570,11496,7,198,"INNER
 k_person1id = p_personid
 
 [INFOSEPARATOR]
 EC: 8
 "
-12,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,2,False,1227,1343,1227,10,7,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,2,False,1227,1343,1227,10,7,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-13,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-14,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,4,False,14066,14066,198,198,169,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,4,False,14066,14066,198,198,169,"INNER
 personid = friendid
 personid > personid
 
 [INFOSEPARATOR]
 EC: 0
 "
-15,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,3,False,11496,2570,11496,7,198,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,3,False,11496,2570,11496,7,198,"INNER
 k_person1id = p_personid
 
 [INFOSEPARATOR]
 EC: 8
 "
-16,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,2,False,1227,1343,1227,10,7,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,2,False,1227,1343,1227,10,7,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-17,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-18,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,3,False,11496,2570,11496,7,198,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,3,False,11496,2570,11496,7,198,"INNER
 k_person1id = p_personid
 
 [INFOSEPARATOR]
 EC: 8
 "
-19,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,2,False,1227,1343,1227,10,7,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,2,False,1227,1343,1227,10,7,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-20,/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-11.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-21,/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,4,False,381507,168438,46195,2589,2,"RIGHT
+/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,4,False,381507,168438,46195,2589,2,"RIGHT
 m_creatorid = zombieid
 
 [INFOSEPARATOR]
 EC: 9466
 "
-22,/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,3,False,213069,168438,46195,2589,46195,"LEFT
+/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,3,False,213069,168438,46195,2589,46195,"LEFT
 p_personid = zombieid
 
 [INFOSEPARATOR]
 EC: 9466
 "
-23,/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,2,False,165652,47417,165652,46195,46195,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,2,False,165652,47417,165652,46195,46195,"INNER
 m_messageid = l_messageid
 
 [INFOSEPARATOR]
 EC: 9466
 "
-24,/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,1,False,46195,1222,46195,1222,46195,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,1,False,46195,1222,46195,1222,46195,"INNER
 l_personid = p_personid
 
 [INFOSEPARATOR]
 EC: 9223
 "
-25,/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,2,True,167095,1343,165922,10,2589,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,2,True,167095,1343,165922,10,2589,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 23
 "
-26,/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,1,False,165868,1227,165868,1227,165922,"RIGHT
+/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,1,False,165868,1227,165868,1227,165922,"RIGHT
 m_creatorid = p_personid
 m_creationdate >= p_creationdate
 
 [INFOSEPARATOR]
 EC: 33173
 "
-27,/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-28,/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,2,True,167095,1343,165922,10,2589,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,2,True,167095,1343,165922,10,2589,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 23
 "
-29,/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,1,False,165868,1227,165868,1227,165922,"RIGHT
+/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,1,False,165868,1227,165868,1227,165922,"RIGHT
 m_creatorid = p_personid
 m_creationdate >= p_creationdate
 
 [INFOSEPARATOR]
 EC: 33173
 "
-30,/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-13.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-31,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,6,False,4031,1124338,45,123,95,"LEFT
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,6,False,4031,1124338,45,123,95,"LEFT
 personid = person1id
 
 [INFOSEPARATOR]
 EC: 1
 "
-32,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,1461,2570,39,29,45,"LEFT
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,1461,2570,39,29,45,"LEFT
 pl_placeid = cityid
 
 [INFOSEPARATOR]
 EC: 1
 "
-33,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1460,1,1460,1,39,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1460,1,1460,1,39,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1
 "
-34,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-35,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-36,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,4,True,168426,168438,5433,3861,45,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,4,True,168426,168438,5433,3861,45,"INNER
 m_messageid = m_c_replyof
 
 [INFOSEPARATOR]
 EC: 0
 "
-37,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,165856,2570,165856,37,5433,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,165856,2570,165856,37,5433,"INNER
 m_creatorid = personid
 
 [INFOSEPARATOR]
 EC: 165868
 "
-38,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,40,37,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,40,37,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-39,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-40,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,165868,2570,165868,29,3861,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,165868,2570,165868,29,3861,"INNER
 m_creatorid = personid
 
 [INFOSEPARATOR]
 EC: 113
 "
-41,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-42,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-43,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,4,True,168438,168426,5433,3861,40,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,4,True,168438,168426,5433,3861,40,"INNER
 m_c_replyof = m_messageid
 
 [INFOSEPARATOR]
 EC: 0
 "
-44,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,165868,2570,165868,37,5433,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,165868,2570,165868,37,5433,"INNER
 m_creatorid = personid
 
 [INFOSEPARATOR]
 EC: 113
 "
-45,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,40,37,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,40,37,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-46,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-47,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,165856,2570,165856,29,3861,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,165856,2570,165856,29,3861,"INNER
 m_creatorid = personid
 
 [INFOSEPARATOR]
 EC: 165868
 "
-48,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-49,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-50,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,4,False,14066,2570,493,29,16,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,4,False,14066,2570,493,29,16,"INNER
 k_person1id = personid
 
 [INFOSEPARATOR]
 EC: 0
 "
-51,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,11496,2570,11496,37,493,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,11496,2570,11496,37,493,"INNER
 k_person2id = personid
 
 [INFOSEPARATOR]
 EC: 7
 "
-52,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,40,37,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,40,37,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-53,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-54,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-55,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-56,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,5,False,214417,2570,1713,37,65,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,5,False,214417,2570,1713,37,65,"INNER
 m_creatorid = personid
 
 [INFOSEPARATOR]
 EC: 0
 "
-57,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,4,False,165652,48765,165652,1713,1713,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,4,False,165652,48765,165652,1713,1713,"INNER
 m_messageid = l_messageid
 
 [INFOSEPARATOR]
 EC: 32
 "
-58,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,46195,2570,46195,29,1713,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,46195,2570,46195,29,1713,"INNER
 l_personid = personid
 
 [INFOSEPARATOR]
 EC: 31
 "
-59,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-60,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-61,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,40,37,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,40,37,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-62,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-63,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,5,False,214417,2570,1477,29,74,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,5,False,214417,2570,1477,29,74,"INNER
 m_creatorid = personid
 
 [INFOSEPARATOR]
 EC: 0
 "
-64,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,4,False,165652,48765,165652,1477,1477,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,4,False,165652,48765,165652,1477,1477,"INNER
 m_messageid = l_messageid
 
 [INFOSEPARATOR]
 EC: 32
 "
-65,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,46195,2570,46195,37,1477,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,3,False,46195,2570,46195,37,1477,"INNER
 l_personid = personid
 
 [INFOSEPARATOR]
 EC: 31
 "
-66,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,40,37,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,40,37,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-67,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,40,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-68,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,2,False,1227,1343,1227,39,29,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-69,/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-14.sql,HASH_JOIN,1,False,1342,1,1342,1,39,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-70,/Users/kerenhuang/ldbc-snb-bi/bi-2.sql,HASH_JOIN,2,False,126073,16012,3288,16012,3288,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-2.sql,HASH_JOIN,2,False,126073,16012,3288,16012,3288,"INNER
 mt_tagid = t_tagid
 
 [INFOSEPARATOR]
 EC: 25780
 "
-71,/Users/kerenhuang/ldbc-snb-bi/bi-2.sql,HASH_JOIN,1,False,121129,4944,121129,4944,3288,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-2.sql,HASH_JOIN,1,False,121129,4944,121129,4944,3288,"INNER
 mt_messageid = m_messageid
 
 [INFOSEPARATOR]
 EC: 24863
 "
-72,/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,7,False,316249,1,965,1,64,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,7,False,316249,1,965,1,64,"INNER
 t_tagclassid = tc_tagclassid
 
 [INFOSEPARATOR]
 EC: 1
 "
-73,/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,6,False,16012,300237,16012,965,965,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,6,False,16012,300237,16012,965,965,"INNER
 t_tagid = mt_tagid
 
 [INFOSEPARATOR]
 EC: 92
 "
-74,/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,5,False,121129,179108,121129,817,965,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,5,False,121129,179108,121129,817,965,"INNER
 mt_messageid = m_messageid
 
 [INFOSEPARATOR]
 EC: 88
 "
-75,/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,4,False,165868,13240,165868,79,817,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,4,False,165868,13240,165868,79,817,"INNER
 m_ps_forumid = f_forumid
 
 [INFOSEPARATOR]
 EC: 118
 "
-76,/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,3,False,10670,2570,10670,13,79,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,3,False,10670,2570,10670,13,79,"INNER
 f_moderatorid = p_personid
 
 [INFOSEPARATOR]
 EC: 7
 "
-77,/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,2,False,1227,1343,1227,10,13,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,2,False,1227,1343,1227,10,13,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-78,/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-3.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-79,/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,6,False,225428,239559,1780,6287,65240,"RIGHT
+/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,6,False,225428,239559,1780,6287,65240,"RIGHT
 m_creatorid = p_personid
 
 [INFOSEPARATOR]
 EC: 33173
 "
-80,/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,3,False,117881,2570,117881,7,1588,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,3,False,117881,2570,117881,7,1588,"INNER
 fp_personid = p_personid
 
 [INFOSEPARATOR]
 EC: 82
 "
-81,/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,2,False,1227,1343,1227,10,7,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,2,False,1227,1343,1227,10,7,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-82,/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-83,/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,5,False,238332,1227,6287,1227,6287,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,5,False,238332,1227,6287,1227,6287,"INNER
 fp_personid = p_personid
 
 [INFOSEPARATOR]
 EC: 4381
 "
-84,/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,4,False,117881,120451,117881,1588,6287,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,4,False,117881,120451,117881,1588,6287,"INNER
 fp_forumid = forumid
 
 [INFOSEPARATOR]
 EC: 4381
 "
-85,/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,3,False,117881,2570,117881,7,1588,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,3,False,117881,2570,117881,7,1588,"INNER
 fp_personid = p_personid
 
 [INFOSEPARATOR]
 EC: 82
 "
-86,/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,2,False,1227,1343,1227,10,7,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,2,False,1227,1343,1227,10,7,"INNER
 p_placeid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 0
 "
-87,/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-4.sql,HASH_JOIN,1,False,1342,1,1342,1,10,"INNER
 pl_containerplaceid = pl_placeid
 
 [INFOSEPARATOR]
 EC: 1460
 "
-88,/Users/kerenhuang/ldbc-snb-bi/bi-5.sql,HASH_JOIN,4,False,1227,394049,1227,26,26,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-5.sql,HASH_JOIN,4,False,1227,394049,1227,26,26,"INNER
 p_personid = m_creatorid
 
 [INFOSEPARATOR]
 EC: 16
 "
-89,/Users/kerenhuang/ldbc-snb-bi/bi-5.sql,HASH_JOIN,3,True,272919,121130,269253,15,26,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-5.sql,HASH_JOIN,3,True,272919,121130,269253,15,26,"INNER
 m_messageid = mt_messageid
 
 [INFOSEPARATOR]
 EC: 16
 "
-90,/Users/kerenhuang/ldbc-snb-bi/bi-5.sql,HASH_JOIN,2,False,226724,46195,203423,46195,269253,"LEFT
+/Users/kerenhuang/ldbc-snb-bi/bi-5.sql,HASH_JOIN,2,False,226724,46195,203423,46195,269253,"LEFT
 m_messageid = l_messageid
 
 [INFOSEPARATOR]
 EC: 165868
 "
-91,/Users/kerenhuang/ldbc-snb-bi/bi-5.sql,HASH_JOIN,1,False,165856,60868,165856,60868,203423,"LEFT
+/Users/kerenhuang/ldbc-snb-bi/bi-5.sql,HASH_JOIN,1,False,165856,60868,165856,60868,203423,"LEFT
 m_messageid = m_c_replyof
 
 [INFOSEPARATOR]
 EC: 165868
 "
-92,/Users/kerenhuang/ldbc-snb-bi/bi-5.sql,HASH_JOIN,1,False,121129,1,121129,1,15,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-5.sql,HASH_JOIN,1,False,121129,1,121129,1,15,"INNER
 mt_tagid = t_tagid
 
 [INFOSEPARATOR]
 EC: 15
 "
-93,/Users/kerenhuang/ldbc-snb-bi/bi-6.sql,HASH_JOIN,3,False,211847,333181,46195,144,89,"RIGHT
+/Users/kerenhuang/ldbc-snb-bi/bi-6.sql,HASH_JOIN,3,False,211847,333181,46195,144,89,"RIGHT
 personid = likerPersonid
 
 [INFOSEPARATOR]
 EC: 796
 "
-94,/Users/kerenhuang/ldbc-snb-bi/bi-6.sql,HASH_JOIN,1,False,165652,46195,165652,46195,46195,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-6.sql,HASH_JOIN,1,False,165652,46195,165652,46195,46195,"INNER
 m_messageid = l_messageid
 
 [INFOSEPARATOR]
 EC: 47411
 "
-95,/Users/kerenhuang/ldbc-snb-bi/bi-6.sql,HASH_JOIN,2,True,212051,121130,204592,126,144,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-6.sql,HASH_JOIN,2,True,212051,121130,204592,126,144,"INNER
 m_messageid = mt_messageid
 
 [INFOSEPARATOR]
 EC: 16
 "
-96,/Users/kerenhuang/ldbc-snb-bi/bi-6.sql,HASH_JOIN,1,False,165856,46195,165856,46195,204592,"LEFT
+/Users/kerenhuang/ldbc-snb-bi/bi-6.sql,HASH_JOIN,1,False,165856,46195,165856,46195,204592,"LEFT
 m_messageid = l_messageid
 
 [INFOSEPARATOR]
 EC: 165868
 "
-97,/Users/kerenhuang/ldbc-snb-bi/bi-6.sql,HASH_JOIN,1,False,121129,1,121129,1,126,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-6.sql,HASH_JOIN,1,False,121129,1,121129,1,126,"INNER
 mt_tagid = t_tagid
 
 [INFOSEPARATOR]
 EC: 15
 "
-98,/Users/kerenhuang/ldbc-snb-bi/bi-7.sql,HASH_JOIN,5,False,121129,424139,121129,525,525,"RIGHT
+/Users/kerenhuang/ldbc-snb-bi/bi-7.sql,HASH_JOIN,5,False,121129,424139,121129,525,525,"RIGHT
 mt_messageid = m_messageid
 mt_tagid = mt_tagid
 
 [INFOSEPARATOR]
 EC: 121129
 "
-99,/Users/kerenhuang/ldbc-snb-bi/bi-7.sql,HASH_JOIN,4,False,16012,408127,16012,525,525,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-7.sql,HASH_JOIN,4,False,16012,408127,16012,525,525,"INNER
 t_tagid = mt_tagid
 
 [INFOSEPARATOR]
 EC: 381
 "
-100,/Users/kerenhuang/ldbc-snb-bi/bi-7.sql,HASH_JOIN,3,False,121129,286998,121129,339,525,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-7.sql,HASH_JOIN,3,False,121129,286998,121129,339,525,"INNER
 mt_messageid = m_messageid
 
 [INFOSEPARATOR]
 EC: 368
 "
-101,/Users/kerenhuang/ldbc-snb-bi/bi-7.sql,HASH_JOIN,2,False,165868,121130,165868,156,339,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-7.sql,HASH_JOIN,2,False,165868,121130,165868,156,339,"INNER
 m_c_replyof = mt_messageid
 
 [INFOSEPARATOR]
 EC: 491
 "
-102,/Users/kerenhuang/ldbc-snb-bi/bi-7.sql,HASH_JOIN,1,False,121129,1,121129,1,156,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-7.sql,HASH_JOIN,1,False,121129,1,121129,1,156,"INNER
 mt_tagid = t_tagid
 
 [INFOSEPARATOR]
 EC: 121129
 "
-103,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,6,False,292277,280781,1586,71,230,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,6,False,292277,280781,1586,71,230,"INNER
 k_person1id = personid
 
 [INFOSEPARATOR]
 EC: 0
 "
-104,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,5,False,11496,280781,11496,71,1586,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,5,False,11496,280781,11496,71,1586,"INNER
 k_person2id = personid
 
 [INFOSEPARATOR]
 EC: 28
 "
-105,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,4,False,29355,251426,20,84,71,"FULL
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,4,False,29355,251426,20,84,71,"FULL
 personid = personid
 
 [INFOSEPARATOR]
 EC: 3
 "
-106,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,2,False,1227,28128,1227,20,20,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,2,False,1227,28128,1227,20,20,"INNER
 p_personid = pt_personid
 
 [INFOSEPARATOR]
 EC: 3
 "
-107,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,1,False,28127,1,28127,1,20,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,1,False,28127,1,28127,1,20,"INNER
 pt_tagid = t_tagid
 
 [INFOSEPARATOR]
 EC: 3
 "
-108,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,3,False,1227,250199,1227,84,84,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,3,False,1227,250199,1227,84,84,"INNER
 p_personid = m_creatorid
 
 [INFOSEPARATOR]
 EC: 3
 "
-109,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,2,False,129069,121130,129069,116,84,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,2,False,129069,121130,129069,116,84,"INNER
 m_messageid = mt_messageid
 
 [INFOSEPARATOR]
 EC: 3
 "
-110,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,1,False,121129,1,121129,1,116,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,1,False,121129,1,121129,1,116,"INNER
 mt_tagid = t_tagid
 
 [INFOSEPARATOR]
 EC: 15
 "
-111,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,4,False,29355,251426,20,84,71,"FULL
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,4,False,29355,251426,20,84,71,"FULL
 personid = personid
 
 [INFOSEPARATOR]
 EC: 3
 "
-112,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,2,False,1227,28128,1227,20,20,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,2,False,1227,28128,1227,20,20,"INNER
 p_personid = pt_personid
 
 [INFOSEPARATOR]
 EC: 3
 "
-113,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,1,False,28127,1,28127,1,20,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,1,False,28127,1,28127,1,20,"INNER
 pt_tagid = t_tagid
 
 [INFOSEPARATOR]
 EC: 3
 "
-114,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,3,False,1227,250199,1227,84,84,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,3,False,1227,250199,1227,84,84,"INNER
 p_personid = m_creatorid
 
 [INFOSEPARATOR]
 EC: 3
 "
-115,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,2,False,129069,121130,129069,116,84,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,2,False,129069,121130,129069,116,84,"INNER
 m_messageid = mt_messageid
 
 [INFOSEPARATOR]
 EC: 3
 "
-116,/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,1,False,121129,1,121129,1,116,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-8.sql,HASH_JOIN,1,False,121129,1,121129,1,116,"INNER
 mt_tagid = t_tagid
 
 [INFOSEPARATOR]
 EC: 15
 "
-117,/Users/kerenhuang/ldbc-snb-bi/bi-9.sql,HASH_JOIN,2,False,111599,1227,8895,1227,9533,"RIGHT
+/Users/kerenhuang/ldbc-snb-bi/bi-9.sql,HASH_JOIN,2,False,111599,1227,8895,1227,9533,"RIGHT
 psa_thread_creatorid = p_personid
 
 [INFOSEPARATOR]
 EC: 165868
 "
-118,/Users/kerenhuang/ldbc-snb-bi/bi-9.sql,HASH_JOIN,1,False,89866,8895,89866,8895,2515,"INNER
+/Users/kerenhuang/ldbc-snb-bi/bi-9.sql,HASH_JOIN,1,False,89866,8895,89866,8895,2515,"INNER
 m_c_replyof = psa_messageid
 
 [INFOSEPARATOR]
