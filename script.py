@@ -1,4 +1,5 @@
 import argparse
+from pty import CHILD
 import duckdb
 import json
 import os
@@ -67,51 +68,50 @@ def get_json_from_file(file, con):
 
 '''
 Takes in a curr_plan_node as root.
-Finds the highest join node in this subtree.
-Returns a node, the depth of the node, and whether it is a JOIN node.
-
-TODO: Does not work if curr_plan_node has 2 children and is NOT JOIN.
+Finds the highest binary node in this subtree.
+Returns a node and whether it is binary (has 2 children).
 '''
-def get_first_join_node(curr_plan_node):
-    while "JOIN" not in curr_plan_node[NAME]:
-        children = curr_plan_node[CHILDREN]
+def get_first_binary_node(curr_plan_node):
+    children = curr_plan_node[CHILDREN]
+    while len(children) < 2:
         if not children:
             return curr_plan_node, False
         curr_plan_node = children[0]
+        children = curr_plan_node[CHILDREN]
     return curr_plan_node, True
 
 
 '''
-Assume curr_plan_node is a JOIN node.
+Assume curr_plan_node is a binary node (has 2 children).
 Chases left and right branches to get immediate/local children sizes.
 '''
 def get_local_children_size(curr_plan_node, data, file_name):
-    assert("JOIN" in curr_plan_node[NAME])
     children = curr_plan_node[CHILDREN]
     if len(children) != 2:
         return
 
-    L_child, L_is_join = get_first_join_node(children[0])
-    R_child, R_is_join = get_first_join_node(children[1])
+    L_child, L_is_binary = get_first_binary_node(children[0])
+    R_child, R_is_binary = get_first_binary_node(children[1])
     
     L_size = L_child[CARDINALITY]
     R_size = R_child[CARDINALITY]
     curr_size = curr_plan_node[CARDINALITY]
     
-    data[QUERY_NAME].append(file_name)
-    data[NODE_INFO].append(curr_plan_node[NAME])
-    data[DEPTH].append(curr_plan_node[DEPTH])
-    data[IS_BUSHY].append(is_bushy_join_node(curr_plan_node))
-    data[LEFT_LEAF_SIZE].append(children[0][LEAF_SIZE])
-    data[RIGHT_LEAF_SIZE].append(children[1][LEAF_SIZE])
-    data[LEFT_LOCAL_SIZE].append(L_size)
-    data[RIGHT_LOCAL_SIZE].append(R_size)
-    data[CURR_SIZE].append(curr_size)
-    data[EXTRA_INFO].append(curr_plan_node[EXTRA_INFO])
+    if is_join_node(curr_plan_node):
+        data[QUERY_NAME].append(file_name)
+        data[NODE_INFO].append(curr_plan_node[NAME])
+        data[DEPTH].append(curr_plan_node[DEPTH])
+        data[IS_BUSHY].append(is_bushy_join_node(curr_plan_node))
+        data[LEFT_LEAF_SIZE].append(children[0][LEAF_SIZE])
+        data[RIGHT_LEAF_SIZE].append(children[1][LEAF_SIZE])
+        data[LEFT_LOCAL_SIZE].append(L_size)
+        data[RIGHT_LOCAL_SIZE].append(R_size)
+        data[CURR_SIZE].append(curr_size)
+        data[EXTRA_INFO].append(curr_plan_node[EXTRA_INFO])
 
-    if L_is_join:
+    if L_is_binary:
         get_local_children_size(L_child, data, file_name)
-    if R_is_join:
+    if R_is_binary:
         get_local_children_size(R_child, data, file_name)
 
 
@@ -207,9 +207,9 @@ def get_data(file, data, con):
     set_union_cardinality(query_plan)
     set_join_node_depths(query_plan)
     set_leaf_children_size(query_plan)
-    top_join_node, is_join = get_first_join_node(query_plan)
-    if is_join:
-        get_local_children_size(top_join_node, data, file_name)
+    top_binary_node, is_binary = get_first_binary_node(query_plan)
+    if is_binary:
+        get_local_children_size(top_binary_node, data, file_name)
 
 
 def main():
