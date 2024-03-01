@@ -26,6 +26,12 @@ CURR_SIZE = "z"
 
 LEAF_SIZE = "leaf_size"
 
+'''
+Checks if a plan node is UNION type.
+'''
+def is_union_node(curr_node):
+    return len(curr_node[CHILDREN]) == 2 and "UNION" in curr_node[NAME]
+
 
 '''
 Checks if a plan node is JOIN type.
@@ -152,6 +158,45 @@ def set_leaf_children_size(curr_plan_node):
 
 
 '''
+Modify the JSON object for current plan node if it is a UNION.
+As of writing this, DuckDB has output cardinality as 0 for UNION nodes.
+This makes it difficult to get accurate calculations.
+'''
+def set_union_cardinality(curr_plan_node):
+    children = curr_plan_node[CHILDREN]
+    if not children:
+        return
+
+    for child in children:
+        set_union_cardinality(child)
+
+    if is_union_node(curr_plan_node):
+        total_size = 0
+        for child in children:
+            total_size += child[CARDINALITY]
+
+        curr_plan_node[CARDINALITY] = total_size
+
+
+'''
+Search for other plan nodes with 2 children to assess edge cases.
+Not meant to be used for actual script runs, only 1 time use.
+'''
+def find_other_2_children_nodes(curr_plan_node):
+    children = curr_plan_node[CHILDREN]
+    if not children:
+        return
+    
+    if len(children) > 1 and not is_join_node(curr_plan_node):
+        print(curr_plan_node[NAME], len(children), curr_plan_node[CARDINALITY])
+
+    for child in children:
+        find_other_2_children_nodes(child)
+
+    return
+
+
+'''
 Takes in a .sql file + database connection.
 Applies EXPLAIN ANALYZE to grab the JSON query plan.
 Based on the query plan, we gather desired data to be placed in data.
@@ -161,6 +206,7 @@ def get_data(file, data, con):
     query_plan = get_json_from_file(file, con)
     set_join_node_depths(query_plan)
     set_leaf_children_size(query_plan)
+    set_union_cardinality(query_plan)
     top_join_node, is_join = get_first_join_node(query_plan)
     if is_join:
         get_local_children_size(top_join_node, data, file_name)
