@@ -17,13 +17,20 @@ NODE_INFO = "node_info"
 DEPTH = "depth"
 IS_BUSHY = "is_bushy"
 
-LEFT_LEAF_SIZE = "x"
-RIGHT_LEAF_SIZE = "y"
-LEFT_LOCAL_SIZE = "x'"
-RIGHT_LOCAL_SIZE = "y'"
-CURR_SIZE = "z"
+LEFT_LEAF_SIZE = "left_subtree_cardinality_sum"
+RIGHT_LEAF_SIZE = "right_subtree_cardinality_sum"
+LEFT_LOCAL_SIZE = "immedate_left_cardinality"
+RIGHT_LOCAL_SIZE = "immediate_right_cardinality"
+CURR_SIZE = "join_output_cardinality"
 
 LEAF_SIZE = "leaf_size"
+
+
+'''
+Gets the cleaned query file name from a file object.
+'''
+def get_file_name(file):
+    return file.name.split('/')[-1][:-4]
 
 '''
 Checks if a plan node is UNION type.
@@ -200,7 +207,7 @@ Applies EXPLAIN ANALYZE to grab the JSON query plan.
 Based on the query plan, we gather desired data to be placed in data.
 '''
 def get_data(file, data, con):
-    file_name = file.name
+    file_name = get_file_name(file)
     query_plan = get_json_from_file(file, con)
     set_union_cardinality(query_plan)
     set_join_node_depths(query_plan)

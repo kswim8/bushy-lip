@@ -1,5435 +1,5435 @@
-query_name,node_info,depth,is_bushy,x,y,x',y',z,extra_info
-/Users/kerenhuang/join-order-benchmark/10a.sql,HASH_JOIN,6,False,3140339,39866016,3140339,112,104,"INNER
+query_name,node_info,depth,is_bushy,left_subtree_cardinality_sum,right_subtree_cardinality_sum,immedate_left_cardinality,immediate_right_cardinality,join_output_cardinality,extra_info
+10a,HASH_JOIN,6,False,3140339,39866016,3140339,112,104,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 489
 "
-/Users/kerenhuang/join-order-benchmark/10a.sql,HASH_JOIN,5,False,39866014,2,112,2,112,"INNER
+10a,HASH_JOIN,5,False,39866014,2,112,2,112,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 473
 "
-/Users/kerenhuang/join-order-benchmark/10a.sql,HASH_JOIN,4,False,39866013,1,151,1,112,"INNER
+10a,HASH_JOIN,4,False,39866013,1,151,1,112,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 473
 "
-/Users/kerenhuang/join-order-benchmark/10a.sql,HASH_JOIN,3,False,36242603,3623410,36242603,4539,151,"INNER
+10a,HASH_JOIN,3,False,36242603,3623410,36242603,4539,151,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 5684
 "
-/Users/kerenhuang/join-order-benchmark/10a.sql,HASH_JOIN,2,False,1012920,2610490,1012920,8790,4539,"INNER
+10a,HASH_JOIN,2,False,1012920,2610490,1012920,8790,4539,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2615
 "
-/Users/kerenhuang/join-order-benchmark/10a.sql,HASH_JOIN,1,False,2609129,1361,2609129,1361,8790,"INNER
+10a,HASH_JOIN,1,False,2609129,1361,2609129,1361,8790,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 17245
 "
-/Users/kerenhuang/join-order-benchmark/10b.sql,HASH_JOIN,6,False,16384,39244762,16384,0,0,"INNER
+10b,HASH_JOIN,6,False,16384,39244762,16384,0,0,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 489
 "
-/Users/kerenhuang/join-order-benchmark/10b.sql,HASH_JOIN,5,False,39244760,2,0,2,0,"INNER
+10b,HASH_JOIN,5,False,39244760,2,0,2,0,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 473
 "
-/Users/kerenhuang/join-order-benchmark/10b.sql,HASH_JOIN,4,False,39244759,1,2614,1,0,"INNER
+10b,HASH_JOIN,4,False,39244759,1,2614,1,0,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 473
 "
-/Users/kerenhuang/join-order-benchmark/10b.sql,HASH_JOIN,3,False,36242603,3002156,36242603,1259,2614,"INNER
+10b,HASH_JOIN,3,False,36242603,3002156,36242603,1259,2614,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 5684
 "
-/Users/kerenhuang/join-order-benchmark/10b.sql,HASH_JOIN,2,False,391666,2610490,391666,8790,1259,"INNER
+10b,HASH_JOIN,2,False,391666,2610490,391666,8790,1259,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2615
 "
-/Users/kerenhuang/join-order-benchmark/10b.sql,HASH_JOIN,1,False,2609129,1361,2609129,1361,8790,"INNER
+10b,HASH_JOIN,1,False,2609129,1361,2609129,1361,8790,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 17245
 "
-/Users/kerenhuang/join-order-benchmark/10c.sql,HASH_JOIN,6,False,3140339,40685620,3140339,782104,10,"INNER
+10c,HASH_JOIN,6,False,3140339,40685620,3140339,782104,10,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 5872
 "
-/Users/kerenhuang/join-order-benchmark/10c.sql,HASH_JOIN,5,False,40685609,11,782104,11,782104,"INNER
+10c,HASH_JOIN,5,False,40685609,11,782104,11,782104,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 5684
 "
-/Users/kerenhuang/join-order-benchmark/10c.sql,HASH_JOIN,4,False,36242603,4443006,36242603,596250,782104,"INNER
+10c,HASH_JOIN,4,False,36242603,4443006,36242603,596250,782104,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 5684
 "
-/Users/kerenhuang/join-order-benchmark/10c.sql,HASH_JOIN,3,False,4443004,2,596250,2,596250,"INNER
+10c,HASH_JOIN,3,False,4443004,2,596250,2,596250,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 2615
 "
-/Users/kerenhuang/join-order-benchmark/10c.sql,HASH_JOIN,2,False,1749032,2693972,1749032,1153798,596250,"INNER
+10c,HASH_JOIN,2,False,1749032,2693972,1749032,1153798,596250,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2615
 "
-/Users/kerenhuang/join-order-benchmark/10c.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
+10c,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 17245
 "
-/Users/kerenhuang/join-order-benchmark/11a.sql,HASH_JOIN,7,False,1,1373323,1,330,310,"INNER
+11a,HASH_JOIN,7,False,1,1373323,1,330,310,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/11a.sql,HASH_JOIN,6,False,234997,1138326,234997,705,330,"INNER
+11a,HASH_JOIN,6,False,234997,1138326,234997,705,330,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/11a.sql,HASH_JOIN,5,False,99876,1038450,99876,152,705,"INNER
+11a,HASH_JOIN,5,False,99876,1038450,99876,152,705,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/11a.sql,HASH_JOIN,4,False,910581,127869,910581,199,152,"INNER
+11a,HASH_JOIN,4,False,910581,127869,910581,199,152,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/11a.sql,HASH_JOIN,3,False,17,127852,17,251,199,"INNER
+11a,HASH_JOIN,3,False,17,127852,17,251,199,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/11a.sql,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
+11a,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/11a.sql,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
+11a,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/11b.sql,HASH_JOIN,7,False,1,509325,1,56,14,"INNER
+11b,HASH_JOIN,7,False,1,509325,1,56,14,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/11b.sql,HASH_JOIN,6,False,97854,411471,97854,14,56,"INNER
+11b,HASH_JOIN,6,False,97854,411471,97854,14,56,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/11b.sql,HASH_JOIN,5,False,1,411470,1,14,14,"INNER
+11b,HASH_JOIN,5,False,1,411470,1,14,14,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/11b.sql,HASH_JOIN,4,False,234997,176473,234997,21,14,"INNER
+11b,HASH_JOIN,4,False,234997,176473,234997,21,14,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/11b.sql,HASH_JOIN,3,False,99876,76597,99876,7,21,"INNER
+11b,HASH_JOIN,3,False,99876,76597,99876,7,21,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 1
 "
-/Users/kerenhuang/join-order-benchmark/11b.sql,HASH_JOIN,2,False,76580,17,19,17,7,"INNER
+11b,HASH_JOIN,2,False,76580,17,19,17,7,"INNER
 link_type_id = id
 
 [INFOSEPARATOR]
 EC: 8
 "
-/Users/kerenhuang/join-order-benchmark/11b.sql,HASH_JOIN,1,False,29997,46583,29997,46583,19,"INNER
+11b,HASH_JOIN,1,False,29997,46583,29997,46583,19,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 50
 "
-/Users/kerenhuang/join-order-benchmark/11c.sql,HASH_JOIN,7,False,2884167,17,6946,17,6946,"INNER
+11c,HASH_JOIN,7,False,2884167,17,6946,17,6946,"INNER
 link_type_id = id
 
 [INFOSEPARATOR]
 EC: 26
 "
-/Users/kerenhuang/join-order-benchmark/11c.sql,HASH_JOIN,6,False,134170,2749997,134170,780776,6946,"INNER
+11c,HASH_JOIN,6,False,134170,2749997,134170,780776,6946,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 26
 "
-/Users/kerenhuang/join-order-benchmark/11c.sql,HASH_JOIN,5,False,97854,2652143,97854,8393,780776,"INNER
+11c,HASH_JOIN,5,False,97854,2652143,97854,8393,780776,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 131
 "
-/Users/kerenhuang/join-order-benchmark/11c.sql,HASH_JOIN,4,False,2652141,2,8402,2,8393,"INNER
+11c,HASH_JOIN,4,False,2652141,2,8402,2,8393,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 69
 "
-/Users/kerenhuang/join-order-benchmark/11c.sql,HASH_JOIN,3,False,234997,2417144,234997,104935,8402,"INNER
+11c,HASH_JOIN,3,False,234997,2417144,234997,104935,8402,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 278
 "
-/Users/kerenhuang/join-order-benchmark/11c.sql,HASH_JOIN,2,False,99876,2317268,99876,29726,104935,"INNER
+11c,HASH_JOIN,2,False,99876,2317268,99876,29726,104935,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 1385
 "
-/Users/kerenhuang/join-order-benchmark/11c.sql,HASH_JOIN,1,False,2287271,29997,2287271,29997,29726,"INNER
+11c,HASH_JOIN,1,False,2287271,29997,2287271,29997,29726,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 6346
 "
-/Users/kerenhuang/join-order-benchmark/11d.sql,HASH_JOIN,7,False,2884167,17,14899,17,14899,"INNER
+11d,HASH_JOIN,7,False,2884167,17,14899,17,14899,"INNER
 link_type_id = id
 
 [INFOSEPARATOR]
 EC: 26
 "
-/Users/kerenhuang/join-order-benchmark/11d.sql,HASH_JOIN,6,False,134170,2749997,134170,3200479,14899,"INNER
+11d,HASH_JOIN,6,False,134170,2749997,134170,3200479,14899,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 26
 "
-/Users/kerenhuang/join-order-benchmark/11d.sql,HASH_JOIN,5,False,97854,2652143,97854,95870,3200479,"INNER
+11d,HASH_JOIN,5,False,97854,2652143,97854,95870,3200479,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 131
 "
-/Users/kerenhuang/join-order-benchmark/11d.sql,HASH_JOIN,4,False,2652141,2,103282,2,95870,"INNER
+11d,HASH_JOIN,4,False,2652141,2,103282,2,95870,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 69
 "
-/Users/kerenhuang/join-order-benchmark/11d.sql,HASH_JOIN,3,False,234997,2417144,234997,104935,103282,"INNER
+11d,HASH_JOIN,3,False,234997,2417144,234997,104935,103282,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 278
 "
-/Users/kerenhuang/join-order-benchmark/11d.sql,HASH_JOIN,2,False,99876,2317268,99876,29726,104935,"INNER
+11d,HASH_JOIN,2,False,99876,2317268,99876,29726,104935,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 1385
 "
-/Users/kerenhuang/join-order-benchmark/11d.sql,HASH_JOIN,1,False,2287271,29997,2287271,29997,29726,"INNER
+11d,HASH_JOIN,1,False,2287271,29997,2287271,29997,29726,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 6346
 "
-/Users/kerenhuang/join-order-benchmark/12a.sql,HASH_JOIN,7,False,1,18026920,1,397,397,"INNER
+12a,HASH_JOIN,7,False,1,18026920,1,397,397,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/12a.sql,HASH_JOIN,6,False,14834457,3192463,14834457,5674,397,"INNER
+12a,HASH_JOIN,6,False,14834457,3192463,14834457,5674,397,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/12a.sql,HASH_JOIN,5,False,3192462,1,9068,1,5674,"INNER
+12a,HASH_JOIN,5,False,3192462,1,9068,1,5674,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/12a.sql,HASH_JOIN,4,False,84843,3107619,84843,17301,9068,"INNER
+12a,HASH_JOIN,4,False,84843,3107619,84843,17301,9068,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/12a.sql,HASH_JOIN,3,False,2609129,498490,2609129,4047,17301,"INNER
+12a,HASH_JOIN,3,False,2609129,498490,2609129,4047,17301,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 476
 "
-/Users/kerenhuang/join-order-benchmark/12a.sql,HASH_JOIN,2,False,445860,52630,445860,15849,4047,"INNER
+12a,HASH_JOIN,2,False,445860,52630,445860,15849,4047,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 477
 "
-/Users/kerenhuang/join-order-benchmark/12a.sql,HASH_JOIN,1,False,52629,1,52629,1,15849,"INNER
+12a,HASH_JOIN,1,False,52629,1,52629,1,15849,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/12b.sql,HASH_JOIN,7,False,20289920,1,1210,1,10,"INNER
+12b,HASH_JOIN,7,False,20289920,1,1210,1,10,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/12b.sql,HASH_JOIN,6,False,14834457,5455463,14834457,10,1210,"INNER
+12b,HASH_JOIN,6,False,14834457,5455463,14834457,10,1210,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 4
 "
-/Users/kerenhuang/join-order-benchmark/12b.sql,HASH_JOIN,5,False,5455461,2,10,2,10,"INNER
+12b,HASH_JOIN,5,False,5455461,2,10,2,10,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/12b.sql,HASH_JOIN,4,False,84843,5370618,84843,33,10,"INNER
+12b,HASH_JOIN,4,False,84843,5370618,84843,33,10,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/12b.sql,HASH_JOIN,3,False,2609129,2761489,2609129,2,33,"INNER
+12b,HASH_JOIN,3,False,2609129,2761489,2609129,2,33,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 476
 "
-/Users/kerenhuang/join-order-benchmark/12b.sql,HASH_JOIN,2,False,1381453,1380036,1381453,10,2,"INNER
+12b,HASH_JOIN,2,False,1381453,1380036,1381453,10,2,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 477
 "
-/Users/kerenhuang/join-order-benchmark/12b.sql,HASH_JOIN,1,False,1380035,1,1380035,1,10,"INNER
+12b,HASH_JOIN,1,False,1380035,1,1380035,1,10,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/12c.sql,HASH_JOIN,7,False,1,18764070,1,4711,4711,"INNER
+12c,HASH_JOIN,7,False,1,18764070,1,4711,4711,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/12c.sql,HASH_JOIN,6,False,14834457,3929613,14834457,42332,4711,"INNER
+12c,HASH_JOIN,6,False,14834457,3929613,14834457,42332,4711,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/12c.sql,HASH_JOIN,5,False,3929612,1,73295,1,42332,"INNER
+12c,HASH_JOIN,5,False,3929612,1,73295,1,42332,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/12c.sql,HASH_JOIN,4,False,84843,3844769,84843,169157,73295,"INNER
+12c,HASH_JOIN,4,False,84843,3844769,84843,169157,73295,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/12c.sql,HASH_JOIN,3,False,2609129,1235640,2609129,52304,169157,"INNER
+12c,HASH_JOIN,3,False,2609129,1235640,2609129,52304,169157,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 476
 "
-/Users/kerenhuang/join-order-benchmark/12c.sql,HASH_JOIN,2,False,1042800,192840,1042800,121572,52304,"INNER
+12c,HASH_JOIN,2,False,1042800,192840,1042800,121572,52304,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 477
 "
-/Users/kerenhuang/join-order-benchmark/12c.sql,HASH_JOIN,1,False,192839,1,192839,1,121572,"INNER
+12c,HASH_JOIN,1,False,192839,1,192839,1,121572,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/13a.sql,HASH_JOIN,8,False,21359119,1,516327,1,111101,"INNER
+13a,HASH_JOIN,8,False,21359119,1,516327,1,111101,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/13a.sql,HASH_JOIN,7,False,14834457,6524662,14834457,16470,516327,"INNER
+13a,HASH_JOIN,7,False,14834457,6524662,14834457,16470,516327,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 15
 "
-/Users/kerenhuang/join-order-benchmark/13a.sql,HASH_JOIN,6,False,6524661,1,31510,1,16470,"INNER
+13a,HASH_JOIN,6,False,6524661,1,31510,1,16470,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/13a.sql,HASH_JOIN,5,False,2525744,3998917,2525744,31510,31510,"INNER
+13a,HASH_JOIN,5,False,2525744,3998917,2525744,31510,31510,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 19
 "
-/Users/kerenhuang/join-order-benchmark/13a.sql,HASH_JOIN,4,False,3998916,1,94568,1,31510,"INNER
+13a,HASH_JOIN,4,False,3998916,1,94568,1,31510,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 20
 "
-/Users/kerenhuang/join-order-benchmark/13a.sql,HASH_JOIN,3,False,1380011,2618905,1380011,71294,94568,"INNER
+13a,HASH_JOIN,3,False,1380011,2618905,1380011,71294,94568,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 2277
 "
-/Users/kerenhuang/join-order-benchmark/13a.sql,HASH_JOIN,2,False,2618904,1,148132,1,71294,"INNER
+13a,HASH_JOIN,2,False,2618904,1,148132,1,71294,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 4311
 "
-/Users/kerenhuang/join-order-benchmark/13a.sql,HASH_JOIN,1,False,2609129,9775,2609129,9775,148132,"INNER
+13a,HASH_JOIN,1,False,2609129,9775,2609129,9775,148132,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 17245
 "
-/Users/kerenhuang/join-order-benchmark/13b.sql,HASH_JOIN,8,False,21434259,1,2122,1,372,"INNER
+13b,HASH_JOIN,8,False,21434259,1,2122,1,372,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/13b.sql,HASH_JOIN,7,False,14834457,6599802,14834457,61,2122,"INNER
+13b,HASH_JOIN,7,False,14834457,6599802,14834457,61,2122,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/13b.sql,HASH_JOIN,6,False,6599801,1,161,1,61,"INNER
+13b,HASH_JOIN,6,False,6599801,1,161,1,61,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/13b.sql,HASH_JOIN,5,False,84843,6514958,84843,313,161,"INNER
+13b,HASH_JOIN,5,False,84843,6514958,84843,313,161,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/13b.sql,HASH_JOIN,4,False,2609129,3905829,2609129,90,313,"INNER
+13b,HASH_JOIN,4,False,2609129,3905829,2609129,90,313,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 340
 "
-/Users/kerenhuang/join-order-benchmark/13b.sql,HASH_JOIN,3,False,3905828,1,352,1,90,"INNER
+13b,HASH_JOIN,3,False,3905828,1,352,1,90,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 2385
 "
-/Users/kerenhuang/join-order-benchmark/13b.sql,HASH_JOIN,2,False,2525792,1380036,2525792,459925,352,"INNER
+13b,HASH_JOIN,2,False,2525792,1380036,2525792,459925,352,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2385
 "
-/Users/kerenhuang/join-order-benchmark/13b.sql,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
+13b,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/13c.sql,HASH_JOIN,8,False,21434259,1,218,1,53,"INNER
+13c,HASH_JOIN,8,False,21434259,1,218,1,53,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/13c.sql,HASH_JOIN,7,False,14834457,6599802,14834457,14,218,"INNER
+13c,HASH_JOIN,7,False,14834457,6599802,14834457,14,218,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/13c.sql,HASH_JOIN,6,False,6599801,1,47,1,14,"INNER
+13c,HASH_JOIN,6,False,6599801,1,47,1,14,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/13c.sql,HASH_JOIN,5,False,84843,6514958,84843,95,47,"INNER
+13c,HASH_JOIN,5,False,84843,6514958,84843,95,47,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/13c.sql,HASH_JOIN,4,False,2609129,3905829,2609129,29,95,"INNER
+13c,HASH_JOIN,4,False,2609129,3905829,2609129,29,95,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 340
 "
-/Users/kerenhuang/join-order-benchmark/13c.sql,HASH_JOIN,3,False,3905828,1,66,1,29,"INNER
+13c,HASH_JOIN,3,False,3905828,1,66,1,29,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 2385
 "
-/Users/kerenhuang/join-order-benchmark/13c.sql,HASH_JOIN,2,False,2525792,1380036,2525792,459925,66,"INNER
+13c,HASH_JOIN,2,False,2525792,1380036,2525792,459925,66,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2385
 "
-/Users/kerenhuang/join-order-benchmark/13c.sql,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
+13c,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/13d.sql,HASH_JOIN,8,False,21434187,1,4316584,1,670390,"INNER
+13d,HASH_JOIN,8,False,21434187,1,4316584,1,670390,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/13d.sql,HASH_JOIN,7,False,14834457,6599730,14834457,87293,4316584,"INNER
+13d,HASH_JOIN,7,False,14834457,6599730,14834457,87293,4316584,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 15
 "
-/Users/kerenhuang/join-order-benchmark/13d.sql,HASH_JOIN,6,False,6599729,1,248554,1,87293,"INNER
+13d,HASH_JOIN,6,False,6599729,1,248554,1,87293,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/13d.sql,HASH_JOIN,5,False,2525744,4073985,2525744,248554,248554,"INNER
+13d,HASH_JOIN,5,False,2525744,4073985,2525744,248554,248554,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 19
 "
-/Users/kerenhuang/join-order-benchmark/13d.sql,HASH_JOIN,4,False,4073984,1,746064,1,248554,"INNER
+13d,HASH_JOIN,4,False,4073984,1,746064,1,248554,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 20
 "
-/Users/kerenhuang/join-order-benchmark/13d.sql,HASH_JOIN,3,False,1380011,2693973,1380011,552328,746064,"INNER
+13d,HASH_JOIN,3,False,1380011,2693973,1380011,552328,746064,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 2277
 "
-/Users/kerenhuang/join-order-benchmark/13d.sql,HASH_JOIN,2,False,2693972,1,1153798,1,552328,"INNER
+13d,HASH_JOIN,2,False,2693972,1,1153798,1,552328,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 4311
 "
-/Users/kerenhuang/join-order-benchmark/13d.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
+13d,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 17245
 "
-/Users/kerenhuang/join-order-benchmark/14a.sql,HASH_JOIN,7,False,134170,21088957,134170,75669,761,"INNER
+14a,HASH_JOIN,7,False,134170,21088957,134170,75669,761,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/14a.sql,HASH_JOIN,6,False,4523924,16565033,4523924,8746,75669,"INNER
+14a,HASH_JOIN,6,False,4523924,16565033,4523924,8746,75669,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 1
 "
-/Users/kerenhuang/join-order-benchmark/14a.sql,HASH_JOIN,5,False,16565032,1,10078,1,8746,"INNER
+14a,HASH_JOIN,5,False,16565032,1,10078,1,8746,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/14a.sql,HASH_JOIN,4,False,14835730,1729302,14835720,17272,10078,"INNER
+14a,HASH_JOIN,4,False,14835730,1729302,14835720,17272,10078,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 77
 "
-/Users/kerenhuang/join-order-benchmark/14a.sql,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
+14a,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/14a.sql,HASH_JOIN,3,False,1729301,1,42711,1,17272,"INNER
+14a,HASH_JOIN,3,False,1729301,1,42711,1,17272,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 68
 "
-/Users/kerenhuang/join-order-benchmark/14a.sql,HASH_JOIN,2,False,391666,1337635,391666,454230,42711,"INNER
+14a,HASH_JOIN,2,False,391666,1337635,391666,454230,42711,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 477
 "
-/Users/kerenhuang/join-order-benchmark/14a.sql,HASH_JOIN,1,False,1337634,1,1337634,1,454230,"INNER
+14a,HASH_JOIN,1,False,1337634,1,1337634,1,454230,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2464
 "
-/Users/kerenhuang/join-order-benchmark/14b.sql,HASH_JOIN,7,False,134170,20124732,134170,4,1,"INNER
+14b,HASH_JOIN,7,False,134170,20124732,134170,4,1,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/14b.sql,HASH_JOIN,6,False,4523924,15600808,4523924,2,4,"INNER
+14b,HASH_JOIN,6,False,4523924,15600808,4523924,2,4,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/14b.sql,HASH_JOIN,5,False,15600807,1,2,1,2,"INNER
+14b,HASH_JOIN,5,False,15600807,1,2,1,2,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/14b.sql,HASH_JOIN,4,False,14835730,765077,14835720,4,2,"INNER
+14b,HASH_JOIN,4,False,14835730,765077,14835720,4,2,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 15
 "
-/Users/kerenhuang/join-order-benchmark/14b.sql,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
+14b,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/14b.sql,HASH_JOIN,3,False,765076,1,49,1,4,"INNER
+14b,HASH_JOIN,3,False,765076,1,49,1,4,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 13
 "
-/Users/kerenhuang/join-order-benchmark/14b.sql,HASH_JOIN,2,False,391666,373410,391666,259848,49,"INNER
+14b,HASH_JOIN,2,False,391666,373410,391666,259848,49,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 95
 "
-/Users/kerenhuang/join-order-benchmark/14b.sql,HASH_JOIN,1,False,373409,1,373409,1,259848,"INNER
+14b,HASH_JOIN,1,False,373409,1,373409,1,259848,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2464
 "
-/Users/kerenhuang/join-order-benchmark/14c.sql,HASH_JOIN,7,False,134170,21710217,134170,460150,4115,"INNER
+14c,HASH_JOIN,7,False,134170,21710217,134170,460150,4115,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/14c.sql,HASH_JOIN,6,False,4523924,17186293,4523924,44414,460150,"INNER
+14c,HASH_JOIN,6,False,4523924,17186293,4523924,44414,460150,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 1
 "
-/Users/kerenhuang/join-order-benchmark/14c.sql,HASH_JOIN,5,False,17186292,1,50884,1,44414,"INNER
+14c,HASH_JOIN,5,False,17186292,1,50884,1,44414,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/14c.sql,HASH_JOIN,4,False,14835730,2350562,14835720,106971,50884,"INNER
+14c,HASH_JOIN,4,False,14835730,2350562,14835720,106971,50884,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 77
 "
-/Users/kerenhuang/join-order-benchmark/14c.sql,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
+14c,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/14c.sql,HASH_JOIN,3,False,2350555,7,140455,7,106971,"INNER
+14c,HASH_JOIN,3,False,2350555,7,140455,7,106971,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 68
 "
-/Users/kerenhuang/join-order-benchmark/14c.sql,HASH_JOIN,2,False,1012920,1337635,1012920,454230,140455,"INNER
+14c,HASH_JOIN,2,False,1012920,1337635,1012920,454230,140455,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 477
 "
-/Users/kerenhuang/join-order-benchmark/14c.sql,HASH_JOIN,1,False,1337634,1,1337634,1,454230,"INNER
+14c,HASH_JOIN,1,False,1337634,1,1337634,1,454230,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2464
 "
-/Users/kerenhuang/join-order-benchmark/15a.sql,HASH_JOIN,8,False,134170,10239935,134170,328,328,"INNER
+15a,HASH_JOIN,8,False,134170,10239935,134170,328,328,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15a.sql,HASH_JOIN,7,False,4523869,5716066,4523869,57,328,"INNER
+15a,HASH_JOIN,7,False,4523869,5716066,4523869,57,328,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15a.sql,HASH_JOIN,6,False,2,5716064,2,57,57,"INNER
+15a,HASH_JOIN,6,False,2,5716064,2,57,57,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15a.sql,HASH_JOIN,5,False,1381453,4334611,1381453,71,57,"INNER
+15a,HASH_JOIN,5,False,1381453,4334611,1381453,71,57,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15a.sql,HASH_JOIN,4,False,4334610,1,71,1,71,"INNER
+15a,HASH_JOIN,4,False,4334610,1,71,1,71,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15a.sql,HASH_JOIN,3,False,1279430,3055180,1279430,13699,71,"INNER
+15a,HASH_JOIN,3,False,1279430,3055180,1279430,13699,71,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 108
 "
-/Users/kerenhuang/join-order-benchmark/15a.sql,HASH_JOIN,2,False,361379,2693801,361379,43837,13699,"INNER
+15a,HASH_JOIN,2,False,361379,2693801,361379,43837,13699,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 477
 "
-/Users/kerenhuang/join-order-benchmark/15a.sql,HASH_JOIN,1,False,2608958,84843,2608958,84843,43837,"INNER
+15a,HASH_JOIN,1,False,2608958,84843,2608958,84843,43837,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 521825
 "
-/Users/kerenhuang/join-order-benchmark/15b.sql,HASH_JOIN,8,False,134170,9489899,134170,37,37,"INNER
+15b,HASH_JOIN,8,False,134170,9489899,134170,37,37,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15b.sql,HASH_JOIN,7,False,4523869,4966030,4523869,3,37,"INNER
+15b,HASH_JOIN,7,False,4523869,4966030,4523869,3,37,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15b.sql,HASH_JOIN,6,False,2,4966028,2,3,3,"INNER
+15b,HASH_JOIN,6,False,2,4966028,2,3,3,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15b.sql,HASH_JOIN,5,False,716259,4249769,716259,3,3,"INNER
+15b,HASH_JOIN,5,False,716259,4249769,716259,3,3,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15b.sql,HASH_JOIN,4,False,1,4249768,1,3,3,"INNER
+15b,HASH_JOIN,4,False,1,4249768,1,3,3,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15b.sql,HASH_JOIN,3,False,1279430,2970338,1279430,27,3,"INNER
+15b,HASH_JOIN,3,False,1279430,2970338,1279430,27,3,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15b.sql,HASH_JOIN,2,False,361379,2608959,361379,278,27,"INNER
+15b,HASH_JOIN,2,False,361379,2608959,361379,278,27,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/15b.sql,HASH_JOIN,1,False,2608958,1,2608958,1,278,"INNER
+15b,HASH_JOIN,1,False,2608958,1,2608958,1,278,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 521825
 "
-/Users/kerenhuang/join-order-benchmark/15c.sql,HASH_JOIN,8,False,134170,24162179,134170,2271,2271,"INNER
+15c,HASH_JOIN,8,False,134170,24162179,134170,2271,2271,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 8
 "
-/Users/kerenhuang/join-order-benchmark/15c.sql,HASH_JOIN,7,False,4523869,19638310,4523869,284,2271,"INNER
+15c,HASH_JOIN,7,False,4523869,19638310,4523869,284,2271,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 8
 "
-/Users/kerenhuang/join-order-benchmark/15c.sql,HASH_JOIN,6,False,2,19638308,2,284,284,"INNER
+15c,HASH_JOIN,6,False,2,19638308,2,284,284,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 4
 "
-/Users/kerenhuang/join-order-benchmark/15c.sql,HASH_JOIN,5,False,19638307,1,284,1,284,"INNER
+15c,HASH_JOIN,5,False,19638307,1,284,1,284,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 4
 "
-/Users/kerenhuang/join-order-benchmark/15c.sql,HASH_JOIN,4,False,14834095,4804212,14834095,218489,284,"INNER
+15c,HASH_JOIN,4,False,14834095,4804212,14834095,218489,284,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 524
 "
-/Users/kerenhuang/join-order-benchmark/15c.sql,HASH_JOIN,3,False,1749032,3055180,1749032,627946,218489,"INNER
+15c,HASH_JOIN,3,False,1749032,3055180,1749032,627946,218489,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 461
 "
-/Users/kerenhuang/join-order-benchmark/15c.sql,HASH_JOIN,2,False,361379,2693801,361379,1153657,627946,"INNER
+15c,HASH_JOIN,2,False,361379,2693801,361379,1153657,627946,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 2386
 "
-/Users/kerenhuang/join-order-benchmark/15c.sql,HASH_JOIN,1,False,2608958,84843,2608958,84843,1153657,"INNER
+15c,HASH_JOIN,1,False,2608958,84843,2608958,84843,1153657,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/15d.sql,HASH_JOIN,8,False,134170,24162179,134170,11347,11347,"INNER
+15d,HASH_JOIN,8,False,134170,24162179,134170,11347,11347,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 8
 "
-/Users/kerenhuang/join-order-benchmark/15d.sql,HASH_JOIN,7,False,4523869,19638310,4523869,875,11347,"INNER
+15d,HASH_JOIN,7,False,4523869,19638310,4523869,875,11347,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 8
 "
-/Users/kerenhuang/join-order-benchmark/15d.sql,HASH_JOIN,6,False,2,19638308,2,875,875,"INNER
+15d,HASH_JOIN,6,False,2,19638308,2,875,875,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 4
 "
-/Users/kerenhuang/join-order-benchmark/15d.sql,HASH_JOIN,5,False,19638307,1,1121,1,875,"INNER
+15d,HASH_JOIN,5,False,19638307,1,1121,1,875,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 4
 "
-/Users/kerenhuang/join-order-benchmark/15d.sql,HASH_JOIN,4,False,14834095,4804212,14834095,218489,1121,"INNER
+15d,HASH_JOIN,4,False,14834095,4804212,14834095,218489,1121,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 524
 "
-/Users/kerenhuang/join-order-benchmark/15d.sql,HASH_JOIN,3,False,1749032,3055180,1749032,627946,218489,"INNER
+15d,HASH_JOIN,3,False,1749032,3055180,1749032,627946,218489,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 461
 "
-/Users/kerenhuang/join-order-benchmark/15d.sql,HASH_JOIN,2,False,361379,2693801,361379,1153657,627946,"INNER
+15d,HASH_JOIN,2,False,361379,2693801,361379,1153657,627946,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 2386
 "
-/Users/kerenhuang/join-order-benchmark/15d.sql,HASH_JOIN,1,False,2608958,84843,2608958,84843,1153657,"INNER
+15d,HASH_JOIN,1,False,2608958,84843,2608958,84843,1153657,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/16a.sql,HASH_JOIN,7,False,4061923,44301332,4061923,385,385,"INNER
+16a,HASH_JOIN,7,False,4061923,44301332,4061923,385,385,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16a.sql,HASH_JOIN,6,False,772581,43528751,772581,323,385,"INNER
+16a,HASH_JOIN,6,False,772581,43528751,772581,323,385,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16a.sql,HASH_JOIN,5,False,36242603,7286148,36242603,25,323,"INNER
+16a,HASH_JOIN,5,False,36242603,7286148,36242603,25,323,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16a.sql,HASH_JOIN,4,False,84843,7201305,84843,54,25,"INNER
+16a,HASH_JOIN,4,False,84843,7201305,84843,54,25,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16a.sql,HASH_JOIN,3,False,2609129,4592176,2609129,146,54,"INNER
+16a,HASH_JOIN,3,False,2609129,4592176,2609129,146,54,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 8
 "
-/Users/kerenhuang/join-order-benchmark/16a.sql,HASH_JOIN,2,False,68245,4523931,68245,41840,146,"INNER
+16a,HASH_JOIN,2,False,68245,4523931,68245,41840,146,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 10
 "
-/Users/kerenhuang/join-order-benchmark/16a.sql,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
+16a,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/16b.sql,HASH_JOIN,7,False,4061923,46758814,4061923,3710592,3710592,"INNER
+16b,HASH_JOIN,7,False,4061923,46758814,4061923,3710592,3710592,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16b.sql,HASH_JOIN,6,False,772581,45986233,772581,2832555,3710592,"INNER
+16b,HASH_JOIN,6,False,772581,45986233,772581,2832555,3710592,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16b.sql,HASH_JOIN,5,False,36242603,9743630,36242603,68316,2832555,"INNER
+16b,HASH_JOIN,5,False,36242603,9743630,36242603,68316,2832555,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/16b.sql,HASH_JOIN,4,False,2525744,7217886,2525744,68316,68316,"INNER
+16b,HASH_JOIN,4,False,2525744,7217886,2525744,68316,68316,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16b.sql,HASH_JOIN,3,False,84843,7133043,84843,148552,68316,"INNER
+16b,HASH_JOIN,3,False,84843,7133043,84843,148552,68316,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16b.sql,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
+16b,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 53
 "
-/Users/kerenhuang/join-order-benchmark/16b.sql,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
+16b,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/16c.sql,HASH_JOIN,7,False,4061923,45179993,4061923,319932,319932,"INNER
+16c,HASH_JOIN,7,False,4061923,45179993,4061923,319932,319932,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16c.sql,HASH_JOIN,6,False,772581,44407412,772581,221609,319932,"INNER
+16c,HASH_JOIN,6,False,772581,44407412,772581,221609,319932,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16c.sql,HASH_JOIN,5,False,36242603,8164809,36242603,8538,221609,"INNER
+16c,HASH_JOIN,5,False,36242603,8164809,36242603,8538,221609,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16c.sql,HASH_JOIN,4,False,84843,8079966,84843,11406,8538,"INNER
+16c,HASH_JOIN,4,False,84843,8079966,84843,11406,8538,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16c.sql,HASH_JOIN,3,False,2609129,5470837,2609129,6926,11406,"INNER
+16c,HASH_JOIN,3,False,2609129,5470837,2609129,6926,11406,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 8
 "
-/Users/kerenhuang/join-order-benchmark/16c.sql,HASH_JOIN,2,False,946906,4523931,946906,41840,6926,"INNER
+16c,HASH_JOIN,2,False,946906,4523931,946906,41840,6926,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 10
 "
-/Users/kerenhuang/join-order-benchmark/16c.sql,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
+16c,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/16d.sql,HASH_JOIN,7,False,4061923,44925643,4061923,249455,249455,"INNER
+16d,HASH_JOIN,7,False,4061923,44925643,4061923,249455,249455,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16d.sql,HASH_JOIN,6,False,772581,44153062,772581,169273,249455,"INNER
+16d,HASH_JOIN,6,False,772581,44153062,772581,169273,249455,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16d.sql,HASH_JOIN,5,False,36242603,7910459,36242603,6766,169273,"INNER
+16d,HASH_JOIN,5,False,36242603,7910459,36242603,6766,169273,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16d.sql,HASH_JOIN,4,False,84843,7825616,84843,8661,6766,"INNER
+16d,HASH_JOIN,4,False,84843,7825616,84843,8661,6766,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/16d.sql,HASH_JOIN,3,False,2609129,5216487,2609129,5385,8661,"INNER
+16d,HASH_JOIN,3,False,2609129,5216487,2609129,5385,8661,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 8
 "
-/Users/kerenhuang/join-order-benchmark/16d.sql,HASH_JOIN,2,False,692556,4523931,692556,41840,5385,"INNER
+16d,HASH_JOIN,2,False,692556,4523931,692556,41840,5385,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 10
 "
-/Users/kerenhuang/join-order-benchmark/16d.sql,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
+16d,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/17a.sql,HASH_JOIN,6,False,343399,45986233,343399,2832555,258289,"INNER
+17a,HASH_JOIN,6,False,343399,45986233,343399,2832555,258289,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/17a.sql,HASH_JOIN,5,False,36242603,9743630,36242603,68316,2832555,"INNER
+17a,HASH_JOIN,5,False,36242603,9743630,36242603,68316,2832555,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/17a.sql,HASH_JOIN,4,False,2525744,7217886,2525744,68316,68316,"INNER
+17a,HASH_JOIN,4,False,2525744,7217886,2525744,68316,68316,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/17a.sql,HASH_JOIN,3,False,84843,7133043,84843,148552,68316,"INNER
+17a,HASH_JOIN,3,False,84843,7133043,84843,148552,68316,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/17a.sql,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
+17a,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 53
 "
-/Users/kerenhuang/join-order-benchmark/17a.sql,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
+17a,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/17b.sql,HASH_JOIN,6,False,234997,45937807,234997,52306,52306,"INNER
+17b,HASH_JOIN,6,False,234997,45937807,234997,52306,52306,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 17
 "
-/Users/kerenhuang/join-order-benchmark/17b.sql,HASH_JOIN,5,False,36174,45901633,36174,7796926,52306,"INNER
+17b,HASH_JOIN,5,False,36174,45901633,36174,7796926,52306,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 17
 "
-/Users/kerenhuang/join-order-benchmark/17b.sql,HASH_JOIN,4,False,36242603,9659030,36242603,148552,7796926,"INNER
+17b,HASH_JOIN,4,False,36242603,9659030,36242603,148552,7796926,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 438
 "
-/Users/kerenhuang/join-order-benchmark/17b.sql,HASH_JOIN,3,False,2609129,7049901,2609129,41840,148552,"INNER
+17b,HASH_JOIN,3,False,2609129,7049901,2609129,41840,148552,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 40
 "
-/Users/kerenhuang/join-order-benchmark/17b.sql,HASH_JOIN,2,False,2525970,4523931,2525970,41840,41840,"INNER
+17b,HASH_JOIN,2,False,2525970,4523931,2525970,41840,41840,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 51
 "
-/Users/kerenhuang/join-order-benchmark/17b.sql,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
+17b,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/17c.sql,HASH_JOIN,6,False,234997,45904297,234997,1918,1918,"INNER
+17c,HASH_JOIN,6,False,234997,45904297,234997,1918,1918,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 17
 "
-/Users/kerenhuang/join-order-benchmark/17c.sql,HASH_JOIN,5,False,2664,45901633,2664,7796926,1918,"INNER
+17c,HASH_JOIN,5,False,2664,45901633,2664,7796926,1918,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 17
 "
-/Users/kerenhuang/join-order-benchmark/17c.sql,HASH_JOIN,4,False,36242603,9659030,36242603,148552,7796926,"INNER
+17c,HASH_JOIN,4,False,36242603,9659030,36242603,148552,7796926,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 438
 "
-/Users/kerenhuang/join-order-benchmark/17c.sql,HASH_JOIN,3,False,2609129,7049901,2609129,41840,148552,"INNER
+17c,HASH_JOIN,3,False,2609129,7049901,2609129,41840,148552,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 40
 "
-/Users/kerenhuang/join-order-benchmark/17c.sql,HASH_JOIN,2,False,2525970,4523931,2525970,41840,41840,"INNER
+17c,HASH_JOIN,2,False,2525970,4523931,2525970,41840,41840,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 51
 "
-/Users/kerenhuang/join-order-benchmark/17c.sql,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
+17c,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/17d.sql,HASH_JOIN,6,False,4061926,46136630,4061926,7796926,11538,"INNER
+17d,HASH_JOIN,6,False,4061926,46136630,4061926,7796926,11538,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 88
 "
-/Users/kerenhuang/join-order-benchmark/17d.sql,HASH_JOIN,5,False,36242603,9894027,36242603,148552,7796926,"INNER
+17d,HASH_JOIN,5,False,36242603,9894027,36242603,148552,7796926,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 440
 "
-/Users/kerenhuang/join-order-benchmark/17d.sql,HASH_JOIN,4,False,234997,9659030,234997,148552,148552,"INNER
+17d,HASH_JOIN,4,False,234997,9659030,234997,148552,148552,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 40
 "
-/Users/kerenhuang/join-order-benchmark/17d.sql,HASH_JOIN,3,False,2609129,7049901,2609129,41840,148552,"INNER
+17d,HASH_JOIN,3,False,2609129,7049901,2609129,41840,148552,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 40
 "
-/Users/kerenhuang/join-order-benchmark/17d.sql,HASH_JOIN,2,False,2525970,4523931,2525970,41840,41840,"INNER
+17d,HASH_JOIN,2,False,2525970,4523931,2525970,41840,41840,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 51
 "
-/Users/kerenhuang/join-order-benchmark/17d.sql,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
+17d,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/17e.sql,HASH_JOIN,6,False,4061926,45986233,4061926,2832555,2832555,"INNER
+17e,HASH_JOIN,6,False,4061926,45986233,4061926,2832555,2832555,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/17e.sql,HASH_JOIN,5,False,36242603,9743630,36242603,68316,2832555,"INNER
+17e,HASH_JOIN,5,False,36242603,9743630,36242603,68316,2832555,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/17e.sql,HASH_JOIN,4,False,2525744,7217886,2525744,68316,68316,"INNER
+17e,HASH_JOIN,4,False,2525744,7217886,2525744,68316,68316,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/17e.sql,HASH_JOIN,3,False,84843,7133043,84843,148552,68316,"INNER
+17e,HASH_JOIN,3,False,84843,7133043,84843,148552,68316,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/17e.sql,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
+17e,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 53
 "
-/Users/kerenhuang/join-order-benchmark/17e.sql,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
+17e,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/17f.sql,HASH_JOIN,6,False,4061926,46136630,4061926,7796926,1113120,"INNER
+17f,HASH_JOIN,6,False,4061926,46136630,4061926,7796926,1113120,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 88
 "
-/Users/kerenhuang/join-order-benchmark/17f.sql,HASH_JOIN,5,False,36242603,9894027,36242603,148552,7796926,"INNER
+17f,HASH_JOIN,5,False,36242603,9894027,36242603,148552,7796926,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 440
 "
-/Users/kerenhuang/join-order-benchmark/17f.sql,HASH_JOIN,4,False,234997,9659030,234997,148552,148552,"INNER
+17f,HASH_JOIN,4,False,234997,9659030,234997,148552,148552,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 40
 "
-/Users/kerenhuang/join-order-benchmark/17f.sql,HASH_JOIN,3,False,2609129,7049901,2609129,41840,148552,"INNER
+17f,HASH_JOIN,3,False,2609129,7049901,2609129,41840,148552,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 40
 "
-/Users/kerenhuang/join-order-benchmark/17f.sql,HASH_JOIN,2,False,2525970,4523931,2525970,41840,41840,"INNER
+17f,HASH_JOIN,2,False,2525970,4523931,2525970,41840,41840,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 51
 "
-/Users/kerenhuang/join-order-benchmark/17f.sql,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
+17f,HASH_JOIN,1,False,4523930,1,4523930,1,41840,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/18a.sql,HASH_JOIN,6,False,56723341,1,82408,1,410,"INNER
+18a,HASH_JOIN,6,False,56723341,1,82408,1,410,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 81
 "
-/Users/kerenhuang/join-order-benchmark/18a.sql,HASH_JOIN,5,False,14834653,41888688,14834653,3435,82408,"INNER
+18a,HASH_JOIN,5,False,14834653,41888688,14834653,3435,82408,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 9105
 "
-/Users/kerenhuang/join-order-benchmark/18a.sql,HASH_JOIN,4,False,2525792,39362896,2525792,3435,3435,"INNER
+18a,HASH_JOIN,4,False,2525792,39362896,2525792,3435,3435,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2046
 "
-/Users/kerenhuang/join-order-benchmark/18a.sql,HASH_JOIN,3,False,1739579,37623317,1739579,858842,3435,"INNER
+18a,HASH_JOIN,3,False,1739579,37623317,1739579,858842,3435,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 2699
 "
-/Users/kerenhuang/join-order-benchmark/18a.sql,HASH_JOIN,2,False,36243281,1380036,36243281,459925,858842,"INNER
+18a,HASH_JOIN,2,False,36243281,1380036,36243281,459925,858842,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 26785
 "
-/Users/kerenhuang/join-order-benchmark/18a.sql,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
+18a,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 12321
 "
-/Users/kerenhuang/join-order-benchmark/18b.sql,HASH_JOIN,6,False,961555,51916121,961555,268,11,"INNER
+18b,HASH_JOIN,6,False,961555,51916121,961555,268,11,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/18b.sql,HASH_JOIN,5,False,36244349,15671772,36244344,358,268,"INNER
+18b,HASH_JOIN,5,False,36244349,15671772,36244344,358,268,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 6
 "
-/Users/kerenhuang/join-order-benchmark/18b.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+18b,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/18b.sql,HASH_JOIN,4,False,15671771,1,358,1,358,"INNER
+18b,HASH_JOIN,4,False,15671771,1,358,1,358,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/18b.sql,HASH_JOIN,3,False,14834653,837118,14834653,6152,358,"INNER
+18b,HASH_JOIN,3,False,14834653,837118,14834653,6152,358,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 332
 "
-/Users/kerenhuang/join-order-benchmark/18b.sql,HASH_JOIN,2,False,784488,52630,784488,15849,6152,"INNER
+18b,HASH_JOIN,2,False,784488,52630,784488,15849,6152,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 373
 "
-/Users/kerenhuang/join-order-benchmark/18b.sql,HASH_JOIN,1,False,52629,1,52629,1,15849,"INNER
+18b,HASH_JOIN,1,False,52629,1,52629,1,15849,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2464
 "
-/Users/kerenhuang/join-order-benchmark/18c.sql,HASH_JOIN,6,False,1739579,54984837,1739579,54155,28073,"INNER
+18c,HASH_JOIN,6,False,1739579,54984837,1739579,54155,28073,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 81
 "
-/Users/kerenhuang/join-order-benchmark/18c.sql,HASH_JOIN,5,False,36244349,18740488,36244344,102516,54155,"INNER
+18c,HASH_JOIN,5,False,36244349,18740488,36244344,102516,54155,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 161
 "
-/Users/kerenhuang/join-order-benchmark/18c.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+18c,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/18c.sql,HASH_JOIN,4,False,2525792,16214696,2525792,102516,102516,"INNER
+18c,HASH_JOIN,4,False,2525792,16214696,2525792,102516,102516,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 74
 "
-/Users/kerenhuang/join-order-benchmark/18c.sql,HASH_JOIN,3,False,16214695,1,104892,1,102516,"INNER
+18c,HASH_JOIN,3,False,16214695,1,104892,1,102516,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 97
 "
-/Users/kerenhuang/join-order-benchmark/18c.sql,HASH_JOIN,2,False,14834659,1380036,188967,459925,104892,"INNER
+18c,HASH_JOIN,2,False,14834659,1380036,188967,459925,104892,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 10963
 "
-/Users/kerenhuang/join-order-benchmark/18c.sql,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
+18c,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 12321
 "
-/Users/kerenhuang/join-order-benchmark/19a.sql,HASH_JOIN,9,False,3140339,56079726,3140339,189,184,"INNER
+19a,HASH_JOIN,9,False,3140339,56079726,3140339,189,184,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19a.sql,HASH_JOIN,8,False,772581,55307145,772581,170,189,"INNER
+19a,HASH_JOIN,8,False,772581,55307145,772581,170,189,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19a.sql,HASH_JOIN,7,False,961555,54345590,961555,40272,170,"INNER
+19a,HASH_JOIN,7,False,961555,54345590,961555,40272,170,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19a.sql,HASH_JOIN,6,False,54345589,1,130077,1,40272,"INNER
+19a,HASH_JOIN,6,False,54345589,1,130077,1,40272,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 9
 "
-/Users/kerenhuang/join-order-benchmark/19a.sql,HASH_JOIN,5,False,36242603,18102986,36242603,116277,130077,"INNER
+19a,HASH_JOIN,5,False,36242603,18102986,36242603,116277,130077,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 9
 "
-/Users/kerenhuang/join-order-benchmark/19a.sql,HASH_JOIN,4,False,18102985,1,116287,1,116277,"INNER
+19a,HASH_JOIN,4,False,18102985,1,116287,1,116277,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 465
 "
-/Users/kerenhuang/join-order-benchmark/19a.sql,HASH_JOIN,3,False,14834457,3268528,14834457,86979,116287,"INNER
+19a,HASH_JOIN,3,False,14834457,3268528,14834457,86979,116287,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 465
 "
-/Users/kerenhuang/join-order-benchmark/19a.sql,HASH_JOIN,2,False,574556,2693972,574556,542096,86979,"INNER
+19a,HASH_JOIN,2,False,574556,2693972,574556,542096,86979,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 523
 "
-/Users/kerenhuang/join-order-benchmark/19a.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,542096,"INNER
+19a,HASH_JOIN,1,False,2609129,84843,2609129,84843,542096,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 521825
 "
-/Users/kerenhuang/join-order-benchmark/19b.sql,HASH_JOIN,9,False,3140339,20218821,3140339,15,15,"INNER
+19b,HASH_JOIN,9,False,3140339,20218821,3140339,15,15,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19b.sql,HASH_JOIN,8,False,1,20218820,1,15,15,"INNER
+19b,HASH_JOIN,8,False,1,20218820,1,15,15,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19b.sql,HASH_JOIN,7,False,14834457,5384363,14834457,15,15,"INNER
+19b,HASH_JOIN,7,False,14834457,5384363,14834457,15,15,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19b.sql,HASH_JOIN,6,False,772581,4611782,772581,3,15,"INNER
+19b,HASH_JOIN,6,False,772581,4611782,772581,3,15,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19b.sql,HASH_JOIN,5,False,84843,4526939,84843,3,3,"INNER
+19b,HASH_JOIN,5,False,84843,4526939,84843,3,3,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19b.sql,HASH_JOIN,4,False,2609129,1917810,2609129,1,3,"INNER
+19b,HASH_JOIN,4,False,2609129,1917810,2609129,1,3,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19b.sql,HASH_JOIN,3,False,961555,956255,961555,17,1,"INNER
+19b,HASH_JOIN,3,False,961555,956255,961555,17,1,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19b.sql,HASH_JOIN,2,False,956254,1,71,1,17,"INNER
+19b,HASH_JOIN,2,False,956254,1,71,1,17,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 101132
 "
-/Users/kerenhuang/join-order-benchmark/19b.sql,HASH_JOIN,1,False,242426,713828,242426,713828,71,"INNER
+19b,HASH_JOIN,1,False,242426,713828,242426,713828,71,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 101132
 "
-/Users/kerenhuang/join-order-benchmark/19c.sql,HASH_JOIN,9,False,3140339,56886623,3140339,3744,3575,"INNER
+19c,HASH_JOIN,9,False,3140339,56886623,3140339,3744,3575,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19c.sql,HASH_JOIN,8,False,772581,56114042,772581,2830,3744,"INNER
+19c,HASH_JOIN,8,False,772581,56114042,772581,2830,3744,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19c.sql,HASH_JOIN,7,False,961555,55152487,961555,132216,2830,"INNER
+19c,HASH_JOIN,7,False,961555,55152487,961555,132216,2830,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/19c.sql,HASH_JOIN,6,False,55152486,1,436929,1,132216,"INNER
+19c,HASH_JOIN,6,False,55152486,1,436929,1,132216,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 45
 "
-/Users/kerenhuang/join-order-benchmark/19c.sql,HASH_JOIN,5,False,36242603,18909883,36242603,391371,436929,"INNER
+19c,HASH_JOIN,5,False,36242603,18909883,36242603,391371,436929,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 45
 "
-/Users/kerenhuang/join-order-benchmark/19c.sql,HASH_JOIN,4,False,18909882,1,391431,1,391371,"INNER
+19c,HASH_JOIN,4,False,18909882,1,391431,1,391371,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2326
 "
-/Users/kerenhuang/join-order-benchmark/19c.sql,HASH_JOIN,3,False,14834457,4075425,14834457,468787,391431,"INNER
+19c,HASH_JOIN,3,False,14834457,4075425,14834457,468787,391431,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 2326
 "
-/Users/kerenhuang/join-order-benchmark/19c.sql,HASH_JOIN,2,False,1381453,2693972,1381453,1153798,468787,"INNER
+19c,HASH_JOIN,2,False,1381453,2693972,1381453,1153798,468787,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2615
 "
-/Users/kerenhuang/join-order-benchmark/19c.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
+19c,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/19d.sql,HASH_JOIN,9,False,3140339,56886623,3140339,1909379,1760645,"INNER
+19d,HASH_JOIN,9,False,3140339,56886623,3140339,1909379,1760645,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/19d.sql,HASH_JOIN,8,False,56886622,1,11154124,1,1909379,"INNER
+19d,HASH_JOIN,8,False,56886622,1,11154124,1,1909379,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/19d.sql,HASH_JOIN,7,False,14834457,42052165,14834457,276408,11154124,"INNER
+19d,HASH_JOIN,7,False,14834457,42052165,14834457,276408,11154124,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 231
 "
-/Users/kerenhuang/join-order-benchmark/19d.sql,HASH_JOIN,6,False,961555,41090610,961555,276501,276408,"INNER
+19d,HASH_JOIN,6,False,961555,41090610,961555,276501,276408,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 52
 "
-/Users/kerenhuang/join-order-benchmark/19d.sql,HASH_JOIN,5,False,772581,40318029,772581,104391,276501,"INNER
+19d,HASH_JOIN,5,False,772581,40318029,772581,104391,276501,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 103
 "
-/Users/kerenhuang/join-order-benchmark/19d.sql,HASH_JOIN,4,False,40318028,1,357202,1,104391,"INNER
+19d,HASH_JOIN,4,False,40318028,1,357202,1,104391,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 5684
 "
-/Users/kerenhuang/join-order-benchmark/19d.sql,HASH_JOIN,3,False,36242603,4075425,36242603,468787,357202,"INNER
+19d,HASH_JOIN,3,False,36242603,4075425,36242603,468787,357202,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 5684
 "
-/Users/kerenhuang/join-order-benchmark/19d.sql,HASH_JOIN,2,False,1381453,2693972,1381453,1153798,468787,"INNER
+19d,HASH_JOIN,2,False,1381453,2693972,1381453,1153798,468787,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2615
 "
-/Users/kerenhuang/join-order-benchmark/19d.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
+19d,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/1a.sql,HASH_JOIN,4,False,2525744,3989142,2525744,142,142,"INNER
+1a,HASH_JOIN,4,False,2525744,3989142,2525744,142,142,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 711
 "
-/Users/kerenhuang/join-order-benchmark/1a.sql,HASH_JOIN,3,False,3989141,1,147,1,142,"INNER
+1a,HASH_JOIN,3,False,3989141,1,147,1,142,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 672
 "
-/Users/kerenhuang/join-order-benchmark/1a.sql,HASH_JOIN,2,False,2609129,1380012,2609129,250,147,"INNER
+1a,HASH_JOIN,2,False,2609129,1380012,2609129,250,147,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 2690
 "
-/Users/kerenhuang/join-order-benchmark/1a.sql,HASH_JOIN,1,False,1380011,1,1380011,1,250,"INNER
+1a,HASH_JOIN,1,False,1380011,1,1380011,1,250,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/1b.sql,HASH_JOIN,4,False,4705424,1,66,1,3,"INNER
+1b,HASH_JOIN,4,False,4705424,1,66,1,3,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 142
 "
-/Users/kerenhuang/join-order-benchmark/1b.sql,HASH_JOIN,3,False,2609129,2096295,2609129,4,66,"INNER
+1b,HASH_JOIN,3,False,2609129,2096295,2609129,4,66,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 569
 "
-/Users/kerenhuang/join-order-benchmark/1b.sql,HASH_JOIN,2,False,716259,1380036,716259,10,4,"INNER
+1b,HASH_JOIN,2,False,716259,1380036,716259,10,4,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2606
 "
-/Users/kerenhuang/join-order-benchmark/1b.sql,HASH_JOIN,1,False,1380035,1,1380035,1,10,"INNER
+1b,HASH_JOIN,1,False,1380035,1,1380035,1,10,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/1c.sql,HASH_JOIN,4,False,4380831,1,3,1,3,"INNER
+1c,HASH_JOIN,4,False,4380831,1,3,1,3,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 142
 "
-/Users/kerenhuang/join-order-benchmark/1c.sql,HASH_JOIN,3,False,2609129,1771702,2609129,12,3,"INNER
+1c,HASH_JOIN,3,False,2609129,1771702,2609129,12,3,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 569
 "
-/Users/kerenhuang/join-order-benchmark/1c.sql,HASH_JOIN,2,False,391666,1380036,391666,250,12,"INNER
+1c,HASH_JOIN,2,False,391666,1380036,391666,250,12,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2606
 "
-/Users/kerenhuang/join-order-benchmark/1c.sql,HASH_JOIN,1,False,1380035,1,1380035,1,250,"INNER
+1c,HASH_JOIN,1,False,1380035,1,1380035,1,250,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/1d.sql,HASH_JOIN,4,False,5370618,1,78,1,4,"INNER
+1d,HASH_JOIN,4,False,5370618,1,78,1,4,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 142
 "
-/Users/kerenhuang/join-order-benchmark/1d.sql,HASH_JOIN,3,False,2609129,2761489,2609129,6,78,"INNER
+1d,HASH_JOIN,3,False,2609129,2761489,2609129,6,78,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 569
 "
-/Users/kerenhuang/join-order-benchmark/1d.sql,HASH_JOIN,2,False,1381453,1380036,1381453,10,6,"INNER
+1d,HASH_JOIN,2,False,1381453,1380036,1381453,10,6,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2606
 "
-/Users/kerenhuang/join-order-benchmark/1d.sql,HASH_JOIN,1,False,1380035,1,1380035,1,10,"INNER
+1d,HASH_JOIN,1,False,1380035,1,1380035,1,10,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/20a.sql,HASH_JOIN,9,False,4061926,46462440,4061926,33,33,"INNER
+20a,HASH_JOIN,9,False,4061926,46462440,4061926,33,33,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 113
 "
-/Users/kerenhuang/join-order-benchmark/20a.sql,HASH_JOIN,8,False,3140339,43322101,3140339,532809,33,"INNER
+20a,HASH_JOIN,8,False,3140339,43322101,3140339,532809,33,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 112
 "
-/Users/kerenhuang/join-order-benchmark/20a.sql,HASH_JOIN,7,False,36241770,7080331,36241770,6016,532809,"INNER
+20a,HASH_JOIN,7,False,36241770,7080331,36241770,6016,532809,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 544
 "
-/Users/kerenhuang/join-order-benchmark/20a.sql,HASH_JOIN,6,False,134178,6946153,134170,978322,6016,"INNER
+20a,HASH_JOIN,6,False,134178,6946153,134170,978322,6016,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 50
 "
-/Users/kerenhuang/join-order-benchmark/20a.sql,HASH_JOIN,1,False,134170,8,134170,8,134170,"MARK
+20a,HASH_JOIN,1,False,134170,8,134170,8,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/20a.sql,HASH_JOIN,5,False,4523792,2422361,4523792,28583,978322,"INNER
+20a,HASH_JOIN,5,False,4523792,2422361,4523792,28583,978322,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 248
 "
-/Users/kerenhuang/join-order-benchmark/20a.sql,HASH_JOIN,4,False,2422359,2,28583,2,28583,"INNER
+20a,HASH_JOIN,4,False,2422359,2,28583,2,28583,"INNER
 status_id = id
 
 [INFOSEPARATOR]
 EC: 182
 "
-/Users/kerenhuang/join-order-benchmark/20a.sql,HASH_JOIN,3,False,2422358,1,41167,1,28583,"INNER
+20a,HASH_JOIN,3,False,2422358,1,41167,1,28583,"INNER
 subject_id = id
 
 [INFOSEPARATOR]
 EC: 505662
 "
-/Users/kerenhuang/join-order-benchmark/20a.sql,HASH_JOIN,2,False,2422357,1,114624,1,41167,"INNER
+20a,HASH_JOIN,2,False,2422357,1,114624,1,41167,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 505662
 "
-/Users/kerenhuang/join-order-benchmark/20a.sql,HASH_JOIN,1,False,2287271,135086,2287271,135086,114624,"INNER
+20a,HASH_JOIN,1,False,2287271,135086,2287271,135086,114624,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 505662
 "
-/Users/kerenhuang/join-order-benchmark/20b.sql,HASH_JOIN,9,False,3140339,46478209,3140339,27,17,"INNER
+20b,HASH_JOIN,9,False,3140339,46478209,3140339,27,17,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 22
 "
-/Users/kerenhuang/join-order-benchmark/20b.sql,HASH_JOIN,8,False,4061926,42416283,4061926,222518,27,"INNER
+20b,HASH_JOIN,8,False,4061926,42416283,4061926,222518,27,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 109
 "
-/Users/kerenhuang/join-order-benchmark/20b.sql,HASH_JOIN,7,False,36241770,6174513,36241770,1472,222518,"INNER
+20b,HASH_JOIN,7,False,36241770,6174513,36241770,1472,222518,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 544
 "
-/Users/kerenhuang/join-order-benchmark/20b.sql,HASH_JOIN,6,False,134178,6040335,134170,294672,1472,"INNER
+20b,HASH_JOIN,6,False,134178,6040335,134170,294672,1472,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 50
 "
-/Users/kerenhuang/join-order-benchmark/20b.sql,HASH_JOIN,1,False,134170,8,134170,8,134170,"MARK
+20b,HASH_JOIN,1,False,134170,8,134170,8,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/20b.sql,HASH_JOIN,5,False,4523792,1516543,4523792,4696,294672,"INNER
+20b,HASH_JOIN,5,False,4523792,1516543,4523792,4696,294672,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 248
 "
-/Users/kerenhuang/join-order-benchmark/20b.sql,HASH_JOIN,4,False,1516541,2,4696,2,4696,"INNER
+20b,HASH_JOIN,4,False,1516541,2,4696,2,4696,"INNER
 status_id = id
 
 [INFOSEPARATOR]
 EC: 182
 "
-/Users/kerenhuang/join-order-benchmark/20b.sql,HASH_JOIN,3,False,1516540,1,6234,1,4696,"INNER
+20b,HASH_JOIN,3,False,1516540,1,6234,1,4696,"INNER
 subject_id = id
 
 [INFOSEPARATOR]
 EC: 505662
 "
-/Users/kerenhuang/join-order-benchmark/20b.sql,HASH_JOIN,2,False,1516539,1,38722,1,6234,"INNER
+20b,HASH_JOIN,2,False,1516539,1,38722,1,6234,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 505662
 "
-/Users/kerenhuang/join-order-benchmark/20b.sql,HASH_JOIN,1,False,1381453,135086,1381453,135086,38722,"INNER
+20b,HASH_JOIN,1,False,1381453,135086,1381453,135086,38722,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 505662
 "
-/Users/kerenhuang/join-order-benchmark/20c.sql,HASH_JOIN,9,False,4061926,45556624,4061926,5406,5406,"INNER
+20c,HASH_JOIN,9,False,4061926,45556624,4061926,5406,5406,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 113
 "
-/Users/kerenhuang/join-order-benchmark/20c.sql,HASH_JOIN,8,False,3140339,42416285,3140339,189844,5406,"INNER
+20c,HASH_JOIN,8,False,3140339,42416285,3140339,189844,5406,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 112
 "
-/Users/kerenhuang/join-order-benchmark/20c.sql,HASH_JOIN,7,False,36241770,6174515,36241770,1267,189844,"INNER
+20c,HASH_JOIN,7,False,36241770,6174515,36241770,1267,189844,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 544
 "
-/Users/kerenhuang/join-order-benchmark/20c.sql,HASH_JOIN,6,False,134180,6040335,134170,294672,1267,"INNER
+20c,HASH_JOIN,6,False,134180,6040335,134170,294672,1267,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 50
 "
-/Users/kerenhuang/join-order-benchmark/20c.sql,HASH_JOIN,1,False,134170,10,134170,10,134170,"MARK
+20c,HASH_JOIN,1,False,134170,10,134170,10,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/20c.sql,HASH_JOIN,5,False,4523792,1516543,4523792,4696,294672,"INNER
+20c,HASH_JOIN,5,False,4523792,1516543,4523792,4696,294672,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 248
 "
-/Users/kerenhuang/join-order-benchmark/20c.sql,HASH_JOIN,4,False,1516541,2,4696,2,4696,"INNER
+20c,HASH_JOIN,4,False,1516541,2,4696,2,4696,"INNER
 status_id = id
 
 [INFOSEPARATOR]
 EC: 182
 "
-/Users/kerenhuang/join-order-benchmark/20c.sql,HASH_JOIN,3,False,1516540,1,6234,1,4696,"INNER
+20c,HASH_JOIN,3,False,1516540,1,6234,1,4696,"INNER
 subject_id = id
 
 [INFOSEPARATOR]
 EC: 505662
 "
-/Users/kerenhuang/join-order-benchmark/20c.sql,HASH_JOIN,2,False,1516539,1,38722,1,6234,"INNER
+20c,HASH_JOIN,2,False,1516539,1,38722,1,6234,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 505662
 "
-/Users/kerenhuang/join-order-benchmark/20c.sql,HASH_JOIN,1,False,1381453,135086,1381453,135086,38722,"INNER
+20c,HASH_JOIN,1,False,1381453,135086,1381453,135086,38722,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 505662
 "
-/Users/kerenhuang/join-order-benchmark/21a.sql,HASH_JOIN,8,False,14835728,1373324,14835720,310,1410,"INNER
+21a,HASH_JOIN,8,False,14835728,1373324,14835720,310,1410,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21a.sql,HASH_JOIN,1,False,14835720,8,14835720,8,14835720,"MARK
+21a,HASH_JOIN,1,False,14835720,8,14835720,8,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/21a.sql,HASH_JOIN,7,False,1,1373323,1,330,310,"INNER
+21a,HASH_JOIN,7,False,1,1373323,1,330,310,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21a.sql,HASH_JOIN,6,False,234997,1138326,234997,705,330,"INNER
+21a,HASH_JOIN,6,False,234997,1138326,234997,705,330,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21a.sql,HASH_JOIN,5,False,99876,1038450,99876,152,705,"INNER
+21a,HASH_JOIN,5,False,99876,1038450,99876,152,705,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21a.sql,HASH_JOIN,4,False,910581,127869,910581,199,152,"INNER
+21a,HASH_JOIN,4,False,910581,127869,910581,199,152,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21a.sql,HASH_JOIN,3,False,17,127852,17,251,199,"INNER
+21a,HASH_JOIN,3,False,17,127852,17,251,199,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21a.sql,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
+21a,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21a.sql,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
+21a,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/21b.sql,HASH_JOIN,8,False,514574,1505543,514574,92,38,"INNER
+21b,HASH_JOIN,8,False,514574,1505543,514574,92,38,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21b.sql,HASH_JOIN,7,False,1,1505542,1,92,92,"INNER
+21b,HASH_JOIN,7,False,1,1505542,1,92,92,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21b.sql,HASH_JOIN,6,False,234997,1270545,234997,317,92,"INNER
+21b,HASH_JOIN,6,False,234997,1270545,234997,317,92,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21b.sql,HASH_JOIN,5,False,99876,1170669,99876,48,317,"INNER
+21b,HASH_JOIN,5,False,99876,1170669,99876,48,317,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21b.sql,HASH_JOIN,4,False,1042800,127869,1042800,199,48,"INNER
+21b,HASH_JOIN,4,False,1042800,127869,1042800,199,48,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21b.sql,HASH_JOIN,3,False,17,127852,17,251,199,"INNER
+21b,HASH_JOIN,3,False,17,127852,17,251,199,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21b.sql,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
+21b,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21b.sql,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
+21b,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/21c.sql,HASH_JOIN,8,False,14835729,2363111,14835720,402,1874,"INNER
+21c,HASH_JOIN,8,False,14835729,2363111,14835720,402,1874,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21c.sql,HASH_JOIN,1,False,14835720,9,14835720,9,14835720,"MARK
+21c,HASH_JOIN,1,False,14835720,9,14835720,9,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/21c.sql,HASH_JOIN,7,False,1,2363110,1,422,402,"INNER
+21c,HASH_JOIN,7,False,1,2363110,1,422,402,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21c.sql,HASH_JOIN,6,False,234997,2128113,234997,1021,422,"INNER
+21c,HASH_JOIN,6,False,234997,2128113,234997,1021,422,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21c.sql,HASH_JOIN,5,False,99876,2028237,99876,199,1021,"INNER
+21c,HASH_JOIN,5,False,99876,2028237,99876,199,1021,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21c.sql,HASH_JOIN,4,False,1900368,127869,1900368,199,199,"INNER
+21c,HASH_JOIN,4,False,1900368,127869,1900368,199,199,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21c.sql,HASH_JOIN,3,False,17,127852,17,251,199,"INNER
+21c,HASH_JOIN,3,False,17,127852,17,251,199,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21c.sql,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
+21c,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/21c.sql,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
+21c,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/22a.sql,HASH_JOIN,10,False,2,24171700,2,2851,2851,"INNER
+22a,HASH_JOIN,10,False,2,24171700,2,2851,2851,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22a.sql,HASH_JOIN,9,False,134170,24037530,134170,319409,2851,"INNER
+22a,HASH_JOIN,9,False,134170,24037530,134170,319409,2851,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22a.sql,HASH_JOIN,8,False,4523913,19513617,4523913,3672,319409,"INNER
+22a,HASH_JOIN,8,False,4523913,19513617,4523913,3672,319409,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22a.sql,HASH_JOIN,7,False,19513616,1,4282,1,3672,"INNER
+22a,HASH_JOIN,7,False,19513616,1,4282,1,3672,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22a.sql,HASH_JOIN,6,False,14834457,4679159,14834457,6816,4282,"INNER
+22a,HASH_JOIN,6,False,14834457,4679159,14834457,6816,4282,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/22a.sql,HASH_JOIN,5,False,234997,4444162,234997,7820,6816,"INNER
+22a,HASH_JOIN,5,False,234997,4444162,234997,7820,6816,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/22a.sql,HASH_JOIN,4,False,2609129,1835033,2609129,40854,7820,"INNER
+22a,HASH_JOIN,4,False,2609129,1835033,2609129,40854,7820,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 13
 "
-/Users/kerenhuang/join-order-benchmark/22a.sql,HASH_JOIN,3,False,1835026,7,55098,7,40854,"INNER
+22a,HASH_JOIN,3,False,1835026,7,55098,7,40854,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 68
 "
-/Users/kerenhuang/join-order-benchmark/22a.sql,HASH_JOIN,2,False,662065,1172961,662065,324117,55098,"INNER
+22a,HASH_JOIN,2,False,662065,1172961,662065,324117,55098,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 477
 "
-/Users/kerenhuang/join-order-benchmark/22a.sql,HASH_JOIN,1,False,1172960,1,1172960,1,324117,"INNER
+22a,HASH_JOIN,1,False,1172960,1,1172960,1,324117,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/22b.sql,HASH_JOIN,10,False,2,24043004,2,31,31,"INNER
+22b,HASH_JOIN,10,False,2,24043004,2,31,31,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22b.sql,HASH_JOIN,9,False,134170,23908834,134170,2606,31,"INNER
+22b,HASH_JOIN,9,False,134170,23908834,134170,2606,31,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22b.sql,HASH_JOIN,8,False,4523913,19384921,4523913,91,2606,"INNER
+22b,HASH_JOIN,8,False,4523913,19384921,4523913,91,2606,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22b.sql,HASH_JOIN,7,False,19384920,1,124,1,91,"INNER
+22b,HASH_JOIN,7,False,19384920,1,124,1,91,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22b.sql,HASH_JOIN,6,False,14834457,4550463,14834457,347,124,"INNER
+22b,HASH_JOIN,6,False,14834457,4550463,14834457,347,124,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/22b.sql,HASH_JOIN,5,False,234997,4315466,234997,488,347,"INNER
+22b,HASH_JOIN,5,False,234997,4315466,234997,488,347,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/22b.sql,HASH_JOIN,4,False,2609129,1706337,2609129,31112,488,"INNER
+22b,HASH_JOIN,4,False,2609129,1706337,2609129,31112,488,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 13
 "
-/Users/kerenhuang/join-order-benchmark/22b.sql,HASH_JOIN,3,False,1706330,7,41460,7,31112,"INNER
+22b,HASH_JOIN,3,False,1706330,7,41460,7,31112,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 68
 "
-/Users/kerenhuang/join-order-benchmark/22b.sql,HASH_JOIN,2,False,533369,1172961,533369,324117,41460,"INNER
+22b,HASH_JOIN,2,False,533369,1172961,533369,324117,41460,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 477
 "
-/Users/kerenhuang/join-order-benchmark/22b.sql,HASH_JOIN,1,False,1172960,1,1172960,1,324117,"INNER
+22b,HASH_JOIN,1,False,1172960,1,1172960,1,324117,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,10,False,2,24688502,2,21489,21489,"INNER
+22c,HASH_JOIN,10,False,2,24688502,2,21489,21489,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,9,False,134170,24554332,134170,2610972,21489,"INNER
+22c,HASH_JOIN,9,False,134170,24554332,134170,2610972,21489,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,8,False,4523913,20030419,4523913,35930,2610972,"INNER
+22c,HASH_JOIN,8,False,4523913,20030419,4523913,35930,2610972,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,7,False,20030418,1,41903,1,35930,"INNER
+22c,HASH_JOIN,7,False,20030418,1,41903,1,35930,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,6,False,14835730,5194688,14835720,56007,41903,"INNER
+22c,HASH_JOIN,6,False,14835730,5194688,14835720,56007,41903,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
+22c,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,5,False,234997,4959691,234997,61806,56007,"INNER
+22c,HASH_JOIN,5,False,234997,4959691,234997,61806,56007,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,4,False,2609129,2350562,2609129,106971,61806,"INNER
+22c,HASH_JOIN,4,False,2609129,2350562,2609129,106971,61806,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 13
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,3,False,2350555,7,140455,7,106971,"INNER
+22c,HASH_JOIN,3,False,2350555,7,140455,7,106971,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 68
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,2,False,1012920,1337635,1012920,454230,140455,"INNER
+22c,HASH_JOIN,2,False,1012920,1337635,1012920,454230,140455,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 477
 "
-/Users/kerenhuang/join-order-benchmark/22c.sql,HASH_JOIN,1,False,1337634,1,1337634,1,454230,"INNER
+22c,HASH_JOIN,1,False,1337634,1,1337634,1,454230,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,10,False,2,24688502,2,46281,46281,"INNER
+22d,HASH_JOIN,10,False,2,24688502,2,46281,46281,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,9,False,134170,24554332,134170,5536051,46281,"INNER
+22d,HASH_JOIN,9,False,134170,24554332,134170,5536051,46281,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,8,False,4523913,20030419,4523913,99935,5536051,"INNER
+22d,HASH_JOIN,8,False,4523913,20030419,4523913,99935,5536051,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,7,False,234997,19795422,234997,189157,99935,"INNER
+22d,HASH_JOIN,7,False,234997,19795422,234997,189157,99935,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,6,False,2609129,17186293,2609129,44414,189157,"INNER
+22d,HASH_JOIN,6,False,2609129,17186293,2609129,44414,189157,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,5,False,17186292,1,50884,1,44414,"INNER
+22d,HASH_JOIN,5,False,17186292,1,50884,1,44414,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 77
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,4,False,14835730,2350562,14835720,106971,50884,"INNER
+22d,HASH_JOIN,4,False,14835730,2350562,14835720,106971,50884,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 77
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
+22d,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,3,False,2350555,7,140455,7,106971,"INNER
+22d,HASH_JOIN,3,False,2350555,7,140455,7,106971,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 68
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,2,False,1012920,1337635,1012920,454230,140455,"INNER
+22d,HASH_JOIN,2,False,1012920,1337635,1012920,454230,140455,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 477
 "
-/Users/kerenhuang/join-order-benchmark/22d.sql,HASH_JOIN,1,False,1337634,1,1337634,1,454230,"INNER
+22d,HASH_JOIN,1,False,1337634,1,1337634,1,454230,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/23a.sql,HASH_JOIN,10,False,134170,23564973,134170,618,618,"INNER
+23a,HASH_JOIN,10,False,134170,23564973,134170,618,618,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23a.sql,HASH_JOIN,9,False,4523775,19041198,4523775,6,618,"INNER
+23a,HASH_JOIN,9,False,4523775,19041198,4523775,6,618,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23a.sql,HASH_JOIN,8,False,2,19041196,2,6,6,"INNER
+23a,HASH_JOIN,8,False,2,19041196,2,6,6,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23a.sql,HASH_JOIN,7,False,19041195,1,6,1,6,"INNER
+23a,HASH_JOIN,7,False,19041195,1,6,1,6,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23a.sql,HASH_JOIN,6,False,14833529,4207666,14833529,5763,6,"INNER
+23a,HASH_JOIN,6,False,14833529,4207666,14833529,5763,6,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 7
 "
-/Users/kerenhuang/join-order-benchmark/23a.sql,HASH_JOIN,5,False,4207665,1,18806,1,5763,"INNER
+23a,HASH_JOIN,5,False,4207665,1,18806,1,5763,"INNER
 status_id = id
 
 [INFOSEPARATOR]
 EC: 6
 "
-/Users/kerenhuang/join-order-benchmark/23a.sql,HASH_JOIN,4,False,4207658,7,47552,7,18806,"INNER
+23a,HASH_JOIN,4,False,4207658,7,47552,7,18806,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 24
 "
-/Users/kerenhuang/join-order-benchmark/23a.sql,HASH_JOIN,3,False,1381453,2826205,1381453,282816,47552,"INNER
+23a,HASH_JOIN,3,False,1381453,2826205,1381453,282816,47552,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 172
 "
-/Users/kerenhuang/join-order-benchmark/23a.sql,HASH_JOIN,2,False,132439,2693766,132439,1153687,282816,"INNER
+23a,HASH_JOIN,2,False,132439,2693766,132439,1153687,282816,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 891
 "
-/Users/kerenhuang/join-order-benchmark/23a.sql,HASH_JOIN,1,False,2608923,84843,2608923,84843,1153687,"INNER
+23a,HASH_JOIN,1,False,2608923,84843,2608923,84843,1153687,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/23b.sql,HASH_JOIN,10,False,2,10145097,2,16,16,"INNER
+23b,HASH_JOIN,10,False,2,10145097,2,16,16,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23b.sql,HASH_JOIN,9,False,134170,10010927,134170,618,16,"INNER
+23b,HASH_JOIN,9,False,134170,10010927,134170,618,16,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23b.sql,HASH_JOIN,8,False,4523775,5487152,4523775,6,618,"INNER
+23b,HASH_JOIN,8,False,4523775,5487152,4523775,6,618,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23b.sql,HASH_JOIN,7,False,84843,5402309,84843,6,6,"INNER
+23b,HASH_JOIN,7,False,84843,5402309,84843,6,6,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23b.sql,HASH_JOIN,6,False,2608923,2793386,2608923,5,6,"INNER
+23b,HASH_JOIN,6,False,2608923,2793386,2608923,5,6,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 1
 "
-/Users/kerenhuang/join-order-benchmark/23b.sql,HASH_JOIN,5,False,2793385,1,32,1,5,"INNER
+23b,HASH_JOIN,5,False,2793385,1,32,1,5,"INNER
 status_id = id
 
 [INFOSEPARATOR]
 EC: 53
 "
-/Users/kerenhuang/join-order-benchmark/23b.sql,HASH_JOIN,4,False,2793384,1,37,1,32,"INNER
+23b,HASH_JOIN,4,False,2793384,1,37,1,32,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 53
 "
-/Users/kerenhuang/join-order-benchmark/23b.sql,HASH_JOIN,3,False,1381453,1411931,1381453,39,37,"INNER
+23b,HASH_JOIN,3,False,1381453,1411931,1381453,39,37,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 53
 "
-/Users/kerenhuang/join-order-benchmark/23b.sql,HASH_JOIN,2,False,132500,1279431,132500,1771,39,"INNER
+23b,HASH_JOIN,2,False,132500,1279431,132500,1771,39,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 273
 "
-/Users/kerenhuang/join-order-benchmark/23b.sql,HASH_JOIN,1,False,1279430,1,1279430,1,1771,"INNER
+23b,HASH_JOIN,1,False,1279430,1,1279430,1,1771,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 593428
 "
-/Users/kerenhuang/join-order-benchmark/23c.sql,HASH_JOIN,10,False,134170,23932552,134170,628,628,"INNER
+23c,HASH_JOIN,10,False,134170,23932552,134170,628,628,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23c.sql,HASH_JOIN,9,False,4523775,19408777,4523775,7,628,"INNER
+23c,HASH_JOIN,9,False,4523775,19408777,4523775,7,628,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23c.sql,HASH_JOIN,8,False,2,19408775,2,7,7,"INNER
+23c,HASH_JOIN,8,False,2,19408775,2,7,7,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23c.sql,HASH_JOIN,7,False,19408774,1,7,1,7,"INNER
+23c,HASH_JOIN,7,False,19408774,1,7,1,7,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/23c.sql,HASH_JOIN,6,False,14833529,4575245,14833529,21851,7,"INNER
+23c,HASH_JOIN,6,False,14833529,4575245,14833529,21851,7,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 7
 "
-/Users/kerenhuang/join-order-benchmark/23c.sql,HASH_JOIN,5,False,4575244,1,53781,1,21851,"INNER
+23c,HASH_JOIN,5,False,4575244,1,53781,1,21851,"INNER
 status_id = id
 
 [INFOSEPARATOR]
 EC: 6
 "
-/Users/kerenhuang/join-order-benchmark/23c.sql,HASH_JOIN,4,False,4575237,7,89930,7,53781,"INNER
+23c,HASH_JOIN,4,False,4575237,7,89930,7,53781,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 24
 "
-/Users/kerenhuang/join-order-benchmark/23c.sql,HASH_JOIN,3,False,1749032,2826205,1749032,282816,89930,"INNER
+23c,HASH_JOIN,3,False,1749032,2826205,1749032,282816,89930,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 172
 "
-/Users/kerenhuang/join-order-benchmark/23c.sql,HASH_JOIN,2,False,132439,2693766,132439,1153687,282816,"INNER
+23c,HASH_JOIN,2,False,132439,2693766,132439,1153687,282816,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 891
 "
-/Users/kerenhuang/join-order-benchmark/23c.sql,HASH_JOIN,1,False,2608923,84843,2608923,84843,1153687,"INNER
+23c,HASH_JOIN,1,False,2608923,84843,2608923,84843,1153687,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,11,False,3140339,60554919,3140339,277,275,"INNER
+24a,HASH_JOIN,11,False,3140339,60554919,3140339,277,275,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,10,False,772581,59782338,772581,143,277,"INNER
+24a,HASH_JOIN,10,False,772581,59782338,772581,143,277,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,9,False,961555,58820783,961555,2778,143,"INNER
+24a,HASH_JOIN,9,False,961555,58820783,961555,2778,143,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,8,False,58820782,1,13758,1,2778,"INNER
+24a,HASH_JOIN,8,False,58820782,1,13758,1,2778,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 12
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,7,False,36242603,22578179,36242603,3406,13758,"INNER
+24a,HASH_JOIN,7,False,36242603,22578179,36242603,3406,13758,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 12
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,6,False,134170,22444009,134170,1261206,3406,"INNER
+24a,HASH_JOIN,6,False,134170,22444009,134170,1261206,3406,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 5
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,5,False,4523913,17920096,4523913,142261,1261206,"INNER
+24a,HASH_JOIN,5,False,4523913,17920096,4523913,142261,1261206,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 28
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,4,False,17920095,1,142261,1,142261,"INNER
+24a,HASH_JOIN,4,False,17920095,1,142261,1,142261,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2326
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,3,False,14834457,3085638,14834457,128115,142261,"INNER
+24a,HASH_JOIN,3,False,14834457,3085638,14834457,128115,142261,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 2326
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,2,False,391666,2693972,391666,1153798,128115,"INNER
+24a,HASH_JOIN,2,False,391666,2693972,391666,1153798,128115,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 2615
 "
-/Users/kerenhuang/join-order-benchmark/24a.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
+24a,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,11,False,3140339,60078419,3140339,45,45,"INNER
+24b,HASH_JOIN,11,False,3140339,60078419,3140339,45,45,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,10,False,772581,59305838,772581,9,45,"INNER
+24b,HASH_JOIN,10,False,772581,59305838,772581,9,45,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,9,False,961555,58344283,961555,62,9,"INNER
+24b,HASH_JOIN,9,False,961555,58344283,961555,62,9,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,8,False,1,58344282,1,244,62,"INNER
+24b,HASH_JOIN,8,False,1,58344282,1,244,62,"INNER
 id = role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,7,False,36242603,22101679,36242603,9,244,"INNER
+24b,HASH_JOIN,7,False,36242603,22101679,36242603,9,244,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,6,False,134170,21967509,134170,162,9,"INNER
+24b,HASH_JOIN,6,False,134170,21967509,134170,162,9,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,5,False,4523913,17443596,4523913,5,162,"INNER
+24b,HASH_JOIN,5,False,4523913,17443596,4523913,5,162,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,4,False,1,17443595,1,5,5,"INNER
+24b,HASH_JOIN,4,False,1,17443595,1,5,5,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,3,False,14834457,2609138,14834457,4,5,"INNER
+24b,HASH_JOIN,3,False,14834457,2609138,14834457,4,5,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,2,False,8,2609130,8,99,4,"INNER
+24b,HASH_JOIN,2,False,8,2609130,8,99,4,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/24b.sql,HASH_JOIN,1,False,2609129,1,2609129,1,99,"INNER
+24b,HASH_JOIN,1,False,2609129,1,2609129,1,99,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/25a.sql,HASH_JOIN,8,False,1739579,44839078,1739579,7112,4407,"INNER
+25a,HASH_JOIN,8,False,1739579,44839078,1739579,7112,4407,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25a.sql,HASH_JOIN,7,False,36244349,8594729,36244344,11389,7112,"INNER
+25a,HASH_JOIN,7,False,36244349,8594729,36244344,11389,7112,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25a.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+25a,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/25a.sql,HASH_JOIN,6,False,2525792,6068937,2525792,11389,11389,"INNER
+25a,HASH_JOIN,6,False,2525792,6068937,2525792,11389,11389,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25a.sql,HASH_JOIN,5,False,134175,5934762,134170,319480,11389,"INNER
+25a,HASH_JOIN,5,False,134175,5934762,134170,319480,11389,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25a.sql,HASH_JOIN,1,False,134170,5,134170,5,134170,"MARK
+25a,HASH_JOIN,1,False,134170,5,134170,5,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/25a.sql,HASH_JOIN,4,False,4523924,1410838,4523924,16480,319480,"INNER
+25a,HASH_JOIN,4,False,4523924,1410838,4523924,16480,319480,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25a.sql,HASH_JOIN,3,False,1,1410837,1,49452,16480,"INNER
+25a,HASH_JOIN,3,False,1,1410837,1,49452,16480,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25a.sql,HASH_JOIN,2,False,1380035,30802,1380035,30413,49452,"INNER
+25a,HASH_JOIN,2,False,1380035,30802,1380035,30413,49452,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25a.sql,HASH_JOIN,1,False,30801,1,30801,1,30413,"INNER
+25a,HASH_JOIN,1,False,30801,1,30801,1,30413,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 22
 "
-/Users/kerenhuang/join-order-benchmark/25b.sql,HASH_JOIN,8,False,1739579,42313359,1739579,6,6,"INNER
+25b,HASH_JOIN,8,False,1739579,42313359,1739579,6,6,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25b.sql,HASH_JOIN,7,False,36244349,6069010,36244344,9,6,"INNER
+25b,HASH_JOIN,7,False,36244349,6069010,36244344,9,6,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25b.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+25b,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/25b.sql,HASH_JOIN,6,False,134175,5934835,134170,74,9,"INNER
+25b,HASH_JOIN,6,False,134175,5934835,134170,74,9,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25b.sql,HASH_JOIN,1,False,134170,5,134170,5,134170,"MARK
+25b,HASH_JOIN,1,False,134170,5,134170,5,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/25b.sql,HASH_JOIN,5,False,4523924,1410911,4523924,10,74,"INNER
+25b,HASH_JOIN,5,False,4523924,1410911,4523924,10,74,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25b.sql,HASH_JOIN,4,False,1,1410910,1,30,10,"INNER
+25b,HASH_JOIN,4,False,1,1410910,1,30,10,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25b.sql,HASH_JOIN,3,False,1380035,30875,1380035,23,30,"INNER
+25b,HASH_JOIN,3,False,1380035,30875,1380035,23,30,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25b.sql,HASH_JOIN,2,False,73,30802,73,30413,23,"INNER
+25b,HASH_JOIN,2,False,73,30802,73,30413,23,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/25b.sql,HASH_JOIN,1,False,30801,1,30801,1,30413,"INNER
+25b,HASH_JOIN,1,False,30801,1,30801,1,30413,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 22
 "
-/Users/kerenhuang/join-order-benchmark/25c.sql,HASH_JOIN,8,False,1739579,59642938,1739579,42900,26153,"INNER
+25c,HASH_JOIN,8,False,1739579,59642938,1739579,42900,26153,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 22
 "
-/Users/kerenhuang/join-order-benchmark/25c.sql,HASH_JOIN,7,False,36244349,23398589,36244344,63386,42900,"INNER
+25c,HASH_JOIN,7,False,36244349,23398589,36244344,63386,42900,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 44
 "
-/Users/kerenhuang/join-order-benchmark/25c.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+25c,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/25c.sql,HASH_JOIN,6,False,2525792,20872797,2525792,63386,63386,"INNER
+25c,HASH_JOIN,6,False,2525792,20872797,2525792,63386,63386,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 20
 "
-/Users/kerenhuang/join-order-benchmark/25c.sql,HASH_JOIN,5,False,134177,20738620,134170,2224786,63386,"INNER
+25c,HASH_JOIN,5,False,134177,20738620,134170,2224786,63386,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 26
 "
-/Users/kerenhuang/join-order-benchmark/25c.sql,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
+25c,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/25c.sql,HASH_JOIN,4,False,4523924,16214696,4523924,102516,2224786,"INNER
+25c,HASH_JOIN,4,False,4523924,16214696,4523924,102516,2224786,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 132
 "
-/Users/kerenhuang/join-order-benchmark/25c.sql,HASH_JOIN,3,False,16214695,1,104892,1,102516,"INNER
+25c,HASH_JOIN,3,False,16214695,1,104892,1,102516,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 97
 "
-/Users/kerenhuang/join-order-benchmark/25c.sql,HASH_JOIN,2,False,14834659,1380036,188967,459925,104892,"INNER
+25c,HASH_JOIN,2,False,14834659,1380036,188967,459925,104892,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 10963
 "
-/Users/kerenhuang/join-order-benchmark/25c.sql,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
+25c,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 12321
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,11,False,4061926,45745765,4061926,1728,1728,"INNER
+26a,HASH_JOIN,11,False,4061926,45745765,4061926,1728,1728,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,10,False,3140339,42605426,3140339,58947,1728,"INNER
+26a,HASH_JOIN,10,False,3140339,42605426,3140339,58947,1728,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,9,False,36240724,6364702,36240724,326,58947,"INNER
+26a,HASH_JOIN,9,False,36240724,6364702,36240724,326,58947,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,8,False,134180,6230522,134170,79039,326,"INNER
+26a,HASH_JOIN,8,False,134180,6230522,134170,79039,326,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,1,False,134170,10,134170,10,134170,"MARK
+26a,HASH_JOIN,1,False,134170,10,134170,10,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,7,False,4523786,1706736,4523786,647,79039,"INNER
+26a,HASH_JOIN,7,False,4523786,1706736,4523786,647,79039,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,6,False,2,1706734,2,647,647,"INNER
+26a,HASH_JOIN,6,False,2,1706734,2,647,647,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,5,False,1706733,1,863,1,647,"INNER
+26a,HASH_JOIN,5,False,1706733,1,863,1,647,"INNER
 subject_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,4,False,1706732,1,9872,1,863,"INNER
+26a,HASH_JOIN,4,False,1706732,1,9872,1,863,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,3,False,1381453,325279,1381453,29914,9872,"INNER
+26a,HASH_JOIN,3,False,1381453,325279,1381453,29914,9872,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 15
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,2,False,132439,192840,132439,121570,29914,"INNER
+26a,HASH_JOIN,2,False,132439,192840,132439,121570,29914,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 99
 "
-/Users/kerenhuang/join-order-benchmark/26a.sql,HASH_JOIN,1,False,192839,1,192839,1,121570,"INNER
+26a,HASH_JOIN,1,False,192839,1,192839,1,121570,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,11,False,4061926,45237012,4061926,93,93,"INNER
+26b,HASH_JOIN,11,False,4061926,45237012,4061926,93,93,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,10,False,3140339,42096673,3140339,2300,93,"INNER
+26b,HASH_JOIN,10,False,3140339,42096673,3140339,2300,93,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,9,False,36240724,5855949,36240724,6,2300,"INNER
+26b,HASH_JOIN,9,False,36240724,5855949,36240724,6,2300,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,8,False,134170,5721779,134170,3891,6,"INNER
+26b,HASH_JOIN,8,False,134170,5721779,134170,3891,6,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,7,False,4523786,1197993,4523786,32,3891,"INNER
+26b,HASH_JOIN,7,False,4523786,1197993,4523786,32,3891,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,6,False,2,1197991,2,32,32,"INNER
+26b,HASH_JOIN,6,False,2,1197991,2,32,32,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,5,False,1197990,1,48,1,32,"INNER
+26b,HASH_JOIN,5,False,1197990,1,48,1,32,"INNER
 subject_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,4,False,1197989,1,1591,1,48,"INNER
+26b,HASH_JOIN,4,False,1197989,1,1591,1,48,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,3,False,1012920,185069,1012920,3981,1591,"INNER
+26b,HASH_JOIN,3,False,1012920,185069,1012920,3981,1591,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 15
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,2,False,132439,52630,132439,15848,3981,"INNER
+26b,HASH_JOIN,2,False,132439,52630,132439,15848,3981,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 99
 "
-/Users/kerenhuang/join-order-benchmark/26b.sql,HASH_JOIN,1,False,52629,1,52629,1,15848,"INNER
+26b,HASH_JOIN,1,False,52629,1,52629,1,15848,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,11,False,4061926,46932859,4061926,5400,5400,"INNER
+26c,HASH_JOIN,11,False,4061926,46932859,4061926,5400,5400,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,10,False,3140339,43792520,3140339,189738,5400,"INNER
+26c,HASH_JOIN,10,False,3140339,43792520,3140339,189738,5400,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,9,False,36240724,7551796,36240724,1261,189738,"INNER
+26c,HASH_JOIN,9,False,36240724,7551796,36240724,1261,189738,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,8,False,134180,7417616,134170,293146,1261,"INNER
+26c,HASH_JOIN,8,False,134180,7417616,134170,293146,1261,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,1,False,134170,10,134170,10,134170,"MARK
+26c,HASH_JOIN,1,False,134170,10,134170,10,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,7,False,4523786,2893830,4523786,4028,293146,"INNER
+26c,HASH_JOIN,7,False,4523786,2893830,4523786,4028,293146,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,6,False,2893828,2,4028,2,4028,"INNER
+26c,HASH_JOIN,6,False,2893828,2,4028,2,4028,"INNER
 status_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,5,False,2893827,1,5052,1,4028,"INNER
+26c,HASH_JOIN,5,False,2893827,1,5052,1,4028,"INNER
 subject_id = id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,4,False,2893826,1,19824,1,5052,"INNER
+26c,HASH_JOIN,4,False,2893826,1,19824,1,5052,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 10
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,3,False,1381453,1512373,1381453,95399,19824,"INNER
+26c,HASH_JOIN,3,False,1381453,1512373,1381453,95399,19824,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 75
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,2,False,132439,1379934,132439,459891,95399,"INNER
+26c,HASH_JOIN,2,False,132439,1379934,132439,459891,95399,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 499
 "
-/Users/kerenhuang/join-order-benchmark/26c.sql,HASH_JOIN,1,False,1379933,1,1379933,1,459891,"INNER
+26c,HASH_JOIN,1,False,1379933,1,1379933,1,459891,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,11,False,513646,1379113,513646,172,477,"INNER
+27a,HASH_JOIN,11,False,513646,1379113,513646,172,477,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,10,False,1,1379112,1,229,172,"INNER
+27a,HASH_JOIN,10,False,1,1379112,1,229,172,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,9,False,2,1379110,2,229,229,"INNER
+27a,HASH_JOIN,9,False,2,1379110,2,229,229,"INNER
 id = subject_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,8,False,1,1379109,1,248,229,"INNER
+27a,HASH_JOIN,8,False,1,1379109,1,248,229,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,7,False,234997,1144112,234997,581,248,"INNER
+27a,HASH_JOIN,7,False,234997,1144112,234997,581,248,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,6,False,99670,1044442,99670,98,581,"INNER
+27a,HASH_JOIN,6,False,99670,1044442,99670,98,581,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,5,False,910581,133861,910581,98,98,"INNER
+27a,HASH_JOIN,5,False,910581,133861,910581,98,98,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,4,False,17,133844,17,119,98,"INNER
+27a,HASH_JOIN,4,False,17,133844,17,119,98,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,3,False,5992,127852,5992,251,119,"INNER
+27a,HASH_JOIN,3,False,5992,127852,5992,251,119,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
+27a,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27a.sql,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
+27a,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,11,False,513646,4941191,513646,95,247,"INNER
+27b,HASH_JOIN,11,False,513646,4941191,513646,95,247,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,10,False,1,4941190,1,152,95,"INNER
+27b,HASH_JOIN,10,False,1,4941190,1,152,95,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,9,False,2,4941188,2,152,152,"INNER
+27b,HASH_JOIN,9,False,2,4941188,2,152,152,"INNER
 id = subject_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,8,False,1,4941187,1,152,152,"INNER
+27b,HASH_JOIN,8,False,1,4941187,1,152,152,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,7,False,234997,4706190,234997,342,152,"INNER
+27b,HASH_JOIN,7,False,234997,4706190,234997,342,152,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,6,False,99670,4606520,99670,57,342,"INNER
+27b,HASH_JOIN,6,False,99670,4606520,99670,57,342,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,5,False,17,4606503,17,57,57,"INNER
+27b,HASH_JOIN,5,False,17,4606503,17,57,57,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,4,False,5992,4600511,5992,77,57,"INNER
+27b,HASH_JOIN,4,False,5992,4600511,5992,77,57,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,3,False,29997,4570514,29997,271,77,"INNER
+27b,HASH_JOIN,3,False,29997,4570514,29997,271,77,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,2,False,46583,4523931,46583,10544,271,"INNER
+27b,HASH_JOIN,2,False,46583,4523931,46583,10544,271,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27b.sql,HASH_JOIN,1,False,4523930,1,4523930,1,10544,"INNER
+27b,HASH_JOIN,1,False,4523930,1,4523930,1,10544,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,11,False,14835729,2368900,14835720,172,743,"INNER
+27c,HASH_JOIN,11,False,14835729,2368900,14835720,172,743,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,1,False,14835720,9,14835720,9,14835720,"MARK
+27c,HASH_JOIN,1,False,14835720,9,14835720,9,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,10,False,2,2368898,2,172,172,"INNER
+27c,HASH_JOIN,10,False,2,2368898,2,172,172,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,9,False,1,2368897,1,229,172,"INNER
+27c,HASH_JOIN,9,False,1,2368897,1,229,172,"INNER
 id = subject_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,8,False,1,2368896,1,248,229,"INNER
+27c,HASH_JOIN,8,False,1,2368896,1,248,229,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,7,False,234997,2133899,234997,581,248,"INNER
+27c,HASH_JOIN,7,False,234997,2133899,234997,581,248,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,6,False,99670,2034229,99670,98,581,"INNER
+27c,HASH_JOIN,6,False,99670,2034229,99670,98,581,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,5,False,1900368,133861,1900368,98,98,"INNER
+27c,HASH_JOIN,5,False,1900368,133861,1900368,98,98,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,4,False,17,133844,17,119,98,"INNER
+27c,HASH_JOIN,4,False,17,133844,17,119,98,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,3,False,5992,127852,5992,251,119,"INNER
+27c,HASH_JOIN,3,False,5992,127852,5992,251,119,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
+27c,HASH_JOIN,2,False,29997,97855,29997,46,251,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/27c.sql,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
+27c,HASH_JOIN,1,False,97854,1,97854,1,46,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,13,False,134170,25054965,134170,738406,4803,"INNER
+28a,HASH_JOIN,13,False,134170,25054965,134170,738406,4803,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,12,False,4523775,20531190,4523775,8650,738406,"INNER
+28a,HASH_JOIN,12,False,4523775,20531190,4523775,8650,738406,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,11,False,1,20531189,1,9355,8650,"INNER
+28a,HASH_JOIN,11,False,1,20531189,1,9355,8650,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,10,False,14835730,5695459,14835720,9491,9355,"INNER
+28a,HASH_JOIN,10,False,14835730,5695459,14835720,9491,9355,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
+28a,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,9,False,2,5695457,2,9491,9491,"INNER
+28a,HASH_JOIN,9,False,2,5695457,2,9491,9491,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,8,False,2,5695455,2,10551,9491,"INNER
+28a,HASH_JOIN,8,False,2,5695455,2,10551,9491,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,7,False,1,5695454,1,48252,10551,"INNER
+28a,HASH_JOIN,7,False,1,5695454,1,48252,10551,"INNER
 id = subject_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,6,False,234997,5460457,234997,50243,48252,"INNER
+28a,HASH_JOIN,6,False,234997,5460457,234997,50243,48252,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,5,False,2608923,2851534,2608923,16813,50243,"INNER
+28a,HASH_JOIN,5,False,2608923,2851534,2608923,16813,50243,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,4,False,2851527,7,19121,7,16813,"INNER
+28a,HASH_JOIN,4,False,2851527,7,19121,7,16813,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,3,False,1381453,1470074,1381453,94130,19121,"INNER
+28a,HASH_JOIN,3,False,1381453,1470074,1381453,94130,19121,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 24
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,2,False,132439,1337635,132439,454196,94130,"INNER
+28a,HASH_JOIN,2,False,132439,1337635,132439,454196,94130,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 127
 "
-/Users/kerenhuang/join-order-benchmark/28a.sql,HASH_JOIN,1,False,1337634,1,1337634,1,454196,"INNER
+28a,HASH_JOIN,1,False,1337634,1,1337634,1,454196,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,13,False,134170,23654864,134170,15989,148,"INNER
+28b,HASH_JOIN,13,False,134170,23654864,134170,15989,148,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,12,False,4523775,19131089,4523775,165,15989,"INNER
+28b,HASH_JOIN,12,False,4523775,19131089,4523775,165,15989,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,11,False,1,19131088,1,253,165,"INNER
+28b,HASH_JOIN,11,False,1,19131088,1,253,165,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,10,False,14833529,4297559,14833529,4055,253,"INNER
+28b,HASH_JOIN,10,False,14833529,4297559,14833529,4055,253,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,9,False,2,4297557,2,4055,4055,"INNER
+28b,HASH_JOIN,9,False,2,4297557,2,4055,4055,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,8,False,2,4297555,2,4207,4055,"INNER
+28b,HASH_JOIN,8,False,2,4297555,2,4207,4055,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,7,False,1,4297554,1,15201,4207,"INNER
+28b,HASH_JOIN,7,False,1,4297554,1,15201,4207,"INNER
 id = subject_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,6,False,234997,4062557,234997,15685,15201,"INNER
+28b,HASH_JOIN,6,False,234997,4062557,234997,15685,15201,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,5,False,2608923,1453634,2608923,8370,15685,"INNER
+28b,HASH_JOIN,5,False,2608923,1453634,2608923,8370,15685,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,4,False,1453627,7,8719,7,8370,"INNER
+28b,HASH_JOIN,4,False,1453627,7,8719,7,8370,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,3,False,1012920,440707,1012920,47053,8719,"INNER
+28b,HASH_JOIN,3,False,1012920,440707,1012920,47053,8719,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 24
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,2,False,132439,308268,132439,194903,47053,"INNER
+28b,HASH_JOIN,2,False,132439,308268,132439,194903,47053,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 127
 "
-/Users/kerenhuang/join-order-benchmark/28b.sql,HASH_JOIN,1,False,308267,1,308267,1,194903,"INNER
+28b,HASH_JOIN,1,False,308267,1,308267,1,194903,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,13,False,134170,24686431,134170,1151351,8373,"INNER
+28c,HASH_JOIN,13,False,134170,24686431,134170,1151351,8373,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,12,False,4523775,20162656,4523775,11455,1151351,"INNER
+28c,HASH_JOIN,12,False,4523775,20162656,4523775,11455,1151351,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,11,False,1,20162655,1,12681,11455,"INNER
+28c,HASH_JOIN,11,False,1,20162655,1,12681,11455,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,10,False,14835730,5326925,14835720,12856,12681,"INNER
+28c,HASH_JOIN,10,False,14835730,5326925,14835720,12856,12681,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
+28c,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,9,False,2,5326923,2,12856,12856,"INNER
+28c,HASH_JOIN,9,False,2,5326923,2,12856,12856,"INNER
 id = company_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,8,False,1,5326922,1,18121,12856,"INNER
+28c,HASH_JOIN,8,False,1,5326922,1,18121,12856,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,7,False,1,5326921,1,22710,18121,"INNER
+28c,HASH_JOIN,7,False,1,5326921,1,22710,18121,"INNER
 id = subject_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,6,False,234997,5091924,234997,23710,22710,"INNER
+28c,HASH_JOIN,6,False,234997,5091924,234997,23710,22710,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,5,False,2608923,2483001,2608923,10771,23710,"INNER
+28c,HASH_JOIN,5,False,2608923,2483001,2608923,10771,23710,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,4,False,2482994,7,11792,7,10771,"INNER
+28c,HASH_JOIN,4,False,2482994,7,11792,7,10771,"INNER
 kind_id = id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,3,False,1012920,1470074,1012920,94130,11792,"INNER
+28c,HASH_JOIN,3,False,1012920,1470074,1012920,94130,11792,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 24
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,2,False,132439,1337635,132439,454196,94130,"INNER
+28c,HASH_JOIN,2,False,132439,1337635,132439,454196,94130,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 127
 "
-/Users/kerenhuang/join-order-benchmark/28c.sql,HASH_JOIN,1,False,1337634,1,1337634,1,454196,"INNER
+28c,HASH_JOIN,1,False,1337634,1,1337634,1,454196,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,16,False,1,63043313,1,1620,1620,"INNER
+29a,HASH_JOIN,16,False,1,63043313,1,1620,1620,"INNER
 id = role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,15,False,1,63043312,1,4890,1620,"INNER
+29a,HASH_JOIN,15,False,1,63043312,1,4890,1620,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,14,False,2882966,60160346,2882966,30,4890,"INNER
+29a,HASH_JOIN,14,False,2882966,60160346,2882966,30,4890,"INNER
 person_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,13,False,961555,59198791,961555,30,30,"INNER
+29a,HASH_JOIN,13,False,961555,59198791,961555,30,30,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,12,False,772581,58426210,772581,10,30,"INNER
+29a,HASH_JOIN,12,False,772581,58426210,772581,10,30,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,11,False,1,58426209,1,380,10,"INNER
+29a,HASH_JOIN,11,False,1,58426209,1,380,10,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,10,False,36240046,22186163,36240046,10,380,"INNER
+29a,HASH_JOIN,10,False,36240046,22186163,36240046,10,380,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,9,False,1,22186162,1,1080,10,"INNER
+29a,HASH_JOIN,9,False,1,22186162,1,1080,10,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,8,False,4523775,17662387,4523775,10,1080,"INNER
+29a,HASH_JOIN,8,False,4523775,17662387,4523775,10,1080,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,7,False,1,17662386,1,10,10,"INNER
+29a,HASH_JOIN,7,False,1,17662386,1,10,10,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,6,False,14833529,2828857,14833529,5,10,"INNER
+29a,HASH_JOIN,6,False,14833529,2828857,14833529,5,10,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,5,False,84843,2744014,84843,22,5,"INNER
+29a,HASH_JOIN,5,False,84843,2744014,84843,22,5,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,4,False,2608923,135091,2608923,1,22,"INNER
+29a,HASH_JOIN,4,False,2608923,135091,2608923,1,22,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,3,False,1,135090,1,1,1,"INNER
+29a,HASH_JOIN,3,False,1,135090,1,1,1,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,2,False,1,135089,1,1,1,"INNER
+29a,HASH_JOIN,2,False,1,135089,1,1,1,"INNER
 id = subject_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29a.sql,HASH_JOIN,1,False,135086,3,135086,3,1,"INNER
+29a,HASH_JOIN,1,False,135086,3,135086,3,1,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 135086
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,16,False,1,49486627,1,15,15,"INNER
+29b,HASH_JOIN,16,False,1,49486627,1,15,15,"INNER
 id = role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,15,False,1,49486626,1,2445,15,"INNER
+29b,HASH_JOIN,15,False,1,49486626,1,2445,15,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,14,False,2882966,46603660,2882966,15,2445,"INNER
+29b,HASH_JOIN,14,False,2882966,46603660,2882966,15,2445,"INNER
 person_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,13,False,961555,45642105,961555,15,15,"INNER
+29b,HASH_JOIN,13,False,961555,45642105,961555,15,15,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,12,False,772581,44869524,772581,5,15,"INNER
+29b,HASH_JOIN,12,False,772581,44869524,772581,5,15,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,11,False,1,44869523,1,190,5,"INNER
+29b,HASH_JOIN,11,False,1,44869523,1,190,5,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,10,False,36240046,8629477,36240046,5,190,"INNER
+29b,HASH_JOIN,10,False,36240046,8629477,36240046,5,190,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,9,False,1,8629476,1,540,5,"INNER
+29b,HASH_JOIN,9,False,1,8629476,1,540,5,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,8,False,4523775,4105701,4523775,5,540,"INNER
+29b,HASH_JOIN,8,False,4523775,4105701,4523775,5,540,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,7,False,84843,4020858,84843,22,5,"INNER
+29b,HASH_JOIN,7,False,84843,4020858,84843,22,5,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,6,False,2608923,1411935,2608923,1,22,"INNER
+29b,HASH_JOIN,6,False,2608923,1411935,2608923,1,22,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,5,False,1,1411934,1,1,1,"INNER
+29b,HASH_JOIN,5,False,1,1411934,1,1,1,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,4,False,1,1411933,1,1,1,"INNER
+29b,HASH_JOIN,4,False,1,1411933,1,1,1,"INNER
 id = subject_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,3,False,1,1411932,1,1,1,"INNER
+29b,HASH_JOIN,3,False,1,1411932,1,1,1,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,2,False,1279430,132502,1279430,1,1,"INNER
+29b,HASH_JOIN,2,False,1279430,132502,1279430,1,1,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29b.sql,HASH_JOIN,1,False,132500,2,132500,2,1,"INNER
+29b,HASH_JOIN,1,False,132500,2,132500,2,1,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 135086
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,16,False,3140339,64083480,3140339,16740,16308,"INNER
+29c,HASH_JOIN,16,False,3140339,64083480,3140339,16740,16308,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,15,False,1,64083479,1,69744,16740,"INNER
+29c,HASH_JOIN,15,False,1,64083479,1,69744,16740,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,14,False,2882966,61200513,2882966,216,69744,"INNER
+29c,HASH_JOIN,14,False,2882966,61200513,2882966,216,69744,"INNER
 person_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,13,False,772581,60427932,772581,55,216,"INNER
+29c,HASH_JOIN,13,False,772581,60427932,772581,55,216,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,12,False,961555,59466377,961555,2088,55,"INNER
+29c,HASH_JOIN,12,False,961555,59466377,961555,2088,55,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,11,False,1,59466376,1,8963,2088,"INNER
+29c,HASH_JOIN,11,False,1,59466376,1,8963,2088,"INNER
 id = role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,10,False,36240046,23226330,36240046,337,8963,"INNER
+29c,HASH_JOIN,10,False,36240046,23226330,36240046,337,8963,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,9,False,1,23226329,1,337,337,"INNER
+29c,HASH_JOIN,9,False,1,23226329,1,337,337,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,8,False,14833529,8392800,14833529,92,337,"INNER
+29c,HASH_JOIN,8,False,14833529,8392800,14833529,92,337,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,7,False,84843,8307957,84843,415,92,"INNER
+29c,HASH_JOIN,7,False,84843,8307957,84843,415,92,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,6,False,2608923,5699034,2608923,18,415,"INNER
+29c,HASH_JOIN,6,False,2608923,5699034,2608923,18,415,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,5,False,1,5699033,1,55,18,"INNER
+29c,HASH_JOIN,5,False,1,5699033,1,55,18,"INNER
 id = status_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,4,False,1,5699032,1,61,55,"INNER
+29c,HASH_JOIN,4,False,1,5699032,1,61,55,"INNER
 id = subject_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,3,False,1042800,4656232,1042800,90,61,"INNER
+29c,HASH_JOIN,3,False,1042800,4656232,1042800,90,61,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,2,False,132439,4523793,132439,414,90,"INNER
+29c,HASH_JOIN,2,False,132439,4523793,132439,414,90,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/29c.sql,HASH_JOIN,1,False,4523792,1,4523792,1,414,"INNER
+29c,HASH_JOIN,1,False,4523792,1,4523792,1,414,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/2a.sql,HASH_JOIN,4,False,2525744,7142818,2525744,7834,7834,"INNER
+2a,HASH_JOIN,4,False,2525744,7142818,2525744,7834,7834,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/2a.sql,HASH_JOIN,3,False,9775,7133043,9775,148552,7834,"INNER
+2a,HASH_JOIN,3,False,9775,7133043,9775,148552,7834,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/2a.sql,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
+2a,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 74
 "
-/Users/kerenhuang/join-order-benchmark/2a.sql,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
+2a,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/2b.sql,HASH_JOIN,4,False,2525744,7135383,2525744,5228,5228,"INNER
+2b,HASH_JOIN,4,False,2525744,7135383,2525744,5228,5228,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/2b.sql,HASH_JOIN,3,False,2340,7133043,2340,148552,5228,"INNER
+2b,HASH_JOIN,3,False,2340,7133043,2340,148552,5228,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/2b.sql,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
+2b,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 74
 "
-/Users/kerenhuang/join-order-benchmark/2b.sql,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
+2b,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/2c.sql,HASH_JOIN,4,False,16384,7133044,16384,0,0,"INNER
+2c,HASH_JOIN,4,False,16384,7133044,16384,0,0,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/2c.sql,HASH_JOIN,3,False,1,7133043,1,148552,0,"INNER
+2c,HASH_JOIN,3,False,1,7133043,1,148552,0,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/2c.sql,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
+2c,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 74
 "
-/Users/kerenhuang/join-order-benchmark/2c.sql,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
+2c,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/2d.sql,HASH_JOIN,4,False,2525744,7217886,2525744,68316,68316,"INNER
+2d,HASH_JOIN,4,False,2525744,7217886,2525744,68316,68316,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/2d.sql,HASH_JOIN,3,False,84843,7133043,84843,148552,68316,"INNER
+2d,HASH_JOIN,3,False,84843,7133043,84843,148552,68316,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/2d.sql,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
+2d,HASH_JOIN,2,False,2609129,4523914,2609129,41838,148552,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 74
 "
-/Users/kerenhuang/join-order-benchmark/2d.sql,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
+2d,HASH_JOIN,1,False,4523913,1,4523913,1,41838,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,11,False,1739579,58629867,1739579,1021,757,"INNER
+30a,HASH_JOIN,11,False,1739579,58629867,1739579,1021,757,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,10,False,36244349,22385518,36244344,1161,1021,"INNER
+30a,HASH_JOIN,10,False,36244349,22385518,36244344,1161,1021,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+30a,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,9,False,134177,22251341,134170,51561,1161,"INNER
+30a,HASH_JOIN,9,False,134177,22251341,134170,51561,1161,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
+30a,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,8,False,4523786,17727555,4523786,432,51561,"INNER
+30a,HASH_JOIN,8,False,4523786,17727555,4523786,432,51561,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,7,False,17727554,1,432,1,432,"INNER
+30a,HASH_JOIN,7,False,17727554,1,432,1,432,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,6,False,14833725,2893829,14833725,1875,432,"INNER
+30a,HASH_JOIN,6,False,14833725,2893829,14833725,1875,432,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 4
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,5,False,2893828,1,19824,1,1875,"INNER
+30a,HASH_JOIN,5,False,2893828,1,19824,1,1875,"INNER
 status_id = id
 
 [INFOSEPARATOR]
 EC: 4
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,4,False,2893826,2,19824,2,19824,"INNER
+30a,HASH_JOIN,4,False,2893826,2,19824,2,19824,"INNER
 subject_id = id
 
 [INFOSEPARATOR]
 EC: 18
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,3,False,1381453,1512373,1381453,95399,19824,"INNER
+30a,HASH_JOIN,3,False,1381453,1512373,1381453,95399,19824,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 75
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,2,False,132439,1379934,132439,459891,95399,"INNER
+30a,HASH_JOIN,2,False,132439,1379934,132439,459891,95399,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 499
 "
-/Users/kerenhuang/join-order-benchmark/30a.sql,HASH_JOIN,1,False,1379933,1,1379933,1,459891,"INNER
+30a,HASH_JOIN,1,False,1379933,1,1379933,1,459891,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,11,False,1739579,58632514,1739579,28,28,"INNER
+30b,HASH_JOIN,11,False,1739579,58632514,1739579,28,28,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,10,False,36244349,22388165,36244344,12,28,"INNER
+30b,HASH_JOIN,10,False,36244349,22388165,36244344,12,28,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+30b,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,9,False,134177,22253988,134170,478,12,"INNER
+30b,HASH_JOIN,9,False,134177,22253988,134170,478,12,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
+30b,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,8,False,4523786,17730202,4523786,3,478,"INNER
+30b,HASH_JOIN,8,False,4523786,17730202,4523786,3,478,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,7,False,1,17730201,1,3,3,"INNER
+30b,HASH_JOIN,7,False,1,17730201,1,3,3,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,6,False,14833725,2896476,14833725,2,3,"INNER
+30b,HASH_JOIN,6,False,14833725,2896476,14833725,2,3,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,5,False,2896475,1,6,1,2,"INNER
+30b,HASH_JOIN,5,False,2896475,1,6,1,2,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,4,False,1379933,1516542,1379933,2,6,"INNER
+30b,HASH_JOIN,4,False,1379933,1516542,1379933,2,6,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 105
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,3,False,1516541,1,28,1,2,"INNER
+30b,HASH_JOIN,3,False,1516541,1,28,1,2,"INNER
 status_id = id
 
 [INFOSEPARATOR]
 EC: 1024
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,2,False,1516539,2,28,2,28,"INNER
+30b,HASH_JOIN,2,False,1516539,2,28,2,28,"INNER
 subject_id = id
 
 [INFOSEPARATOR]
 EC: 1024
 "
-/Users/kerenhuang/join-order-benchmark/30b.sql,HASH_JOIN,1,False,135086,1381453,135086,1381453,28,"INNER
+30b,HASH_JOIN,1,False,135086,1381453,135086,1381453,28,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 135086
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,11,False,1739579,59773928,1739579,11863,8024,"INNER
+30c,HASH_JOIN,11,False,1739579,59773928,1739579,11863,8024,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,10,False,36244349,23529579,36244344,14655,11863,"INNER
+30c,HASH_JOIN,10,False,36244349,23529579,36244344,14655,11863,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+30c,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,9,False,2525509,21004070,2525509,14655,14655,"INNER
+30c,HASH_JOIN,9,False,2525509,21004070,2525509,14655,14655,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,8,False,134177,20869893,134170,643428,14655,"INNER
+30c,HASH_JOIN,8,False,134177,20869893,134170,643428,14655,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
+30c,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,7,False,4523786,16346107,4523786,10291,643428,"INNER
+30c,HASH_JOIN,7,False,4523786,16346107,4523786,10291,643428,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,6,False,16346106,1,12194,1,10291,"INNER
+30c,HASH_JOIN,6,False,16346106,1,12194,1,10291,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,5,False,14833731,1512375,188966,17018,12194,"INNER
+30c,HASH_JOIN,5,False,14833731,1512375,188966,17018,12194,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 27
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,4,False,1512374,1,61559,1,17018,"INNER
+30c,HASH_JOIN,4,False,1512374,1,61559,1,17018,"INNER
 status_id = id
 
 [INFOSEPARATOR]
 EC: 31
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,3,False,1512373,1,95399,1,61559,"INNER
+30c,HASH_JOIN,3,False,1512373,1,95399,1,61559,"INNER
 subject_id = id
 
 [INFOSEPARATOR]
 EC: 124
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,2,False,132439,1379934,132439,459891,95399,"INNER
+30c,HASH_JOIN,2,False,132439,1379934,132439,459891,95399,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 499
 "
-/Users/kerenhuang/join-order-benchmark/30c.sql,HASH_JOIN,1,False,1379933,1,1379933,1,459891,"INNER
+30c,HASH_JOIN,1,False,1379933,1,1379933,1,459891,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,10,False,1739579,62251792,1739579,1556,1273,"INNER
+31a,HASH_JOIN,10,False,1739579,62251792,1739579,1556,1273,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,9,False,36244349,26007443,36244344,1524,1556,"INNER
+31a,HASH_JOIN,9,False,36244349,26007443,36244344,1524,1556,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 1
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+31a,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,8,False,2525744,23481699,2525744,1524,1524,"INNER
+31a,HASH_JOIN,8,False,2525744,23481699,2525744,1524,1524,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,7,False,134177,23347522,134170,54461,1524,"INNER
+31a,HASH_JOIN,7,False,134177,23347522,134170,54461,1524,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
+31a,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,6,False,4523913,18823609,4523913,661,54461,"INNER
+31a,HASH_JOIN,6,False,4523913,18823609,4523913,661,54461,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 4
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,5,False,18823608,1,683,1,661,"INNER
+31a,HASH_JOIN,5,False,18823608,1,683,1,661,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,4,False,14834457,3989151,14834457,1449,683,"INNER
+31a,HASH_JOIN,4,False,14834457,3989151,14834457,1449,683,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 344
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,3,False,3989141,10,1354883,10,1449,"INNER
+31a,HASH_JOIN,3,False,3989141,10,1354883,10,1449,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 387
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,2,False,2609129,1380012,2609129,459917,1354883,"INNER
+31a,HASH_JOIN,2,False,2609129,1380012,2609129,459917,1354883,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 9641
 "
-/Users/kerenhuang/join-order-benchmark/31a.sql,HASH_JOIN,1,False,1380011,1,1380011,1,459917,"INNER
+31a,HASH_JOIN,1,False,1380011,1,1380011,1,459917,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,10,False,1739579,61107525,1739579,84,84,"INNER
+31b,HASH_JOIN,10,False,1739579,61107525,1739579,84,84,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,9,False,36244349,24863176,36244344,46,84,"INNER
+31b,HASH_JOIN,9,False,36244349,24863176,36244344,46,84,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+31b,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,8,False,134177,24728999,134170,1504,46,"INNER
+31b,HASH_JOIN,8,False,134177,24728999,134170,1504,46,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
+31b,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,7,False,4523913,20205086,4523913,11,1504,"INNER
+31b,HASH_JOIN,7,False,4523913,20205086,4523913,11,1504,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,6,False,20205085,1,11,1,11,"INNER
+31b,HASH_JOIN,6,False,20205085,1,11,1,11,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,5,False,14834457,5370628,14834457,7,11,"INNER
+31b,HASH_JOIN,5,False,14834457,5370628,14834457,7,11,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,4,False,10,5370618,10,19,7,"INNER
+31b,HASH_JOIN,4,False,10,5370618,10,19,7,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,3,False,2609129,2761489,2609129,101,19,"INNER
+31b,HASH_JOIN,3,False,2609129,2761489,2609129,101,19,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 58
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,2,False,1381453,1380036,1381453,459925,101,"INNER
+31b,HASH_JOIN,2,False,1381453,1380036,1381453,459925,101,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 373
 "
-/Users/kerenhuang/join-order-benchmark/31b.sql,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
+31b,HASH_JOIN,1,False,1380035,1,1380035,1,459925,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,10,False,4061926,62251798,4061926,2825,2825,"INNER
+31c,HASH_JOIN,10,False,4061926,62251798,4061926,2825,2825,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 1
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,9,False,36244349,26007449,36244344,2840,2825,"INNER
+31c,HASH_JOIN,9,False,36244349,26007449,36244344,2840,2825,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 1
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
+31c,HASH_JOIN,1,False,36244344,5,36244344,5,36244344,"MARK
 note = #0
 
 [INFOSEPARATOR]
 EC: 36244344
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,8,False,2525744,23481705,2525744,2840,2840,"INNER
+31c,HASH_JOIN,8,False,2525744,23481705,2525744,2840,2840,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,7,False,134177,23347528,134170,110436,2840,"INNER
+31c,HASH_JOIN,7,False,134177,23347528,134170,110436,2840,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
+31c,HASH_JOIN,1,False,134170,7,134170,7,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,6,False,4523913,18823615,4523913,1235,110436,"INNER
+31c,HASH_JOIN,6,False,4523913,18823615,4523913,1235,110436,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 4
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,5,False,18823614,1,1295,1,1235,"INNER
+31c,HASH_JOIN,5,False,18823614,1,1295,1,1235,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 3
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,4,False,14834463,3989151,188961,1449,1295,"INNER
+31c,HASH_JOIN,4,False,14834463,3989151,188961,1449,1295,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 344
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,3,False,3989141,10,1354883,10,1449,"INNER
+31c,HASH_JOIN,3,False,3989141,10,1354883,10,1449,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 387
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,2,False,2609129,1380012,2609129,459917,1354883,"INNER
+31c,HASH_JOIN,2,False,2609129,1380012,2609129,459917,1354883,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 9641
 "
-/Users/kerenhuang/join-order-benchmark/31c.sql,HASH_JOIN,1,False,1380011,1,1380011,1,459917,"INNER
+31c,HASH_JOIN,1,False,1380011,1,1380011,1,459917,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 1380035
 "
-/Users/kerenhuang/join-order-benchmark/32a.sql,HASH_JOIN,5,False,3815,116300,3815,0,0,"INNER
+32a,HASH_JOIN,5,False,3815,116300,3815,0,0,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/32a.sql,HASH_JOIN,4,False,16380,99920,16380,0,0,"INNER
+32a,HASH_JOIN,4,False,16380,99920,16380,0,0,"INNER
 id = linked_movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/32a.sql,HASH_JOIN,3,False,17,99903,17,0,0,"INNER
+32a,HASH_JOIN,3,False,17,99903,17,0,0,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/32a.sql,HASH_JOIN,2,False,2048,97855,2048,0,0,"INNER
+32a,HASH_JOIN,2,False,2048,97855,2048,0,0,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/32a.sql,HASH_JOIN,1,False,97854,1,97854,1,0,"INNER
+32a,HASH_JOIN,1,False,97854,1,97854,1,0,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/32b.sql,HASH_JOIN,5,False,186174,2652580,186174,4388,4388,"INNER
+32b,HASH_JOIN,5,False,186174,2652580,186174,4388,4388,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/32b.sql,HASH_JOIN,4,False,2524711,127869,2524711,4388,4388,"INNER
+32b,HASH_JOIN,4,False,2524711,127869,2524711,4388,4388,"INNER
 id = linked_movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/32b.sql,HASH_JOIN,3,False,17,127852,17,4388,4388,"INNER
+32b,HASH_JOIN,3,False,17,127852,17,4388,4388,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/32b.sql,HASH_JOIN,2,False,29997,97855,29997,2233,4388,"INNER
+32b,HASH_JOIN,2,False,29997,97855,29997,2233,4388,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/32b.sql,HASH_JOIN,1,False,97854,1,97854,1,2233,"INNER
+32b,HASH_JOIN,1,False,97854,1,97854,1,2233,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 4523930
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,13,False,234997,4193210,234997,8,8,"INNER
+33a,HASH_JOIN,13,False,234997,4193210,234997,8,8,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,12,False,2607699,1585511,2607699,2,8,"INNER
+33a,HASH_JOIN,12,False,2607699,1585511,2607699,2,8,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,11,False,84843,1500668,84843,14,2,"INNER
+33a,HASH_JOIN,11,False,84843,1500668,84843,14,2,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,10,False,99876,1400792,99876,5,14,"INNER
+33a,HASH_JOIN,10,False,99876,1400792,99876,5,14,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,9,False,7,1400785,7,5,5,"INNER
+33a,HASH_JOIN,9,False,7,1400785,7,5,5,"INNER
 id = kind_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,8,False,186174,1214611,186174,5,5,"INNER
+33a,HASH_JOIN,8,False,186174,1214611,186174,5,5,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,7,False,1,1214610,1,15,5,"INNER
+33a,HASH_JOIN,7,False,1,1214610,1,15,5,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,6,False,63900,1150710,63900,6,15,"INNER
+33a,HASH_JOIN,6,False,63900,1150710,63900,6,15,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,5,False,7,1150703,7,6,6,"INNER
+33a,HASH_JOIN,5,False,7,1150703,7,6,6,"INNER
 id = kind_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,4,False,445860,704843,445860,34,6,"INNER
+33a,HASH_JOIN,4,False,445860,704843,445860,34,6,"INNER
 id = linked_movie_id
 
 [INFOSEPARATOR]
 EC: 1
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,3,False,704826,17,1085,17,34,"INNER
+33a,HASH_JOIN,3,False,704826,17,1085,17,34,"INNER
 link_type_id = id
 
 [INFOSEPARATOR]
 EC: 5
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,2,False,29997,674829,29997,25576,1085,"INNER
+33a,HASH_JOIN,2,False,29997,674829,29997,25576,1085,"INNER
 linked_movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 30
 "
-/Users/kerenhuang/join-order-benchmark/33a.sql,HASH_JOIN,1,False,674828,1,674828,1,25576,"INNER
+33a,HASH_JOIN,1,False,674828,1,674828,1,25576,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,13,False,234997,3784412,234997,4,4,"INNER
+33b,HASH_JOIN,13,False,234997,3784412,234997,4,4,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,12,False,2607699,1176713,2607699,1,4,"INNER
+33b,HASH_JOIN,12,False,2607699,1176713,2607699,1,4,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,11,False,2340,1174373,2340,4,1,"INNER
+33b,HASH_JOIN,11,False,2340,1174373,2340,4,1,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,10,False,99876,1074497,99876,2,4,"INNER
+33b,HASH_JOIN,10,False,99876,1074497,99876,2,4,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,9,False,7,1074490,7,2,2,"INNER
+33b,HASH_JOIN,9,False,7,1074490,7,2,2,"INNER
 id = kind_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,8,False,186174,888316,186174,2,2,"INNER
+33b,HASH_JOIN,8,False,186174,888316,186174,2,2,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,7,False,1,888315,1,6,2,"INNER
+33b,HASH_JOIN,7,False,1,888315,1,6,2,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,6,False,63900,824415,63900,2,6,"INNER
+33b,HASH_JOIN,6,False,63900,824415,63900,2,6,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,5,False,17,824398,17,82,2,"INNER
+33b,HASH_JOIN,5,False,17,824398,17,82,2,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,4,False,7,824391,7,105,82,"INNER
+33b,HASH_JOIN,4,False,7,824391,7,105,82,"INNER
 id = kind_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,3,False,824390,1,1322,1,105,"INNER
+33b,HASH_JOIN,3,False,824390,1,1322,1,105,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,2,False,674828,149562,674828,1053,1322,"INNER
+33b,HASH_JOIN,2,False,674828,149562,674828,1053,1322,"INNER
 movie_id = linked_movie_id
 
 [INFOSEPARATOR]
 EC: 29
 "
-/Users/kerenhuang/join-order-benchmark/33b.sql,HASH_JOIN,1,False,29997,119565,29997,119565,1053,"INNER
+33b,HASH_JOIN,1,False,29997,119565,29997,119565,1053,"INNER
 linked_movie_id = id
 
 [INFOSEPARATOR]
 EC: 251
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,13,False,234997,4952743,234997,114,114,"INNER
+33c,HASH_JOIN,13,False,234997,4952743,234997,114,114,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,12,False,2607699,2345044,2607699,46,114,"INNER
+33c,HASH_JOIN,12,False,2607699,2345044,2607699,46,114,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,11,False,234997,2110047,234997,51,46,"INNER
+33c,HASH_JOIN,11,False,234997,2110047,234997,51,46,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,10,False,99876,2010171,99876,19,51,"INNER
+33c,HASH_JOIN,10,False,99876,2010171,99876,19,51,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,9,False,7,2010164,7,19,19,"INNER
+33c,HASH_JOIN,9,False,7,2010164,7,19,19,"INNER
 id = kind_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,8,False,186174,1823990,186174,19,19,"INNER
+33c,HASH_JOIN,8,False,186174,1823990,186174,19,19,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,7,False,1,1823989,1,57,19,"INNER
+33c,HASH_JOIN,7,False,1,1823989,1,57,19,"INNER
 id = info_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,6,False,63900,1760089,63900,21,57,"INNER
+33c,HASH_JOIN,6,False,63900,1760089,63900,21,57,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,5,False,7,1760082,7,29,21,"INNER
+33c,HASH_JOIN,5,False,7,1760082,7,29,21,"INNER
 id = kind_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,4,False,1042800,717282,1042800,47,29,"INNER
+33c,HASH_JOIN,4,False,1042800,717282,1042800,47,29,"INNER
 id = linked_movie_id
 
 [INFOSEPARATOR]
 EC: 1
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,3,False,717265,17,1505,17,47,"INNER
+33c,HASH_JOIN,3,False,717265,17,1505,17,47,"INNER
 link_type_id = id
 
 [INFOSEPARATOR]
 EC: 5
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,2,False,29997,687268,29997,36724,1505,"INNER
+33c,HASH_JOIN,2,False,29997,687268,29997,36724,1505,"INNER
 linked_movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 30
 "
-/Users/kerenhuang/join-order-benchmark/33c.sql,HASH_JOIN,1,False,687267,1,687267,1,36724,"INNER
+33c,HASH_JOIN,1,False,687267,1,687267,1,36724,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 276007
 "
-/Users/kerenhuang/join-order-benchmark/3a.sql,HASH_JOIN,3,False,14835728,5671020,14835720,2235,206,"INNER
+3a,HASH_JOIN,3,False,14835728,5671020,14835720,2235,206,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 200749
 "
-/Users/kerenhuang/join-order-benchmark/3a.sql,HASH_JOIN,1,False,14835720,8,14835720,8,14835720,"MARK
+3a,HASH_JOIN,1,False,14835720,8,14835720,8,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/3a.sql,HASH_JOIN,2,False,5536850,134170,1253091,134170,2235,"INNER
+3a,HASH_JOIN,2,False,5536850,134170,1253091,134170,2235,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 176740
 "
-/Users/kerenhuang/join-order-benchmark/3a.sql,HASH_JOIN,1,False,4523930,1012920,4523930,1012920,1253091,"INNER
+3a,HASH_JOIN,1,False,4523930,1012920,4523930,1012920,1253091,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 875701
 "
-/Users/kerenhuang/join-order-benchmark/3b.sql,HASH_JOIN,3,False,2287,5049766,2287,405,5,"INNER
+3b,HASH_JOIN,3,False,2287,5049766,2287,405,5,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 200749
 "
-/Users/kerenhuang/join-order-benchmark/3b.sql,HASH_JOIN,2,False,4915596,134170,299534,134170,405,"INNER
+3b,HASH_JOIN,2,False,4915596,134170,299534,134170,405,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 176740
 "
-/Users/kerenhuang/join-order-benchmark/3b.sql,HASH_JOIN,1,False,4523930,391666,4523930,391666,299534,"INNER
+3b,HASH_JOIN,1,False,4523930,391666,4523930,391666,299534,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 875701
 "
-/Users/kerenhuang/join-order-benchmark/3c.sql,HASH_JOIN,3,False,14835730,6407132,14835720,7874,7250,"INNER
+3c,HASH_JOIN,3,False,14835730,6407132,14835720,7874,7250,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 200749
 "
-/Users/kerenhuang/join-order-benchmark/3c.sql,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
+3c,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/3c.sql,HASH_JOIN,2,False,6272962,134170,2742670,134170,7874,"INNER
+3c,HASH_JOIN,2,False,6272962,134170,2742670,134170,7874,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 176740
 "
-/Users/kerenhuang/join-order-benchmark/3c.sql,HASH_JOIN,1,False,4523930,1749032,4523930,1749032,2742670,"INNER
+3c,HASH_JOIN,1,False,4523930,1749032,4523930,1749032,2742670,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 875701
 "
-/Users/kerenhuang/join-order-benchmark/4a.sql,HASH_JOIN,4,False,134170,6054527,134170,697651,740,"INNER
+4a,HASH_JOIN,4,False,134170,6054527,134170,697651,740,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 199
 "
-/Users/kerenhuang/join-order-benchmark/4a.sql,HASH_JOIN,3,False,4523924,1530603,4523924,106021,697651,"INNER
+4a,HASH_JOIN,3,False,4523924,1530603,4523924,106021,697651,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 986
 "
-/Users/kerenhuang/join-order-benchmark/4a.sql,HASH_JOIN,2,False,1012920,517683,1012920,352990,106021,"INNER
+4a,HASH_JOIN,2,False,1012920,517683,1012920,352990,106021,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 521
 "
-/Users/kerenhuang/join-order-benchmark/4a.sql,HASH_JOIN,1,False,517682,1,517682,1,352990,"INNER
+4a,HASH_JOIN,1,False,517682,1,517682,1,352990,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2464
 "
-/Users/kerenhuang/join-order-benchmark/4b.sql,HASH_JOIN,4,False,134170,4923913,134170,1070,6,"INNER
+4b,HASH_JOIN,4,False,134170,4923913,134170,1070,6,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 199
 "
-/Users/kerenhuang/join-order-benchmark/4b.sql,HASH_JOIN,3,False,4523924,399989,4523924,72,1070,"INNER
+4b,HASH_JOIN,3,False,4523924,399989,4523924,72,1070,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 986
 "
-/Users/kerenhuang/join-order-benchmark/4b.sql,HASH_JOIN,2,False,391666,8323,391666,305,72,"INNER
+4b,HASH_JOIN,2,False,391666,8323,391666,305,72,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 521
 "
-/Users/kerenhuang/join-order-benchmark/4b.sql,HASH_JOIN,1,False,8322,1,8322,1,305,"INNER
+4b,HASH_JOIN,1,False,8322,1,8322,1,305,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2464
 "
-/Users/kerenhuang/join-order-benchmark/4c.sql,HASH_JOIN,4,False,134170,7079322,134170,2012691,4700,"INNER
+4c,HASH_JOIN,4,False,134170,7079322,134170,2012691,4700,"INNER
 id = keyword_id
 
 [INFOSEPARATOR]
 EC: 199
 "
-/Users/kerenhuang/join-order-benchmark/4c.sql,HASH_JOIN,3,False,4523924,2555398,4523924,294217,2012691,"INNER
+4c,HASH_JOIN,3,False,4523924,2555398,4523924,294217,2012691,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 986
 "
-/Users/kerenhuang/join-order-benchmark/4c.sql,HASH_JOIN,2,False,1749032,806366,1749032,448969,294217,"INNER
+4c,HASH_JOIN,2,False,1749032,806366,1749032,448969,294217,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 521
 "
-/Users/kerenhuang/join-order-benchmark/4c.sql,HASH_JOIN,1,False,806365,1,806365,1,448969,"INNER
+4c,HASH_JOIN,1,False,806365,1,806365,1,448969,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 2464
 "
-/Users/kerenhuang/join-order-benchmark/5a.sql,HASH_JOIN,4,False,3694311,110,0,110,0,"INNER
+5a,HASH_JOIN,4,False,3694311,110,0,110,0,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 28939
 "
-/Users/kerenhuang/join-order-benchmark/5a.sql,HASH_JOIN,3,False,72261,3622050,72253,0,0,"INNER
+5a,HASH_JOIN,3,False,72261,3622050,72253,0,0,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 28682
 "
-/Users/kerenhuang/join-order-benchmark/5a.sql,HASH_JOIN,1,False,72253,8,72253,8,72253,"MARK
+5a,HASH_JOIN,1,False,72253,8,72253,8,72253,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/5a.sql,HASH_JOIN,2,False,3622049,1,3929,1,0,"INNER
+5a,HASH_JOIN,2,False,3622049,1,3929,1,0,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 25252
 "
-/Users/kerenhuang/join-order-benchmark/5a.sql,HASH_JOIN,1,False,2609129,1012920,2609129,1012920,3929,"INNER
+5a,HASH_JOIN,1,False,2609129,1012920,2609129,1012920,3929,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 101010
 "
-/Users/kerenhuang/join-order-benchmark/5b.sql,HASH_JOIN,4,False,14425995,110,0,110,0,"INNER
+5b,HASH_JOIN,4,False,14425992,110,0,110,0,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 28939
 "
-/Users/kerenhuang/join-order-benchmark/5b.sql,HASH_JOIN,3,False,11425199,3000796,11425199,0,0,"INNER
+5b,HASH_JOIN,3,False,11425196,3000796,11425196,0,0,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 28682
 "
-/Users/kerenhuang/join-order-benchmark/5b.sql,HASH_JOIN,2,False,3000795,1,0,1,0,"INNER
+5b,HASH_JOIN,2,False,3000795,1,0,1,0,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 25252
 "
-/Users/kerenhuang/join-order-benchmark/5b.sql,HASH_JOIN,1,False,2609129,391666,2609129,391666,0,"INNER
+5b,HASH_JOIN,1,False,2609129,391666,2609129,391666,0,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 101010
 "
-/Users/kerenhuang/join-order-benchmark/5c.sql,HASH_JOIN,4,False,19193892,110,669,110,669,"INNER
+5c,HASH_JOIN,4,False,19193892,110,669,110,669,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 28939
 "
-/Users/kerenhuang/join-order-benchmark/5c.sql,HASH_JOIN,3,False,14835730,4358162,14835720,767,669,"INNER
+5c,HASH_JOIN,3,False,14835730,4358162,14835720,767,669,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 28682
 "
-/Users/kerenhuang/join-order-benchmark/5c.sql,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
+5c,HASH_JOIN,1,False,14835720,10,14835720,10,14835720,"MARK
 info = #0
 
 [INFOSEPARATOR]
 EC: 14835720
 "
-/Users/kerenhuang/join-order-benchmark/5c.sql,HASH_JOIN,2,False,4358161,1,105501,1,767,"INNER
+5c,HASH_JOIN,2,False,4358161,1,105501,1,767,"INNER
 company_type_id = id
 
 [INFOSEPARATOR]
 EC: 25252
 "
-/Users/kerenhuang/join-order-benchmark/5c.sql,HASH_JOIN,1,False,2609129,1749032,2609129,1749032,105501,"INNER
+5c,HASH_JOIN,1,False,2609129,1749032,2609129,1749032,105501,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 101010
 "
-/Users/kerenhuang/join-order-benchmark/6a.sql,HASH_JOIN,4,False,4061926,41159924,4061926,1224,6,"INNER
+6a,HASH_JOIN,4,False,4061926,41159924,4061926,1224,6,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 22
 "
-/Users/kerenhuang/join-order-benchmark/6a.sql,HASH_JOIN,3,False,36244327,4915597,36244327,11,1224,"INNER
+6a,HASH_JOIN,3,False,36244327,4915597,36244327,11,1224,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 112
 "
-/Users/kerenhuang/join-order-benchmark/6a.sql,HASH_JOIN,2,False,391666,4523931,391666,14,11,"INNER
+6a,HASH_JOIN,2,False,391666,4523931,391666,14,11,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 10
 "
-/Users/kerenhuang/join-order-benchmark/6a.sql,HASH_JOIN,1,False,4523930,1,4523930,1,14,"INNER
+6a,HASH_JOIN,1,False,4523930,1,4523930,1,14,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 68
 "
-/Users/kerenhuang/join-order-benchmark/6b.sql,HASH_JOIN,4,False,40902873,4061926,383,4061926,12,"INNER
+6b,HASH_JOIN,4,False,40902873,4061926,383,4061926,12,"INNER
 person_id = id
 
 [INFOSEPARATOR]
 EC: 303311
 "
-/Users/kerenhuang/join-order-benchmark/6b.sql,HASH_JOIN,3,False,36244327,4658546,36244327,36,383,"INNER
+6b,HASH_JOIN,3,False,36244327,4658546,36244327,36,383,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 1504910
 "
-/Users/kerenhuang/join-order-benchmark/6b.sql,HASH_JOIN,2,False,4524368,134178,1054,134170,36,"INNER
+6b,HASH_JOIN,2,False,4524368,134178,1054,134170,36,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 138456
 "
-/Users/kerenhuang/join-order-benchmark/6b.sql,HASH_JOIN,1,False,4523930,438,4523930,438,1054,"INNER
+6b,HASH_JOIN,1,False,4523930,438,4523930,438,1054,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 686013
 "
-/Users/kerenhuang/join-order-benchmark/6b.sql,HASH_JOIN,1,False,134170,8,134170,8,134170,"MARK
+6b,HASH_JOIN,1,False,134170,8,134170,8,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/6c.sql,HASH_JOIN,4,False,4061926,40768696,4061926,33,2,"INNER
+6c,HASH_JOIN,4,False,4061926,40768696,4061926,33,2,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 22
 "
-/Users/kerenhuang/join-order-benchmark/6c.sql,HASH_JOIN,3,False,36244327,4524369,36244327,2,33,"INNER
+6c,HASH_JOIN,3,False,36244327,4524369,36244327,2,33,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 112
 "
-/Users/kerenhuang/join-order-benchmark/6c.sql,HASH_JOIN,2,False,438,4523931,438,14,2,"INNER
+6c,HASH_JOIN,2,False,438,4523931,438,14,2,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 10
 "
-/Users/kerenhuang/join-order-benchmark/6c.sql,HASH_JOIN,1,False,4523930,1,4523930,1,14,"INNER
+6c,HASH_JOIN,1,False,4523930,1,4523930,1,14,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 68
 "
-/Users/kerenhuang/join-order-benchmark/6d.sql,HASH_JOIN,4,False,42283888,4061926,785477,4061926,88,"INNER
+6d,HASH_JOIN,4,False,42283888,4061926,785477,4061926,88,"INNER
 person_id = id
 
 [INFOSEPARATOR]
 EC: 303311
 "
-/Users/kerenhuang/join-order-benchmark/6d.sql,HASH_JOIN,3,False,36244327,6039561,36244327,14165,785477,"INNER
+6d,HASH_JOIN,3,False,36244327,6039561,36244327,14165,785477,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 1504910
 "
-/Users/kerenhuang/join-order-benchmark/6d.sql,HASH_JOIN,2,False,5905383,134178,1970380,134170,14165,"INNER
+6d,HASH_JOIN,2,False,5905383,134178,1970380,134170,14165,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 138456
 "
-/Users/kerenhuang/join-order-benchmark/6d.sql,HASH_JOIN,1,False,4523930,1381453,4523930,1381453,1970380,"INNER
+6d,HASH_JOIN,1,False,4523930,1381453,4523930,1381453,1970380,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 686013
 "
-/Users/kerenhuang/join-order-benchmark/6d.sql,HASH_JOIN,1,False,134170,8,134170,8,134170,"MARK
+6d,HASH_JOIN,1,False,134170,8,134170,8,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/6e.sql,HASH_JOIN,4,False,4061926,42149711,4061926,1224,6,"INNER
+6e,HASH_JOIN,4,False,4061926,42149711,4061926,1224,6,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 22
 "
-/Users/kerenhuang/join-order-benchmark/6e.sql,HASH_JOIN,3,False,36244327,5905384,36244327,11,1224,"INNER
+6e,HASH_JOIN,3,False,36244327,5905384,36244327,11,1224,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 112
 "
-/Users/kerenhuang/join-order-benchmark/6e.sql,HASH_JOIN,2,False,1381453,4523931,1381453,14,11,"INNER
+6e,HASH_JOIN,2,False,1381453,4523931,1381453,14,11,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 10
 "
-/Users/kerenhuang/join-order-benchmark/6e.sql,HASH_JOIN,1,False,4523930,1,4523930,1,14,"INNER
+6e,HASH_JOIN,1,False,4523930,1,4523930,1,14,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 68
 "
-/Users/kerenhuang/join-order-benchmark/6f.sql,HASH_JOIN,4,False,4061926,42283888,4061926,785477,785477,"INNER
+6f,HASH_JOIN,4,False,4061926,42283888,4061926,785477,785477,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 1516558
 "
-/Users/kerenhuang/join-order-benchmark/6f.sql,HASH_JOIN,3,False,36244327,6039561,36244327,14165,785477,"INNER
+6f,HASH_JOIN,3,False,36244327,6039561,36244327,14165,785477,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 1504910
 "
-/Users/kerenhuang/join-order-benchmark/6f.sql,HASH_JOIN,2,False,5905383,134178,1970380,134170,14165,"INNER
+6f,HASH_JOIN,2,False,5905383,134178,1970380,134170,14165,"INNER
 keyword_id = id
 
 [INFOSEPARATOR]
 EC: 138456
 "
-/Users/kerenhuang/join-order-benchmark/6f.sql,HASH_JOIN,1,False,4523930,1381453,4523930,1381453,1970380,"INNER
+6f,HASH_JOIN,1,False,4523930,1381453,4523930,1381453,1970380,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 686013
 "
-/Users/kerenhuang/join-order-benchmark/6f.sql,HASH_JOIN,1,False,134170,8,134170,8,134170,"MARK
+6f,HASH_JOIN,1,False,134170,8,134170,8,134170,"MARK
 keyword = #0
 
 [INFOSEPARATOR]
 EC: 134170
 "
-/Users/kerenhuang/join-order-benchmark/7a.sql,HASH_JOIN,7,False,340186,38279024,340186,151,32,"INNER
+7a,HASH_JOIN,7,False,340186,38279024,340186,151,32,"INNER
 id = linked_movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7a.sql,HASH_JOIN,6,False,1,38279023,1,510,151,"INNER
+7a,HASH_JOIN,6,False,1,38279023,1,510,151,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7a.sql,HASH_JOIN,5,False,29997,38249026,29997,3354,510,"INNER
+7a,HASH_JOIN,5,False,29997,38249026,29997,3354,510,"INNER
 linked_movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7a.sql,HASH_JOIN,4,False,36244340,2004686,36244340,20,3354,"INNER
+7a,HASH_JOIN,4,False,36244340,2004686,36244340,20,3354,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7a.sql,HASH_JOIN,3,False,901343,1103343,901343,17,20,"INNER
+7a,HASH_JOIN,3,False,901343,1103343,901343,17,20,"INNER
 person_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7a.sql,HASH_JOIN,2,False,1103278,65,1103278,64,17,"INNER
+7a,HASH_JOIN,2,False,1103278,65,1103278,64,17,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7a.sql,HASH_JOIN,1,False,64,1,64,1,64,"INNER
+7a,HASH_JOIN,1,False,64,1,64,1,64,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 491
 "
-/Users/kerenhuang/join-order-benchmark/7b.sql,HASH_JOIN,7,False,76065,37267722,76065,46,16,"INNER
+7b,HASH_JOIN,7,False,76065,37267722,76065,46,16,"INNER
 id = linked_movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7b.sql,HASH_JOIN,6,False,1,37267721,1,176,46,"INNER
+7b,HASH_JOIN,6,False,1,37267721,1,176,46,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7b.sql,HASH_JOIN,5,False,29997,37237724,29997,353,176,"INNER
+7b,HASH_JOIN,5,False,29997,37237724,29997,353,176,"INNER
 linked_movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7b.sql,HASH_JOIN,4,False,36244340,993384,36244340,3,353,"INNER
+7b,HASH_JOIN,4,False,36244340,993384,36244340,3,353,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7b.sql,HASH_JOIN,3,False,91976,901408,91976,98,3,"INNER
+7b,HASH_JOIN,3,False,91976,901408,91976,98,3,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7b.sql,HASH_JOIN,2,False,901343,65,901343,64,98,"INNER
+7b,HASH_JOIN,2,False,901343,65,901343,64,98,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7b.sql,HASH_JOIN,1,False,64,1,64,1,64,"INNER
+7b,HASH_JOIN,1,False,64,1,64,1,64,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 491
 "
-/Users/kerenhuang/join-order-benchmark/7c.sql,HASH_JOIN,7,False,17,42798220,17,77651,68185,"INNER
+7c,HASH_JOIN,7,False,17,42798220,17,77651,68185,"INNER
 id = link_type_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7c.sql,HASH_JOIN,6,False,1555597,41242623,1555597,127027,77651,"INNER
+7c,HASH_JOIN,6,False,1555597,41242623,1555597,127027,77651,"INNER
 id = linked_movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7c.sql,HASH_JOIN,5,False,29997,41212626,29997,1618304,127027,"INNER
+7c,HASH_JOIN,5,False,29997,41212626,29997,1618304,127027,"INNER
 linked_movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/7c.sql,HASH_JOIN,4,False,36244340,4968286,36244340,12595,1618304,"INNER
+7c,HASH_JOIN,4,False,36244340,4968286,36244340,12595,1618304,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 81
 "
-/Users/kerenhuang/join-order-benchmark/7c.sql,HASH_JOIN,3,False,901343,4066943,901343,13063,12595,"INNER
+7c,HASH_JOIN,3,False,901343,4066943,901343,13063,12595,"INNER
 person_id = id
 
 [INFOSEPARATOR]
 EC: 9
 "
-/Users/kerenhuang/join-order-benchmark/7c.sql,HASH_JOIN,2,False,1103278,2963665,1103278,84183,13063,"INNER
+7c,HASH_JOIN,2,False,1103278,2963665,1103278,84183,13063,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 213
 "
-/Users/kerenhuang/join-order-benchmark/7c.sql,HASH_JOIN,1,False,2963664,1,2963664,1,84183,"INNER
+7c,HASH_JOIN,1,False,2963664,1,2963664,1,84183,"INNER
 info_type_id = id
 
 [INFOSEPARATOR]
 EC: 592732
 "
-/Users/kerenhuang/join-order-benchmark/8a.sql,HASH_JOIN,6,False,2525744,7543484,2525744,62,62,"INNER
+8a,HASH_JOIN,6,False,2525744,7543484,2525744,62,62,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/8a.sql,HASH_JOIN,5,False,772581,6770903,772581,38,62,"INNER
+8a,HASH_JOIN,5,False,772581,6770903,772581,38,62,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/8a.sql,HASH_JOIN,4,False,4061926,2708977,4061926,7438,38,"INNER
+8a,HASH_JOIN,4,False,4061926,2708977,4061926,7438,38,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/8a.sql,HASH_JOIN,3,False,6752,2702225,6752,7532,7438,"INNER
+8a,HASH_JOIN,3,False,6752,2702225,6752,7532,7438,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/8a.sql,HASH_JOIN,2,False,2609129,93096,2609129,34848,7532,"INNER
+8a,HASH_JOIN,2,False,2609129,93096,2609129,34848,7532,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 4
 "
-/Users/kerenhuang/join-order-benchmark/8a.sql,HASH_JOIN,1,False,93095,1,93095,1,34848,"INNER
+8a,HASH_JOIN,1,False,93095,1,93095,1,34848,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 356
 "
-/Users/kerenhuang/join-order-benchmark/8b.sql,HASH_JOIN,6,False,772581,6998897,772581,4,6,"INNER
+8b,HASH_JOIN,6,False,772581,6998897,772581,4,6,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/8b.sql,HASH_JOIN,5,False,4061926,2936971,4061926,25,4,"INNER
+8b,HASH_JOIN,5,False,4061926,2936971,4061926,25,4,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/8b.sql,HASH_JOIN,4,False,6752,2930219,6752,25,25,"INNER
+8b,HASH_JOIN,4,False,6752,2930219,6752,25,25,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/8b.sql,HASH_JOIN,3,False,2609129,321090,2609129,56,25,"INNER
+8b,HASH_JOIN,3,False,2609129,321090,2609129,56,25,"INNER
 movie_id = id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/8b.sql,HASH_JOIN,2,False,321089,1,226,1,56,"INNER
+8b,HASH_JOIN,2,False,321089,1,226,1,56,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 101132
 "
-/Users/kerenhuang/join-order-benchmark/8b.sql,HASH_JOIN,1,False,227994,93095,227994,93095,226,"INNER
+8b,HASH_JOIN,1,False,227994,93095,227994,93095,226,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 101132
 "
-/Users/kerenhuang/join-order-benchmark/8c.sql,HASH_JOIN,6,False,4061923,42234901,4061923,2487611,2487611,"INNER
+8c,HASH_JOIN,6,False,4061923,42234901,4061923,2487611,2487611,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 2601
 "
-/Users/kerenhuang/join-order-benchmark/8c.sql,HASH_JOIN,5,False,772581,41462320,772581,1970658,2487611,"INNER
+8c,HASH_JOIN,5,False,772581,41462320,772581,1970658,2487611,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 2581
 "
-/Users/kerenhuang/join-order-benchmark/8c.sql,HASH_JOIN,4,False,41462319,1,32289229,1,1970658,"INNER
+8c,HASH_JOIN,4,False,41462319,1,32289229,1,1970658,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 142119
 "
-/Users/kerenhuang/join-order-benchmark/8c.sql,HASH_JOIN,3,False,36242603,5219716,36242603,1153798,32289229,"INNER
+8c,HASH_JOIN,3,False,36242603,5219716,36242603,1153798,32289229,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 142119
 "
-/Users/kerenhuang/join-order-benchmark/8c.sql,HASH_JOIN,2,False,2525744,2693972,2525744,1153798,1153798,"INNER
+8c,HASH_JOIN,2,False,2525744,2693972,2525744,1153798,1153798,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 13075
 "
-/Users/kerenhuang/join-order-benchmark/8c.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
+8c,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/8d.sql,HASH_JOIN,6,False,4061923,42234901,4061923,323005,323005,"INNER
+8d,HASH_JOIN,6,False,4061923,42234901,4061923,323005,323005,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 2601
 "
-/Users/kerenhuang/join-order-benchmark/8d.sql,HASH_JOIN,5,False,772581,41462320,772581,285538,323005,"INNER
+8d,HASH_JOIN,5,False,772581,41462320,772581,285538,323005,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 2581
 "
-/Users/kerenhuang/join-order-benchmark/8d.sql,HASH_JOIN,4,False,41462319,1,32289229,1,285538,"INNER
+8d,HASH_JOIN,4,False,41462319,1,32289229,1,285538,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 142119
 "
-/Users/kerenhuang/join-order-benchmark/8d.sql,HASH_JOIN,3,False,36242603,5219716,36242603,1153798,32289229,"INNER
+8d,HASH_JOIN,3,False,36242603,5219716,36242603,1153798,32289229,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 142119
 "
-/Users/kerenhuang/join-order-benchmark/8d.sql,HASH_JOIN,2,False,2525744,2693972,2525744,1153798,1153798,"INNER
+8d,HASH_JOIN,2,False,2525744,2693972,2525744,1153798,1153798,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 13075
 "
-/Users/kerenhuang/join-order-benchmark/8d.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
+8d,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/9a.sql,HASH_JOIN,7,False,3140339,41778600,3140339,127,121,"INNER
+9a,HASH_JOIN,7,False,3140339,41778600,3140339,127,121,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/9a.sql,HASH_JOIN,6,False,772581,41006019,772581,125,127,"INNER
+9a,HASH_JOIN,6,False,772581,41006019,772581,125,127,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/9a.sql,HASH_JOIN,5,False,961555,40044464,961555,30619,125,"INNER
+9a,HASH_JOIN,5,False,961555,40044464,961555,30619,125,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 9
 "
-/Users/kerenhuang/join-order-benchmark/9a.sql,HASH_JOIN,4,False,40044463,1,104698,1,30619,"INNER
+9a,HASH_JOIN,4,False,40044463,1,104698,1,30619,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 1136
 "
-/Users/kerenhuang/join-order-benchmark/9a.sql,HASH_JOIN,3,False,36242603,3801860,36242603,144120,104698,"INNER
+9a,HASH_JOIN,3,False,36242603,3801860,36242603,144120,104698,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 1136
 "
-/Users/kerenhuang/join-order-benchmark/9a.sql,HASH_JOIN,2,False,1107888,2693972,1107888,542096,144120,"INNER
+9a,HASH_JOIN,2,False,1107888,2693972,1107888,542096,144120,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 523
 "
-/Users/kerenhuang/join-order-benchmark/9a.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,542096,"INNER
+9a,HASH_JOIN,1,False,2609129,84843,2609129,84843,542096,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 521825
 "
-/Users/kerenhuang/join-order-benchmark/9b.sql,HASH_JOIN,7,False,3140339,5654762,3140339,40,40,"INNER
+9b,HASH_JOIN,7,False,3140339,5654762,3140339,40,40,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/9b.sql,HASH_JOIN,6,False,772581,4882181,772581,30,40,"INNER
+9b,HASH_JOIN,6,False,772581,4882181,772581,30,40,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/9b.sql,HASH_JOIN,5,False,512825,4369356,512825,82,30,"INNER
+9b,HASH_JOIN,5,False,512825,4369356,512825,82,30,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/9b.sql,HASH_JOIN,4,False,84843,4284513,84843,87,82,"INNER
+9b,HASH_JOIN,4,False,84843,4284513,84843,87,82,"INNER
 id = company_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/9b.sql,HASH_JOIN,3,False,2609129,1675384,2609129,453,87,"INNER
+9b,HASH_JOIN,3,False,2609129,1675384,2609129,453,87,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 0
 "
-/Users/kerenhuang/join-order-benchmark/9b.sql,HASH_JOIN,2,False,961555,713829,961555,222686,453,"INNER
+9b,HASH_JOIN,2,False,961555,713829,961555,222686,453,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 2
 "
-/Users/kerenhuang/join-order-benchmark/9b.sql,HASH_JOIN,1,False,713828,1,713828,1,222686,"INNER
+9b,HASH_JOIN,1,False,713828,1,713828,1,222686,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 356
 "
-/Users/kerenhuang/join-order-benchmark/9c.sql,HASH_JOIN,7,False,3140339,43196456,3140339,8514,8144,"INNER
+9c,HASH_JOIN,7,False,3140339,43196456,3140339,8514,8144,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 53
 "
-/Users/kerenhuang/join-order-benchmark/9c.sql,HASH_JOIN,6,False,2525744,40670712,2525744,8514,8514,"INNER
+9c,HASH_JOIN,6,False,2525744,40670712,2525744,8514,8514,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 52
 "
-/Users/kerenhuang/join-order-benchmark/9c.sql,HASH_JOIN,5,False,772581,39898131,772581,4938,8514,"INNER
+9c,HASH_JOIN,5,False,772581,39898131,772581,4938,8514,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 68
 "
-/Users/kerenhuang/join-order-benchmark/9c.sql,HASH_JOIN,4,False,961555,38936576,961555,189554,4938,"INNER
+9c,HASH_JOIN,4,False,961555,38936576,961555,189554,4938,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 314
 "
-/Users/kerenhuang/join-order-benchmark/9c.sql,HASH_JOIN,3,False,38936575,1,671694,1,189554,"INNER
+9c,HASH_JOIN,3,False,38936575,1,671694,1,189554,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 37488
 "
-/Users/kerenhuang/join-order-benchmark/9c.sql,HASH_JOIN,2,False,36242603,2693972,36242603,1153798,671694,"INNER
+9c,HASH_JOIN,2,False,36242603,2693972,36242603,1153798,671694,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 37488
 "
-/Users/kerenhuang/join-order-benchmark/9c.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
+9c,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
 company_id = id
 
 [INFOSEPARATOR]
 EC: 2609129
 "
-/Users/kerenhuang/join-order-benchmark/9d.sql,HASH_JOIN,7,False,3140339,43196456,3140339,505134,483082,"INNER
+9d,HASH_JOIN,7,False,3140339,43196456,3140339,505134,483082,"INNER
 id = person_role_id
 
 [INFOSEPARATOR]
 EC: 268
 "
-/Users/kerenhuang/join-order-benchmark/9d.sql,HASH_JOIN,6,False,2525744,40670712,2525744,505134,505134,"INNER
+9d,HASH_JOIN,6,False,2525744,40670712,2525744,505134,505134,"INNER
 id = movie_id
 
 [INFOSEPARATOR]
 EC: 260
 "
-/Users/kerenhuang/join-order-benchmark/9d.sql,HASH_JOIN,5,False,961555,39709157,961555,505250,505134,"INNER
+9d,HASH_JOIN,5,False,961555,39709157,961555,505250,505134,"INNER
 id = person_id
 
 [INFOSEPARATOR]
 EC: 343
 "
-/Users/kerenhuang/join-order-benchmark/9d.sql,HASH_JOIN,4,False,772581,38936576,772581,189554,505250,"INNER
+9d,HASH_JOIN,4,False,772581,38936576,772581,189554,505250,"INNER
 person_id = person_id
 
 [INFOSEPARATOR]
 EC: 680
 "
-/Users/kerenhuang/join-order-benchmark/9d.sql,HASH_JOIN,3,False,38936575,1,671694,1,189554,"INNER
+9d,HASH_JOIN,3,False,38936575,1,671694,1,189554,"INNER
 role_id = id
 
 [INFOSEPARATOR]
 EC: 37488
 "
-/Users/kerenhuang/join-order-benchmark/9d.sql,HASH_JOIN,2,False,36242603,2693972,36242603,1153798,671694,"INNER
+9d,HASH_JOIN,2,False,36242603,2693972,36242603,1153798,671694,"INNER
 movie_id = movie_id
 
 [INFOSEPARATOR]
 EC: 37488
 "
-/Users/kerenhuang/join-order-benchmark/9d.sql,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
+9d,HASH_JOIN,1,False,2609129,84843,2609129,84843,1153798,"INNER
 company_id = id
 
 [INFOSEPARATOR]
